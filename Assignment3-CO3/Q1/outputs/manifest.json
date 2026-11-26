@@ -1,0 +1,36 @@
+[
+  {
+    "source": "complete_the_code.c",
+    "compile": [
+      "gcc",
+      "-std=c11",
+      "-O2",
+      "-Wall",
+      "-Wextra",
+      "Q1/complete_the_code.c",
+      "-o",
+      "build/Q1_complete_the_code.exe"
+    ],
+    "input": "Q1\\input.txt",
+    "exit_code": 0,
+    "stdout_sha256": "4df436ffc8f06785fa47d8f7de476487beb9b0ed90d9a04f304a51b6d1773c3b",
+    "expected_bytes_match": true
+  },
+  {
+    "source": "library_search_lab.c",
+    "compile": [
+      "gcc",
+      "-std=c11",
+      "-O2",
+      "-Wall",
+      "-Wextra",
+      "Q1/library_search_lab.c",
+      "-o",
+      "build/Q1_library_search_lab.exe"
+    ],
+    "input": "Q1\\input.txt",
+    "exit_code": 0,
+    "stdout_sha256": "4bca200bbbc85728d2ae036371b6b4557704e6930f13847b0562d9ba58e05661",
+    "expected_bytes_match": false
+  }
+]

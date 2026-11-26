@@ -1,0 +1,6 @@
+$ gcc -std=c11 -O2 -Wall -Wextra Q1/complete_the_code.c -o build/Q1_complete_the_code.exe
+$ build/Q1_complete_the_code.exe < Q1/input.txt
+Book 1021 -> index 0, comparisons = 3
+Book 1305 -> index 5, comparisons = 3
+Book 1533 -> index 9, comparisons = 4
+Book 1400 -> index -1, comparisons = 4
