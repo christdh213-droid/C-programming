@@ -71,6 +71,7 @@
       "-Wall",
       "-Wextra",
       "Task05/two_counters.c",
+      "Task05/extern_store.c",
       "-o",
       "build/Task05_two_counters.exe"
     ],

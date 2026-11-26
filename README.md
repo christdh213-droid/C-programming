@@ -10,6 +10,7 @@ Repository: https://github.com/christdh213-droid/C-programming
 | --- | --- | --- |
 | Assignment 2 CO2 | [Assignment2-CO2](Assignment2-CO2/README.md) | [Report](Assignment2-CO2/CSA02_1911260256_Assignment2_Report.docx) |
 | Assignment 3 CO3 | [Assignment3-CO3](Assignment3-CO3/README.md) | [Report](Assignment3-CO3/CSA02_1911260256_Assignment3_Report.docx) |
+| Assignment 4 CO4 | [Assignment4-CO4](Assignment4-CO4/README.md) | [Report](Assignment4-CO4/CSA02_1911260256_Assignment4_Report.docx) |
 
 ## Exact detected gcc version
 

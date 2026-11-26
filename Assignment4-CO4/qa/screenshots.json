@@ -1,0 +1,142 @@
+[
+  {
+    "file": "Task01\\screenshots\\patient_register_01.png",
+    "source": "Task01\\outputs\\patient_register.transcript.txt",
+    "start": 1,
+    "end": 11,
+    "width": 1900,
+    "height": 528,
+    "dpi": 300,
+    "nonblank": true
+  },
+  {
+    "file": "Task02\\screenshots\\complete_the_code_01.png",
+    "source": "Task02\\outputs\\complete_the_code.transcript.txt",
+    "start": 1,
+    "end": 5,
+    "width": 1900,
+    "height": 300,
+    "dpi": 300,
+    "nonblank": true
+  },
+  {
+    "file": "Task02\\screenshots\\courier_full_01.png",
+    "source": "Task02\\outputs\\courier_full.transcript.txt",
+    "start": 1,
+    "end": 9,
+    "width": 1900,
+    "height": 452,
+    "dpi": 300,
+    "nonblank": true
+  },
+  {
+    "file": "Task02\\screenshots\\starter_layout_01.png",
+    "source": "Task02\\outputs\\starter_layout.transcript.txt",
+    "start": 1,
+    "end": 3,
+    "width": 1900,
+    "height": 224,
+    "dpi": 300,
+    "nonblank": true
+  },
+  {
+    "file": "Task03\\screenshots\\complete_the_code_01.png",
+    "source": "Task03\\outputs\\complete_the_code.transcript.txt",
+    "start": 1,
+    "end": 6,
+    "width": 1900,
+    "height": 338,
+    "dpi": 300,
+    "nonblank": true
+  },
+  {
+    "file": "Task03\\screenshots\\weather_lab_01.png",
+    "source": "Task03\\outputs\\weather_lab.transcript.txt",
+    "start": 1,
+    "end": 10,
+    "width": 1900,
+    "height": 490,
+    "dpi": 300,
+    "nonblank": true
+  },
+  {
+    "file": "Task04\\screenshots\\address_proof_01.png",
+    "source": "Task04\\outputs\\address_proof.transcript.txt",
+    "start": 1,
+    "end": 11,
+    "width": 1900,
+    "height": 528,
+    "dpi": 300,
+    "nonblank": true
+  },
+  {
+    "file": "Task04\\screenshots\\compile_error_01.png",
+    "source": "Task04\\outputs\\compile_error.transcript.txt",
+    "start": 1,
+    "end": 13,
+    "width": 1900,
+    "height": 604,
+    "dpi": 300,
+    "nonblank": true
+  },
+  {
+    "file": "Task04\\screenshots\\repaired_bank_01.png",
+    "source": "Task04\\outputs\\repaired_bank.transcript.txt",
+    "start": 1,
+    "end": 8,
+    "width": 1900,
+    "height": 414,
+    "dpi": 300,
+    "nonblank": true
+  },
+  {
+    "file": "Task05\\screenshots\\argument_order_01.png",
+    "source": "Task05\\outputs\\argument_order.transcript.txt",
+    "start": 1,
+    "end": 4,
+    "width": 1900,
+    "height": 262,
+    "dpi": 300,
+    "nonblank": true
+  },
+  {
+    "file": "Task05\\screenshots\\complete_the_code_01.png",
+    "source": "Task05\\outputs\\complete_the_code.transcript.txt",
+    "start": 1,
+    "end": 4,
+    "width": 1900,
+    "height": 262,
+    "dpi": 300,
+    "nonblank": true
+  },
+  {
+    "file": "Task05\\screenshots\\counter_four_ways_01.png",
+    "source": "Task05\\outputs\\counter_four_ways.transcript.txt",
+    "start": 1,
+    "end": 7,
+    "width": 1900,
+    "height": 376,
+    "dpi": 300,
+    "nonblank": true
+  },
+  {
+    "file": "Task05\\screenshots\\two_counters_01.png",
+    "source": "Task05\\outputs\\two_counters.transcript.txt",
+    "start": 1,
+    "end": 8,
+    "width": 2510,
+    "height": 414,
+    "dpi": 300,
+    "nonblank": true
+  },
+  {
+    "file": "Task06\\screenshots\\canteen_system_01.png",
+    "source": "Task06\\outputs\\canteen_system.transcript.txt",
+    "start": 1,
+    "end": 27,
+    "width": 1900,
+    "height": 1136,
+    "dpi": 300,
+    "nonblank": true
+  }
+]

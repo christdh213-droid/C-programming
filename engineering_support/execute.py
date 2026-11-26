@@ -16,7 +16,7 @@ def task(number,task):
         if name=='extern_store':
             command+=['-c','-o',f'build/{task}_{name}.o']
         else:
-            if name=='counter_four_ways':command+=[f'{task}/extern_store.c']
+            if name in ('counter_four_ways','two_counters'):command+=[f'{task}/extern_store.c']
             command+=['-o',f'build/{task}_{name}.exe']
             if name=='nightly_report':command+=['-lpsapi']
         comp=subprocess.run(command,cwd=a,env=ENV,capture_output=True)

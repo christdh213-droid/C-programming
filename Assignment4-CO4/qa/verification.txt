@@ -1,0 +1,7 @@
+Task02 Complete-the-Code: PASS; preserved main and exact fixture bytes
+Task03 Complete-the-Code: PASS; preserved main and exact fixture bytes
+Task05 Complete-the-Code: PASS; preserved main and exact fixture bytes
+All successful builds: zero compiler diagnostics; all captured stdout hashes PASS
+Patient capacity, courier pointer path, union bit pattern and distinct value-copy addresses PASS
+Bank balances, five atomic sale rejections, revenue totals and calendar boundaries PASS
+Task05 literal requested auto: conflicts with preserved main auto  :; fixture follows exact starter main
