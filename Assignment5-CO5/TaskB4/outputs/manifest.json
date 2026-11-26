@@ -1,0 +1,35 @@
+[
+  {
+    "source": "complete_the_code.c",
+    "compile": [
+      "gcc",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "TaskB4/complete_the_code.c",
+      "-o",
+      "build/TaskB4_complete_the_code.exe"
+    ],
+    "compile_exit": 0,
+    "exit_code": 0,
+    "stdout_sha256": "a26fa315fd67f558586447c06a376383ac679af7304768a6e7b07dfbf104faae",
+    "exact_expected": true
+  },
+  {
+    "source": "nightly_report.c",
+    "compile": [
+      "gcc",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "TaskB4/nightly_report.c",
+      "-o",
+      "build/TaskB4_nightly_report.exe",
+      "-lpsapi"
+    ],
+    "compile_exit": 0,
+    "exit_code": 0,
+    "stdout_sha256": "909c501d5584cceb9ef4c84a2e229283ec67bfbf2208c1dfabcccfa2118f0a97",
+    "exact_expected": false
+  }
+]

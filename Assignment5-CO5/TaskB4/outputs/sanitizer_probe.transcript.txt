@@ -1,0 +1,4 @@
+$ gcc -std=c11 -Wall -Wextra -fsanitize=address,leak TaskB4/nightly_report.c -o build/asan_nightly.exe -lpsapi
+C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot find -lasan: No such file or directory
+collect2.exe: error: ld returned 1 exit status
+EXIT_CODE 1

@@ -1,0 +1,30 @@
+$ "C:\Users\Chris\Documents\ChatGPT\DBMS assisgnments\C-programming\Assignment5-CO5\build\TaskB4_nightly_report.exe" stream
+NIGHTLY mode=stream date=26/11/2026 records=100000 hospitals=25 eligible=67047 youngest_id=7001
+MEASURE clock_seconds=0.011000000 peak_working_set_bytes=5099520 record_bytes=88 capacity=0 logical_input_buffer_bytes=22528 realloc_calls=0
+HOSPITAL 1 eligible=2680
+HOSPITAL 2 eligible=2681
+HOSPITAL 3 eligible=2681
+HOSPITAL 4 eligible=2678
+HOSPITAL 5 eligible=2680
+HOSPITAL 6 eligible=2680
+HOSPITAL 7 eligible=2682
+HOSPITAL 8 eligible=2681
+HOSPITAL 9 eligible=2681
+HOSPITAL 10 eligible=2683
+HOSPITAL 11 eligible=2683
+HOSPITAL 12 eligible=2685
+HOSPITAL 13 eligible=2685
+HOSPITAL 14 eligible=2683
+HOSPITAL 15 eligible=2682
+HOSPITAL 16 eligible=2682
+HOSPITAL 17 eligible=2682
+HOSPITAL 18 eligible=2680
+HOSPITAL 19 eligible=2681
+HOSPITAL 20 eligible=2682
+HOSPITAL 21 eligible=2682
+HOSPITAL 22 eligible=2686
+HOSPITAL 23 eligible=2684
+HOSPITAL 24 eligible=2681
+HOSPITAL 25 eligible=2682
+CLEANUP donor allocation freed; owner reset (source instrumentation, not sanitizer proof)
+INJECTED realloc failure: pointer, capacity, size and content unchanged; freed once
