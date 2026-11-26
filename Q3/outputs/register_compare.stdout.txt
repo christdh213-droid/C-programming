@@ -1,0 +1,7 @@
+step=1 value=128 binary=10000000 bit_count=1 array_count=1
+step=2 value=129 binary=10000001 bit_count=2 array_count=2
+step=3 value=1 binary=00000001 bit_count=1 array_count=1
+step=4 value=0 binary=00000000 bit_count=0 array_count=0
+reg=2 dev=1: reg & 1 << dev = 2; (reg & 1) << dev = 0
+CHAR_BIT=8 sizeof register=1 array=8; signed conversion=-128 right_shift=-64
+1000000 homes: register=1000000 bytes; array=8000000 bytes; count visits=8 per home in both.

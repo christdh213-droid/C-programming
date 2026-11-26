@@ -1,0 +1,32 @@
+[
+  {
+    "source": "complete.c",
+    "command": [
+      "gcc",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "Q3/complete.c",
+      "-o",
+      "build/Q3_complete.exe"
+    ],
+    "exit_code": 0,
+    "stdout_sha256": "d3d1a1da7e0a98502e26a55d54a989364df343d5bd987243c8aaa7fc94aed72a",
+    "expected_bytes_match": true
+  },
+  {
+    "source": "register_compare.c",
+    "command": [
+      "gcc",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "Q3/register_compare.c",
+      "-o",
+      "build/Q3_register_compare.exe"
+    ],
+    "exit_code": 0,
+    "stdout_sha256": "f1569b12eb2e97f09354b5abc404bd8fa13b5f6e3926ed5736b0d2d306f4583b",
+    "expected_bytes_match": false
+  }
+]
