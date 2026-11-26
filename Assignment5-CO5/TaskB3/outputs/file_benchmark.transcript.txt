@@ -1,0 +1,14 @@
+$ gcc -std=c11 -Wall -Wextra TaskB3/file_benchmark.c -o build/TaskB3_file_benchmark.exe
+$ build/TaskB3_file_benchmark.exe < TaskB3/input.txt
+RECORD sizeof=88 alignment=4
+FILE n=10 format=text bytes=493 write_cpu=0.008000000 read_verify_cpu=0.001000000 PASS
+FILE n=10 format=binary bytes=880 write_cpu=0.005000000 read_verify_cpu=0.002000000 PASS
+FILE n=1000 format=text bytes=49890 write_cpu=0.006000000 read_verify_cpu=0.002000000 PASS
+FILE n=1000 format=binary bytes=88000 write_cpu=0.007000000 read_verify_cpu=0.002000000 PASS
+FILE n=10000 format=text bytes=505901 write_cpu=0.009000000 read_verify_cpu=0.007000000 PASS
+FILE n=10000 format=binary bytes=880000 write_cpu=0.005000000 read_verify_cpu=0.001000000 PASS
+FILE n=100000 format=text bytes=5093002 write_cpu=0.060000000 read_verify_cpu=0.074000000 PASS
+FILE n=100000 format=binary bytes=8800000 write_cpu=0.006000000 read_verify_cpu=0.011000000 PASS
+UPDATE ordinal=50000 index=49999 binary_cpu=0.005000000 text_rewrite_cpu=0.150000000 untouched_fields_PASS
+BULK n=100000 fwrite_calls=100000 write_cpu=0.026000000 PASS
+BULK n=100000 fwrite_calls=1 write_cpu=0.090000000 PASS

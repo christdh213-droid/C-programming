@@ -1,0 +1,34 @@
+[
+  {
+    "source": "complete_the_code.c",
+    "compile": [
+      "gcc",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "TaskB3/complete_the_code.c",
+      "-o",
+      "build/TaskB3_complete_the_code.exe"
+    ],
+    "compile_exit": 0,
+    "exit_code": 0,
+    "stdout_sha256": "aa6da0bf7da4c89fa01e5ee105dcb7c5e9e48a06c54024c5bc83deea4c76aeab",
+    "exact_expected": true
+  },
+  {
+    "source": "file_benchmark.c",
+    "compile": [
+      "gcc",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "TaskB3/file_benchmark.c",
+      "-o",
+      "build/TaskB3_file_benchmark.exe"
+    ],
+    "compile_exit": 0,
+    "exit_code": 0,
+    "stdout_sha256": "0c34520f6bb3fc3e271fa1f996fcf04319e0094b8ded85e8a4dc16e8020d8eea",
+    "exact_expected": false
+  }
+]
