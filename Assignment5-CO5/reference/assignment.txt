@@ -1,0 +1,347 @@
+Programme: B.E / B.Tech
+Course Code: CSA02
+Course Name         : C Programming
+Course outcome: CO5
+Max Marks: 50
+ASSIGNMENT 5
+MODULAR, MEMORY-AWARE AND PERSISTENT PROGRAM ENGINEERING
+Course Outcome – CO5: Design modular and scalable C programs using functions, recursion, pointers and file 
+handling (parameter passing, prototypes, recursion, pointer operations, pointers with arrays and functions, 
+command-line arguments, dynamic memory allocation, file pointers and file operations)
+Nature: IndividualDuration: One WeekTotal Marks: 50
+Bloom’s Levels Assessed: K4 – Analyse and K5 – Evaluate (the level of each task is stated under the task 
+heading)
+Mandatory Execution and GitHub Submission
+Every student must individually execute every task in this assignment, including all “Complete the Code” programs.
+Create a GitHub repository named CSA02-<RegisterNumber>-Assignment5 and share it with the course faculty (public, 
+or private with the faculty added as a collaborator).
+Keep one folder for each task (for example: Task01, Task02 … or Q1, Q2 …), containing the C source code, input files 
+and output screenshots.
+Include a README.md with your name, register number, compiler and version (for example gcc 13), the exact gcc 
+command used to compile, the steps to run each program, and a short note of the result of each task.
+Commit your work progressively – at least one commit for each task. The commit history will be checked; a single upload 
+of all files on the last day will not be accepted.
+Submit the GitHub link below and on the cover page of your report. An assignment submitted without a working 
+GitHub link will not be evaluated.
+GitHub Repository Link: __________________________________________________
+How to Answer the Additional Questions
+Complete the Code: Copy the given code into your repository, replace every TODO with working code 
+without changing the rest of the program, execute it and compare your output with the expected output.
+Alternative Concept and Complexity Analysis: Describe how the solution would change if the alternative 
+concept were used, with code or pseudocode, and analyse and compare the time complexity and space 
+complexity of both solutions using Big-O notation, supported by your own measurements wherever possible.
+Assessment Components
+PART A – Design & Pseudocode: 25 Marks
+PART B – Implementation & Experimental Investigation: 25 Marks
+PURPOSE OF THE ASSIGNMENT
+Real C programs are built from functions, manage their own memory through pointers, and store data in files. 
+Poor choices in these areas lead to programs that are slow, crash, leak memory or lose data.
+This assignment investigates a fundamental question:
+How should a C programmer divide a program into functions, manage memory and store data so that the 
+program stays correct as the data grows?
+You are expected to demonstrate the following progression:
+Decompose → Design Interfaces → Recurse → Point → Allocate → Persist → Measure → Decide
+Simply obtaining a program that runs is not sufficient. Your design reasoning, experimental evidence and 
+interpretation are all part of the assessment.
+Case Study — District Blood Bank Network
+A district has one central blood bank and several hospital storage units. Each donor record holds a donor ID, 
+name, blood group, age, phone number and the date of the last donation. Each stock record holds a blood group 
+and the number of units available. The blood bank must register donors, find eligible donors of a given group, 
+update stock after every donation and issue, and keep all data in files so that nothing is lost when the computer 
+is switched off.
+PART A – DESIGN & PSEUDOCODE25 Marks
+All pseudocode must follow the SIMATS Engineering – Standard for Algorithmic Pseudocode.
+TASK A1 – DECOMPOSE THE PROGRAM INTO FUNCTIONS7 Marks
+Bloom’s Level: K4 – Analyse
+A1.1 – Identify the Functions | 2 Marks
+Break the blood bank program into functions (for example: register donor, check eligibility, find donors, update 
+stock, save, load). Draw a structure chart showing which function calls which.
+A1.2 – Design the Interfaces | 3 Marks
+Write the prototype of every function. For each parameter, decide whether it is passed by value or by pointer 
+(address), and whether the pointer should be const. Justify each decision.
+A1.3 – Return More Than One Value | 2 Marks
+A function must return both the number of eligible donors and the ID of the youngest eligible donor. Design two 
+alternatives – using pointer parameters, and returning a structure – and compare them.
+Alternative Concept and Complexity Analysis
+If the functions shared data through global variables instead of receiving it through parameters and pointers, 
+what would the solution be? Analyse whether the running time or memory changes, and explain the effect on 
+coupling, testing and reuse of the functions.
+Evidence Expected
+A structure chart, justified prototypes and two designs for returning multiple values.
+TASK A2 – DESIGN WITH RECURSION5 Marks
+Bloom’s Level: K4 – Analyse
+Donor IDs carry a check digit: the digital root of the other digits (repeatedly summing digits until one digit 
+remains). The blood bank also computes base^n for a reporting formula.
+A2.1 – Recursive Design | 2 Marks
+Write recursive pseudocode for the digital root and for base^n using the idea base^n = (base^(n/2))². Identify the 
+base case and the recursive case of each.
+A2.2 – Trace the Calls | 2 Marks
+Trace both functions for one input, drawing the call stack at its deepest point. Write the recurrence for the 
+number of calls of each version of power (linear and halving).
+A2.3 – Recursion Risks | 1 Mark
+Explain what happens if the base case is missing, and when recursion should be replaced by a loop.
+Alternative Concept and Complexity Analysis
+If the digital root were computed with a loop, or directly with the formula 1 + (n − 1) % 9, instead of recursion, 
+what would the solution be? Analyse the time (proportional to the number of digits, versus O(1)) and the stack 
+space used by recursion versus O(1) for the loop.
+Evidence Expected
+Correct recursive designs with base cases, call traces, recurrences and an explanation of recursion risks.
+TASK A3 – DESIGN WITH POINTERS5 Marks
+Bloom’s Level: K4 – Analyse
+A3.1 – Pointer Operations | 2 Marks
+Given int stock[8] for the eight blood groups and int *p = stock;, explain what p + 3, *(p + 3), p[3] and *p++ 
+mean, and draw the memory diagram.
+A3.2 – Pointers and Functions | 2 Marks
+Design a function that finds the blood group with the lowest stock and returns a pointer to that element, so that 
+the caller can update it directly. Explain why returning a pointer to a local variable would be wrong.
+A3.3 – Command-Line Interface | 1 Mark
+Design the command-line interface of the program (for example: bloodbank find O+ or bloodbank issue A- 2) 
+using argc and argv, and state how invalid arguments are handled.
+Alternative Concept and Complexity Analysis
+If the lowest-stock function returned the index of the element instead of a pointer to it, what would the calling 
+code look like? Analyse the time and space of both versions (both O(n) time and O(1) space) and compare their 
+safety when the array is later reallocated.
+Evidence Expected
+Correct pointer expressions with a memory diagram, a safe pointer-returning function and a command-line 
+design.
+TASK A4 – DESIGN DYNAMIC MEMORY USE4 Marks
+Bloom’s Level: K4 – Analyse
+The number of donors is not known in advance; it may be 50 in a small hospital or 50,000 in the district.
+A4.1 – Growable Donor List | 2 Marks
+Design a donor list that starts small and doubles its capacity with realloc() when full. Write pseudocode for 
+adding a donor, including what happens if realloc() fails.
+A4.2 – Memory Errors | 2 Marks
+Explain a memory leak, a dangling pointer and a double free, giving an example of how each could occur in the 
+blood bank program and how your design prevents it.
+Alternative Concept and Complexity Analysis
+If the donor list grew by a fixed 10 records each time instead of doubling, what would the solution be? Analyse 
+the total number of elements copied by realloc for n donors (O(n²) versus O(n) overall) and the maximum 
+unused space in each strategy.
+Evidence Expected
+A growable-array design with failure handling, and correct explanations of three memory errors.
+TASK A5 – DESIGN THE FILE STORAGE4 Marks
+Bloom’s Level: K4 – Analyse
+A5.1 – Text or Binary? | 2 Marks
+Design the donor file as a text file (one donor per line, written with fprintf) and the stock file as a binary file of 
+fixed-size records (written with fwrite). Justify each choice.
+A5.2 – Update in Place | 2 Marks
+Write pseudocode to change the units of one blood group in the binary stock file using fseek, fread and fwrite, 
+without rewriting the whole file. Explain why this is difficult for the text file.
+Alternative Concept and Complexity Analysis
+If the stock were kept in a text file and the whole file rewritten after every update, instead of a binary file 
+updated in place with fseek, what would the solution be? Analyse the time per update for n records (O(n) versus 
+O(1)) and the file size in each format.
+Evidence Expected
+Justified file designs and correct pseudocode for an in-place update.
+PART B – IMPLEMENTATION & EXPERIMENTAL INVESTIGATION25 Marks
+Part B assesses whether your design reasoning survives contact with actual computation. You are expected to:
+Implement → Instrument → Stress → Measure → Compare → Interpret
+Execution screenshots alone are insufficient.
+TASK B1 – IMPLEMENT AND INSTRUMENT THE RECURSIVE 
+FUNCTIONS7 Marks
+Bloom’s Level: K4 – Analyse
+B1.1 – Validate the Implementation | 2 Marks
+Implement the digital root and both power functions. Test them with ordinary values, 0 and 1, and one value of 
+your choice. Explain what each test verifies.
+B1.2 – Compare with Your Design | 1 Mark
+Compare your code with your Part A pseudocode and explain any change.
+B1.3 – Count the Calls | 2 Marks
+Count the recursive calls of linear and halving power for n = 10, 100, 1,000 and 10,000, and compare the counts 
+with your recurrences from A2.2.
+B1.4 – Find the Limit | 2 Marks
+Increase n for the linear version until the program crashes. Record the value and explain the crash (stack 
+overflow). Repeat with an iterative version.
+Complete the Code
+Complete TODO 1 below and execute the program.
+#include <stdio.h>
+long long calls = 0;     /* number of recursive calls made */
+/* Linear recursion: base^exp = base * base^(exp-1) */
+long long power_linear(long long base, int exp)
+{
+    calls++;
+    if (exp == 0) return 1;
+    return base * power_linear(base, exp - 1);
+}
+/* Divide-and-conquer recursion: compute base^(exp/2) once and square it. */
+long long power_fast(long long base, int exp)
+{
+    calls++;
+    // TODO 1: Write the base case for exp == 0; otherwise compute half =
+    //   power_fast(base, exp / 2) ONCE and return half * half, multiplied by base when
+    //   exp is odd
+    
+}
+int main(void)
+{
+    calls = 0;
+    long long a = power_linear(2, 30);
+    printf("linear: %lld in %lld calls\n", a, calls);
+    calls = 0;
+    long long b = power_fast(2, 30);
+    printf("fast  : %lld in %lld calls\n", b, calls);
+   return 0;
+}
+Expected output:
+linear: 1073741824 in 31 calls
+fast  : 1073741824 in 6 calls
+Change half * half to power_fast(base, exp / 2) * power_fast(base, exp / 2) and record the number of calls. 
+Explain the result.
+Alternative Concept and Complexity Analysis
+If power were computed with an iterative square-and-multiply loop instead of recursion, what would the 
+solution be? Analyse the time (O(log n) in both) and the stack space (O(log n) for recursion versus O(1)), and 
+compare both with the linear recursive version.
+Evidence Expected
+Working functions, test table, call counts compared with the recurrences, and an explained recursion limit.
+TASK B2 – ENGINEER ADVERSARIAL INPUTS5 Marks
+Bloom’s Level: K4 – Analyse
+Give the program a donor name longer than the array that holds it, first with scanf("%s") and then with fgets; record and 
+explain what happens
+Run the program with a missing or read-only data file and show that it reports the error using perror() instead of crashing
+Pass wrong command-line arguments (none, too many, an invalid blood group)
+Run the program under valgrind (or with gcc -fsanitize=address) and report any memory errors found and fixed
+Alternative Concept and Complexity Analysis
+If input lines were read with getline(), which allocates a buffer of the required size, instead of fgets() into a 
+fixed array, what would the solution be? Analyse the time to read a line of length L and the heap space used, and 
+state who must free the buffer.
+Evidence Expected
+Deliberately constructed adversarial inputs, the observed behaviour, and the corrections made.
+TASK B3 – TEXT FILE vs BINARY FILE8 Marks
+Bloom’s Level: K4 – Analyse
+B3.1 – Correctness on Small Data | 2 Marks
+Write and read back 10 donor records in both a text file and a binary file, and verify that the data read back is 
+identical.
+B3.2 – Increase the Data Size | 2 Marks
+Measure the file size and the time to write and read all records for 1,000, 10,000 and 100,000 donors in both 
+formats.
+B3.3 – Update One Record | 2 Marks
+Measure the time to update the 50,000th record in place in the binary file (fseek) and by rewriting the text file.
+B3.4 – Engineering Trade-Off | 2 Marks
+Explain the differences observed, including portability of binary files between computers, and recommend a 
+format for each kind of data.
+Complete the Code
+Complete TODO 1 below and execute the program.
+#include <stdio.h>
+typedef struct { int group_code; int units; } Stock;   /* fixed-size binary record */
+/* Overwrites the units of record number index directly in the binary file. */
+int update_units(FILE *fp, int index, int units)
+{
+    Stock s;
+    // TODO 1: Seek to record index, read it, change units, seek back by one record and
+    //   write it again; return 0 if any step fails, 1 on success
+    
+}
+int main(void)
+{
+    FILE *fp = tmpfile();
+    if (fp == NULL) { perror("tmpfile"); return 1; }
+    Stock initial[5] = {{1, 40}, {2, 25}, {3, 12}, {4, 8}, {5, 30}};
+    fwrite(initial, sizeof(Stock), 5, fp);
+    printf("update record 3: %s\n", update_units(fp, 3, 20) ? "done" : "failed");
+    printf("update record 9: %s\n", update_units(fp, 9, 20) ? "done" : "failed");
+    rewind(fp);
+    Stock s;
+    while (fread(&s, sizeof s, 1, fp) == 1) printf("%d:%d ", s.group_code, s.units);
+    printf("\n");
+    fclose(fp);
+    return 0;
+}
+Expected output:
+update record 3: done
+update record 9: failed
+1:40 2:25 3:12 4:20 5:30 
+Explain why the update of record 9 fails and why the file is not damaged.
+Alternative Concept and Complexity Analysis
+If all stock records were written with one fwrite call for the whole array, instead of one fwrite per record, what 
+would the solution be? Analyse the number of library calls and the time for n records, and the memory needed 
+to hold the array before writing.
+Evidence Expected
+Verified correctness, measured comparison at three sizes, update timings and a reasoned trade-off.
+TASK B4 – FINAL ENGINEERING DECISION5 Marks
+Bloom’s Level: K5 – Evaluate
+The district now connects 25 hospitals, with 100× the present number of donors, and the blood bank wants a 
+nightly report of donors eligible to donate in the next week.
+B4.1 – Implement a Practical Strategy | 2 Marks
+Implement the report using the growable donor list loaded from the file, and measure the memory used and the 
+time taken.
+B4.2 – Check Memory Safety | 1 Mark
+Show that the program frees all allocated memory (valgrind summary or sanitizer output).
+B4.3 – Production Decision | 2 Marks
+Decide whether to keep all donors in memory, read the file in batches, or keep a separate index file, and justify 
+the decision using your measurements.
+Complete the Code
+Complete TODO 1 below and execute the program. Use this growable list in your report program.
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+typedef struct { int id; char group[4]; } Donor;
+typedef struct { Donor *data; int size, capacity; } DonorList;
+/* Appends a donor, doubling the capacity when the list is full.
+   Returns 1 on success, 0 if memory could not be allocated. */
+int add_donor(DonorList *list, int id, const char *group)
+{
+    if (list->size == list->capacity) {
+        // TODO 1: Compute the new capacity (2 if it is 0, otherwise double it), grow
+        //   the array with realloc WITHOUT losing the old pointer if realloc fails, and
+        //   update data and capacity
+        
+    }
+    list->data[list->size].id = id;
+    strncpy(list->data[list->size].group, group, 3);
+    list->data[list->size].group[3] = '\0';
+    list->size++;
+    return 1;
+}
+int main(void)
+{
+    DonorList list = {NULL, 0, 0};
+    const char *groups[] = {"O+", "A+", "B-", "AB+", "O-"};
+    for (int i = 0; i < 5; i++) {
+        add_donor(&list, 7001 + i, groups[i]);
+       printf("added %d (%s): size = %d, capacity = %d\n",
+               list.data[i].id, list.data[i].group, list.size, list.capacity);
+    }
+    free(list.data);
+    return 0;
+}
+Expected output:
+added 7001 (O+): size = 1, capacity = 2
+added 7002 (A+): size = 2, capacity = 2
+added 7003 (B-): size = 3, capacity = 4
+added 7004 (AB+): size = 4, capacity = 4
+added 7005 (O-): size = 5, capacity = 8
+Explain why the result of realloc() is stored in a temporary pointer p instead of directly in list->data.
+Alternative Concept and Complexity Analysis
+If the donors were not loaded into memory but searched through a separate sorted index file (donor ID and file 
+offset) using binary search with fseek, what would the solution be? Analyse the time per lookup (O(log n) file 
+reads versus O(1) after loading) and the memory used (O(1) versus O(n)).
+Evidence Expected
+A working report program with memory measurements, a clean memory check and an evidence-based 
+production decision.
+MARK DISTRIBUTION
+Component Task Bloom’s Level Marks
+Part A – Design A1 – Functional Decomposition K4 – Analyse 7
+A2 – Recursive Design K4 – Analyse 5
+A3 – Pointer Design K4 – Analyse 5
+A4 – Dynamic Memory Design K4 – Analyse 4
+A5 – File Design K4 – Analyse 4
+Part A Total 25
+Part B – Implementation B1 – Instrumented Recursion K4 – Analyse 7
+B2 – Adversarial Inputs K4 – Analyse 5
+B3 – Text vs Binary Files K4 – Analyse 8
+B4 – Final Engineering Decision K5 – Evaluate 5
+Part B Total 25
+TOTAL 50
+SUBMISSION REQUIREMENTS
+GitHub repository link (mandatory) containing the executed code for every task, including every completed 
+“Complete the Code” program, with input files, output screenshots and a README.md.
+For Part A, submit the structure chart, prototypes, pseudocode, call traces, memory diagrams and reasoning. C 
+code will not be accepted in place of pseudocode.
+For Part B, submit C source code, data files, test inputs, expected behaviour, actual outputs, measurement data, 
+valgrind or sanitizer output, and interpretation.
+Students are expected to use the same engineering workflow throughout the assignment:
+UNDERSTAND → DECOMPOSE → DESIGN → IMPLEMENT → MEASURE → CHALLENGE → 
+INTERPRET
+The key question is not simply “Does the program work?” It is also:
+Does it stay correct, safe and fast as the data grows, and what should a C programmer change when it 
+does not?
+CSA02 – C Programming – Assignments CO1–CO5  |  Page 1

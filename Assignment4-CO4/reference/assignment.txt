@@ -1,0 +1,319 @@
+Programme: B.E / B.Tech
+Course Code: CSA02
+Course Name         : C Programming
+Course outcome: CO4
+Max Marks: 50
+ASSIGNMENT 4
+MODELLING REAL-WORLD DATA WITH STRUCTURES AND UNIONS
+Course Outcome: CO4 – Implement structures, unions and nested structures for modelling and processing real-
+world data (structure definition and declaration, structure within a structure, arrays of structures, structure 
+pointers, unions, and the storage classes auto, extern, static and register)Nature of Assignment: 
+IndividualDuration: One WeekTotal Marks: 50Submission Date: __________________
+Mandatory Execution and GitHub Submission
+Every student must individually execute every task in this assignment, including all “Complete the Code” programs.
+Create a GitHub repository named CSA02-<RegisterNumber>-Assignment4 and share it with the course faculty (public, 
+or private with the faculty added as a collaborator).
+Keep one folder for each task (for example: Task01, Task02 … or Q1, Q2 …), containing the C source code, input files 
+and output screenshots.
+Include a README.md with your name, register number, compiler and version (for example gcc 13), the exact gcc 
+command used to compile, the steps to run each program, and a short note of the result of each task.
+Commit your work progressively – at least one commit for each task. The commit history will be checked; a single upload 
+of all files on the last day will not be accepted.
+Submit the GitHub link below and on the cover page of your report. An assignment submitted without a working 
+GitHub link will not be evaluated.
+GitHub Repository Link: __________________________________________________
+How to Answer the Additional Questions
+Complete the Code: Copy the given code into your repository, replace every TODO with working code 
+without changing the rest of the program, execute it and compare your output with the expected output.
+Alternative Concept and Complexity Analysis: Describe how the solution would change if the alternative 
+concept were used, with code or pseudocode, and analyse and compare the time complexity and space 
+complexity of both solutions using Big-O notation, supported by your own measurements wherever possible.
+PURPOSE OF THE ASSIGNMENT
+This assignment evaluates your ability to design the data model of a program before writing its logic.
+You are expected to demonstrate the following progression:
+Interpret the Requirement → Identify the Entities → Design the Structures → Choose Storage → 
+Implement → Trace Memory → Challenge → Refine
+Where pseudocode is required, it must follow the SIMATS Engineering – Standard for Algorithmic Pseudocode. 
+All code must be written in standard C and compiled with gcc -Wall -Wextra.
+TASK 1 – DATA DESIGN REVIEW
+Bloom’s Level: K4 – Analyse
+Diagnose and Repair a Poor Data Design
+6 Marks
+A junior developer has written the data part of a primary health centre’s patient register as follows:
+char  name[100][20];
+int   age[100];
+char  phone[100][10];
+float bp[100];          /* blood pressure, e.g. 120/80 */
+char  visitDate[100][8];
+int   count;
+void addPatient(char n[], int a, char p[], float b, char d[]) {
+    strcpy(name[count], n); age[count] = a; strcpy(phone[count], p);
+    bp[count] = b; strcpy(visitDate[count], d); count++;
+}
+Task 1.1 – Diagnose the Design | 2 Marks
+Identify at least five design deficiencies. Do not focus merely on syntax. Examine aspects such as:
+Keeping related data in parallel arrays
+Storing a phone number of 10 digits in char[10]
+Storing blood pressure (two values) in one float
+Storing a date as text of 8 characters
+Absence of a limit check on count
+Use of global variables
+Difficulty of sorting patients by age
+For each deficiency, explain what could go wrong in the health centre.
+Task 1.2 – Repair the Design | 3 Marks
+Redesign the data using structures, including nested structures for the date and the blood pressure, and rewrite 
+addPatient() to accept a structure pointer.
+Task 1.3 – Design Defence | 1 Mark
+In not more than 100 words, explain why your structure-based design is easier to sort, pass to functions and 
+extend.
+Alternative Concept and Complexity Analysis
+Your redesign uses an array of structures. The original used parallel arrays (a “structure of arrays”). When could 
+parallel arrays still be preferred? Analyse the time to sort n patients (the number of elements moved in each 
+swap) and the space used, including padding, in both designs.
+Evidence Expected
+A reasoned diagnosis, a corrected structure design and a concise justification.
+TASK 2 – FROM REQUIREMENT TO NESTED STRUCTURES
+Bloom’s Level: K4 – Analyse
+Courier Parcel Tracking
+8 Marks
+A courier franchise books parcels at its counter. Each parcel has an ID, weight, booking date, sender and 
+receiver (each with name, city and PIN code), the service type (normal or express) and the charge. The franchise 
+needs a list of parcels sorted by weight and a list of parcels for a given city.
+Task 2.1 – Identify the Entities | 2 Marks
+Identify the entities and the fields of each, and show which structures are nested inside others.
+Task 2.2 – Define the Structures | 2 Marks
+Write the structure definitions, using typedef where appropriate, and an array of structures for the day’s 
+bookings.
+Task 2.3 – Design the Operations | 3 Marks
+Write pseudocode for (a) sorting the parcels by weight and (b) listing all parcels for a given receiver city.
+Task 2.4 – Access Paths | 1 Mark
+Write the expression to access the receiver’s PIN code of the third parcel (i) using the array and the dot operator, 
+and (ii) using a structure pointer and the arrow operator.
+Complete the Code
+Complete TODO 1 and TODO 2 below and execute the program.
+#include <stdio.h>
+struct date    { int day, month, year; };
+struct address { char city[20]; int pincode; };
+struct parcel  { int id; float weight; struct address to; struct date booked; };
+void print_parcel(const struct parcel *p)
+{
+    // TODO 1: Print id, weight (1 decimal), city, pincode and booking date (dd/mm/yyyy)
+    //   using the -> operator
+    
+}
+/* Selection sort of the parcels in ascending order of weight. */
+void sort_by_weight(struct parcel p[], int n)
+{
+    // TODO 2: For each position i, find the lightest parcel among i..n-1 and swap the
+    //   whole structure into position i
+    
+}
+int main(void)
+{
+    struct parcel list[3] = {
+        {501, 4.5f, {"Madurai", 625001}, {12, 10, 2026}},
+        {502, 1.2f, {"Chennai", 600077}, {12, 10, 2026}},
+        {503, 2.8f, {"Coimbatore", 641001}, {13, 10, 2026}}
+    };
+    sort_by_weight(list, 3);
+    for (int i = 0; i < 3; i++) print_parcel(&list[i]);
+   return 0;
+}
+Expected output:
+502  1.2 kg  Chennai-600077  12/10/2026
+503  2.8 kg  Coimbatore-641001  13/10/2026
+501  4.5 kg  Madurai-625001  12/10/2026
+Count how many bytes are copied in each swap using sizeof(struct parcel).
+Alternative Concept and Complexity Analysis
+If the address and date were written as fields directly inside the parcel structure (a flat structure) instead of 
+nested structures, what would the solution be? Compare the access paths and the reuse of the address type, and 
+analyse the space of each design using sizeof.
+Evidence Expected
+An entity model, structure definitions, operation pseudocode and correct access expressions.
+TASK 3 – UNIONS AND MEMORY LAYOUT
+Bloom’s Level: K4 – Analyse
+Weather-Station Sensor Packets
+9 Marks
+A weather station sends packets that carry exactly one kind of value: a temperature (float), a humidity 
+percentage (int) or a short status text (up to 7 characters). The station has very little memory and stores 
+thousands of packets.
+Task 3.1 – Structure or Union? | 3 Marks
+Design the packet first as a structure containing all three fields, and then as a tagged union (a structure holding a 
+type tag and a union). Justify which design suits the station.
+Task 3.2 – Predict the Size | 2 Marks
+Predict sizeof for each design on a typical 64-bit system, explaining alignment and padding. Then verify with 
+sizeof.
+Task 3.3 – Implement and Test | 3 Marks
+Implement the tagged-union design and a function that prints a packet according to its tag.
+Task 3.4 – Misuse Experiment | 1 Mark
+Store a temperature and then read the humidity member. Record the output and explain it.
+Complete the Code
+Complete TODO 1 below and execute the program. The sizes shown are for a typical 64-bit GCC system.
+#include <stdio.h>
+enum kind { TEMPERATURE, HUMIDITY, STATUS };
+struct reading {
+    enum kind type;                 /* tag: tells which union member is valid */
+    union {
+        float celsius;
+        int   percent;
+        char  status[8];
+    } value;
+};
+void show(const struct reading *r)
+{
+    // TODO 1: Use a switch on r->type to print only the valid union member: "Temp 31.5
+    //   C", "Humidity 68 %" or "Status OK"
+    
+}
+int main(void)
+{
+    struct reading log[3] = {
+        {TEMPERATURE, {.celsius = 31.5f}},
+        {HUMIDITY,    {.percent = 68}},
+        {STATUS,      {.status = "OK"}}
+    };
+    printf("sizeof union = %zu, sizeof struct reading = %zu\n",
+           sizeof log[0].value, sizeof log[0]);
+    for (int i = 0; i < 3; i++) show(&log[i]);
+   return 0;
+}
+Expected output:
+sizeof union = 8, sizeof struct reading = 12
+Temp 31.5 C
+Humidity 68 %
+Status OK
+Explain why the structure is 12 bytes and not 4 + 4 + 4 + 8.
+Alternative Concept and Complexity Analysis
+If packets were stored in three separate arrays (one per packet type), or each packet were allocated with malloc 
+and referenced through a void pointer, instead of a tagged union, what would the solution be? Analyse the time 
+to read a packet and the space used per packet in each design.
+Evidence Expected
+Both designs with justification, predicted and measured sizes, a working tagged union and an explained misuse 
+experiment.
+TASK 4 – STRUCTURE FORENSICS
+Bloom’s Level: K4 – Analyse
+7 Marks
+A bank’s savings-account program is supposed to add interest to every account. After running it, every balance 
+is unchanged, and one statement does not compile.
+struct account { int number; float balance; };
+void addInterest(struct account a, float rate) {
+    a.balance = a.balance + a.balance * rate / 100;
+}
+int main(void) {
+    struct account list[3] = {{101, 5000}, {102, 12000}, {103, 800}};
+    struct account *p = list;
+    for (int i = 0; i < 3; i++) addInterest(list[i], 4);
+    printf("%d %f\n", p.number, p.balance);
+    return 0;
+}
+Task 4.1 – Locate the Defects | 2 Marks
+Identify why the balances do not change and why one statement does not compile.
+Task 4.2 – Construct Evidence | 2 Marks
+Print the address of the structure inside addInterest() and in main() to prove your explanation of the first defect.
+Task 4.3 – Repair the Program | 2 Marks
+Correct the program so that interest is added to every account, using a structure pointer and the arrow operator.
+Task 4.4 – Prevent Recurrence | 1 Mark
+Explain when a structure should be passed by value, by pointer and by const pointer.
+Alternative Concept and Complexity Analysis
+Instead of passing a pointer, addInterest() could take the structure by value and return the modified copy (list[i] 
+= addInterest(list[i], 4)). What would the solution be? Analyse the time to copy sizeof(struct account) bytes 
+twice per call against passing one pointer, and the stack space used in each approach.
+Evidence Expected
+Correct defect identification, address evidence, a repaired program and a guideline for passing structures.
+TASK 5 – STORAGE CLASSES: THE SAME COUNTER FOUR WAYS
+Bloom’s Level: K5 – Evaluate
+7 Marks
+A hostel mess issues token numbers starting from 1001. The token function is called from more than one source 
+file.
+Task 5.1 – Four Implementations | 3 Marks
+Implement the token counter using (a) an automatic local variable, (b) a static local variable, (c) a global 
+variable shared across two files with extern, and (d) a register loop variable in the printing loop. Record the 
+tokens produced by each.
+Task 5.2 – Change the Requirement | 2 Marks
+The mess now has two counters (veg and non-veg) that must not interfere with each other. Modify each version 
+and record how much code had to change.
+Task 5.3 – Compare the Storage Classes | 2 Marks
+Compare the four on scope, lifetime, initial value and risk of accidental modification. Explain why taking the 
+address of a register variable is not allowed.
+Complete the Code
+Complete TODO 1 below and execute the program.
+#include <stdio.h>
+/* Issues the next mess token number, starting from 1001. */
+int next_token(void)
+{
+    // TODO 1: Use a static local variable so that the counter keeps its value between
+    //   calls
+    
+}
+/* The same logic with an automatic variable, for comparison. */
+int auto_token(void)
+{
+    int token = 1000;
+    return ++token;
+}
+int main(void)
+{
+    int s1 = next_token(), s2 = next_token(), s3 = next_token();
+    int a1 = auto_token(), a2 = auto_token(), a3 = auto_token();
+    printf("static: %d %d %d\n", s1, s2, s3);
+    printf("auto  : %d %d %d\n", a1, a2, a3);
+    return 0;
+}
+Expected output:
+static: 1001 1002 1003
+auto  : 1001 1001 1001
+Move the three calls into a single printf (printf("%d %d %d", next_token(), next_token(), next_token())) and 
+explain why the output order can change. (Hint: the order in which function arguments are evaluated is not 
+specified in C.)
+Alternative Concept and Complexity Analysis
+If the counter were kept in the caller and passed to the function as a pointer (int next_token(int *counter)), 
+instead of being a static or global variable, what would the solution be? Analyse the time (O(1) in all cases), the 
+space and lifetime of the counter, and how easily two independent counters can be supported.
+Evidence Expected
+Four working versions with outputs, evidence of the change effort and a reasoned comparison.
+TASK 6 – DESIGN CHALLENGE
+Bloom’s Level: K5 – Evaluate
+College Canteen Inventory and Billing
+13 Marks
+The college canteen sells packaged items (with a price and expiry date), cooked items (with a price and the time 
+they were prepared) and combo meals (made of up to three other items). It needs to record sales, update stock, 
+warn about items expiring within two days, and print the day’s bill summary sorted by revenue.
+You are not given the design.
+Stage 1 – Interpret the Problem | 2 Marks
+Identify the entities, the data of each and the rules. State the requirements as testable statements.
+Stage 2 – Propose the Data Model | 2 Marks
+Decide where nested structures, arrays of structures and a tagged union (for the three kinds of item) are needed.
+Stage 3 – Identify the Critical Design Decisions | 2 Marks
+Identify how stock is updated safely, how expiry is checked using a date structure, and which data must be static 
+or global.
+Stage 4 – Design the Structures and Functions | 4 Marks
+Present the structure definitions, the function prototypes using structure pointers, and pseudocode for recording 
+a sale and for the expiry warning.
+Stage 5 – Implement and Demonstrate | 3 Marks
+Implement the program and demonstrate normal sales, a sale that exceeds stock, an expiring item and the sorted 
+summary.
+Alternative Concept and Complexity Analysis
+If the canteen items were kept in a linked list of dynamically allocated structures instead of an array of 
+structures, what would the solution be? Analyse the time to add, remove and search an item (O(1), O(n), O(n) 
+versus shifting elements in an array) and the extra space used by the next pointers.
+Evidence Expected
+A complete data model, structure and function design with pseudocode, a working program and demonstrated 
+test cases.
+MARK DISTRIBUTION
+Task Competency Assessed Bloom’s Level Marks
+Task 1 Diagnose and repair a poor data design K4 – Analyse 6
+Task 2 Design nested structures from a requirement K4 – Analyse 8
+Task 3 Design and analyse unions and memory layout K4 – Analyse 9
+Task 4 Debug structure handling using evidence K4 – Analyse 7
+Task 5 Compare storage classes under changing requirements K5 – Evaluate 7
+Task 6 Independently design a structure-based application K5 – Evaluate 13
+TOTAL 50
+Submission Requirements
+GitHub repository link (mandatory) containing the executed code for every task, including every completed 
+“Complete the Code” program, with input files, output screenshots and a README.md.
+Report containing diagnoses, structure definitions, memory diagrams, pseudocode and comparisons
+C source code for Tasks 1.2, 3, 4, 5 and 6
+Output screenshots linked to each test
+Assessment Verification
+Students may be asked to explain any structure, draw its memory layout, trace a structure-pointer access or 
+modify a function during a brief verification discussion/viva.
