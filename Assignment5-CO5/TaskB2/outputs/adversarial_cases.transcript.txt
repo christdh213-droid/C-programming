@@ -1,0 +1,52 @@
+$ "C:\Users\Chris\Documents\ChatGPT\DBMS assisgnments\C-programming\Assignment5-CO5\build\TaskB2_bloodbank_cli.exe" find O+ [case=find]
+O+ units=10
+EXIT_CODE 0
+$ "C:\Users\Chris\Documents\ChatGPT\DBMS assisgnments\C-programming\Assignment5-CO5\build\TaskB2_bloodbank_cli.exe" issue A- 2 [case=issue]
+A- units=11 after issue
+EXIT_CODE 0
+$ "C:\Users\Chris\Documents\ChatGPT\DBMS assisgnments\C-programming\Assignment5-CO5\build\TaskB2_bloodbank_cli.exe" [case=no_args]
+Usage: bloodbank init | find GROUP | issue GROUP UNITS | register GROUP | pointers
+EXIT_CODE 2
+$ "C:\Users\Chris\Documents\ChatGPT\DBMS assisgnments\C-programming\Assignment5-CO5\build\TaskB2_bloodbank_cli.exe" find O+ extra [case=too_many]
+Usage: bloodbank init | find GROUP | issue GROUP UNITS | register GROUP | pointers
+EXIT_CODE 2
+$ "C:\Users\Chris\Documents\ChatGPT\DBMS assisgnments\C-programming\Assignment5-CO5\build\TaskB2_bloodbank_cli.exe" find ZZ [case=bad_group]
+Invalid blood group
+EXIT_CODE 2
+$ "C:\Users\Chris\Documents\ChatGPT\DBMS assisgnments\C-programming\Assignment5-CO5\build\TaskB2_bloodbank_cli.exe" issue O+ -1 [case=units_-1]
+Invalid positive units
+EXIT_CODE 2
+$ "C:\Users\Chris\Documents\ChatGPT\DBMS assisgnments\C-programming\Assignment5-CO5\build\TaskB2_bloodbank_cli.exe" issue O+ 0 [case=units_0]
+Invalid positive units
+EXIT_CODE 2
+$ "C:\Users\Chris\Documents\ChatGPT\DBMS assisgnments\C-programming\Assignment5-CO5\build\TaskB2_bloodbank_cli.exe" issue O+ two [case=units_two]
+Invalid positive units
+EXIT_CODE 2
+$ "C:\Users\Chris\Documents\ChatGPT\DBMS assisgnments\C-programming\Assignment5-CO5\build\TaskB2_bloodbank_cli.exe" issue O+ 999999999999999999999 [case=units_999999999999999999999]
+Invalid positive units
+EXIT_CODE 2
+$ "C:\Users\Chris\Documents\ChatGPT\DBMS assisgnments\C-programming\Assignment5-CO5\build\TaskB2_bloodbank_cli.exe" issue O+ 999 [case=units_999]
+Insufficient stock
+EXIT_CODE 2
+$ "C:\Users\Chris\Documents\ChatGPT\DBMS assisgnments\C-programming\Assignment5-CO5\build\TaskB2_bloodbank_cli.exe" register O+ [case=long_name]
+Donor name:
+Name too long: rejected and drained
+EXIT_CODE 2
+$ "C:\Users\Chris\Documents\ChatGPT\DBMS assisgnments\C-programming\Assignment5-CO5\build\TaskB2_bloodbank_cli.exe" register O+ [case=valid_name]
+Donor name:
+Registered Chris Abraham George (O+)
+EXIT_CODE 0
+$ "C:\Users\Chris\Documents\ChatGPT\DBMS assisgnments\C-programming\Assignment5-CO5\build\TaskB2_bloodbank_cli.exe" pointers [case=pointers]
+POINTER base=000000A6A41FFD40 p+3=000000A6A41FFD4C displacement=12 value=8 indexed=8
+POSTINCREMENT value=40 now_offset=1
+LOWEST index=6 before=4 after=6
+EXIT_CODE 0
+$ "C:\Users\Chris\Documents\ChatGPT\DBMS assisgnments\C-programming\Assignment5-CO5\build\TaskB2_bloodbank_cli.exe" find O+ [case=missing]
+TaskB2/missing.bin: No such file or directory
+EXIT_CODE 1
+$ "C:\Users\Chris\Documents\ChatGPT\DBMS assisgnments\C-programming\Assignment5-CO5\build\TaskB2_bloodbank_cli.exe" issue O+ 1 [case=readonly]
+TaskB2/readonly.bin: Permission denied
+EXIT_CODE 1
+$ "C:\Users\Chris\Documents\ChatGPT\DBMS assisgnments\C-programming\Assignment5-CO5\build\TaskB2_bloodbank_cli.exe" find O+ [case=corrupt]
+Invalid stock file
+EXIT_CODE 1

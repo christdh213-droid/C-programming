@@ -1,0 +1,4 @@
+$ "C:\Users\Chris\Documents\ChatGPT\DBMS assisgnments\C-programming\Assignment5-CO5\build\TaskB2_adversarial_scanf_demo.exe" unsafe < TaskB2/inputs/overlong.txt
+INTENTIONAL unsafe scanf demonstration
+EXIT_CODE 3221225477 (0xC0000005)
+Not sanitizer-instrumented; UB outcome is not portable.

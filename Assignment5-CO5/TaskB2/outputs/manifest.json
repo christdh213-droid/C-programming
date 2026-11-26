@@ -1,0 +1,34 @@
+[
+  {
+    "source": "adversarial_scanf_demo.c",
+    "compile": [
+      "gcc",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "TaskB2/adversarial_scanf_demo.c",
+      "-o",
+      "build/TaskB2_adversarial_scanf_demo.exe"
+    ],
+    "compile_exit": 0,
+    "exit_code": 0,
+    "stdout_sha256": "047603bd569c4a96bddbf57c1800a0b013e1671de29b1c4af4728883aff78445",
+    "exact_expected": false
+  },
+  {
+    "source": "bloodbank_cli.c",
+    "compile": [
+      "gcc",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "TaskB2/bloodbank_cli.c",
+      "-o",
+      "build/TaskB2_bloodbank_cli.exe"
+    ],
+    "compile_exit": 0,
+    "exit_code": 0,
+    "stdout_sha256": "98aa6e5745a7fc0738a7b60717dd61932378d2199a0327a4e7c73a699d6ed1bf",
+    "exact_expected": false
+  }
+]

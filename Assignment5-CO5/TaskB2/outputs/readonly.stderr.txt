@@ -1,0 +1,1 @@
+TaskB2/readonly.bin: Permission denied

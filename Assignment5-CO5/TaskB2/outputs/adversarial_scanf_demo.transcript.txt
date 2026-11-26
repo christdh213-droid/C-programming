@@ -1,0 +1,3 @@
+$ gcc -std=c11 -Wall -Wextra TaskB2/adversarial_scanf_demo.c -o build/TaskB2_adversarial_scanf_demo.exe
+$ build/TaskB2_adversarial_scanf_demo.exe < TaskB2/input.txt
+SAFE name=XXXXXXXXXXXXXXX length=15 truncated=1

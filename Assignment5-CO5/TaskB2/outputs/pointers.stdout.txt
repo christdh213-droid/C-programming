@@ -1,0 +1,3 @@
+POINTER base=000000A6A41FFD40 p+3=000000A6A41FFD4C displacement=12 value=8 indexed=8
+POSTINCREMENT value=40 now_offset=1
+LOWEST index=6 before=4 after=6

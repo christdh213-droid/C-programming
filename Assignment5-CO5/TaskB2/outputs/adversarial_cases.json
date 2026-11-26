@@ -1,0 +1,150 @@
+[
+  {
+    "case": "find",
+    "args": [
+      "find",
+      "O+"
+    ],
+    "expected": 0,
+    "actual": 0
+  },
+  {
+    "case": "issue",
+    "args": [
+      "issue",
+      "A-",
+      "2"
+    ],
+    "expected": 0,
+    "actual": 0
+  },
+  {
+    "case": "no_args",
+    "args": [],
+    "expected": 2,
+    "actual": 2
+  },
+  {
+    "case": "too_many",
+    "args": [
+      "find",
+      "O+",
+      "extra"
+    ],
+    "expected": 2,
+    "actual": 2
+  },
+  {
+    "case": "bad_group",
+    "args": [
+      "find",
+      "ZZ"
+    ],
+    "expected": 2,
+    "actual": 2
+  },
+  {
+    "case": "units_-1",
+    "args": [
+      "issue",
+      "O+",
+      "-1"
+    ],
+    "expected": 2,
+    "actual": 2
+  },
+  {
+    "case": "units_0",
+    "args": [
+      "issue",
+      "O+",
+      "0"
+    ],
+    "expected": 2,
+    "actual": 2
+  },
+  {
+    "case": "units_two",
+    "args": [
+      "issue",
+      "O+",
+      "two"
+    ],
+    "expected": 2,
+    "actual": 2
+  },
+  {
+    "case": "units_999999999999999999999",
+    "args": [
+      "issue",
+      "O+",
+      "999999999999999999999"
+    ],
+    "expected": 2,
+    "actual": 2
+  },
+  {
+    "case": "units_999",
+    "args": [
+      "issue",
+      "O+",
+      "999"
+    ],
+    "expected": 2,
+    "actual": 2
+  },
+  {
+    "case": "long_name",
+    "args": [
+      "register",
+      "O+"
+    ],
+    "expected": 2,
+    "actual": 2
+  },
+  {
+    "case": "valid_name",
+    "args": [
+      "register",
+      "O+"
+    ],
+    "expected": 0,
+    "actual": 0
+  },
+  {
+    "case": "pointers",
+    "args": [
+      "pointers"
+    ],
+    "expected": 0,
+    "actual": 0
+  },
+  {
+    "case": "missing",
+    "args": [
+      "find",
+      "O+"
+    ],
+    "expected": 1,
+    "actual": 1
+  },
+  {
+    "case": "readonly",
+    "args": [
+      "issue",
+      "O+",
+      "1"
+    ],
+    "expected": 1,
+    "actual": 1
+  },
+  {
+    "case": "corrupt",
+    "args": [
+      "find",
+      "O+"
+    ],
+    "expected": 1,
+    "actual": 1
+  }
+]

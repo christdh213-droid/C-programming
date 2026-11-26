@@ -1,0 +1,11 @@
+$ gcc -std=c11 -Wall -Wextra -fsanitize=address TaskB2/adversarial_scanf_demo.c -o build/asan_adversarial_scanf_demo.exe
+C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot find -lasan: No such file or directory
+collect2.exe: error: ld returned 1 exit status
+EXIT_CODE 1
+$ gcc -std=c11 -Wall -Wextra -fsanitize=address,leak TaskB2/bloodbank_cli.c -o build/asan_bloodbank_cli.exe
+C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot find -lasan: No such file or directory
+collect2.exe: error: ld returned 1 exit status
+EXIT_CODE 1
+valgrind executable: None
+wsl executable: C:\Windows\system32\wsl.EXE
+clang executable: None
