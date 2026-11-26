@@ -105,5 +105,5 @@ Transcript images are rendered from captured execution records, not photographs 
 This directory is Assignment 2 within the combined C-programming repository; its earlier progressive Git history is retained.
 Use `git log --oneline --reverse` to inspect progressive setup, task and final-documentation commits.
 The report cover now points to the combined C-programming GitHub repository.
-Before submission, create the matching GitHub repository, push this history, replace the placeholder with the actual URL and grant the faculty access.
+The combined repository uses the configured origin at https://github.com/christdh213-droid/C-programming.git; push from the repository root and grant faculty access as required.
 The cover leaves Section and Submission Date blank.

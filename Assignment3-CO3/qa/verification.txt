@@ -1,0 +1,11 @@
+Q1 Complete-the-Code: PASS; exact stdout bytes and preserved main/starter
+Q3 Complete-the-Code: PASS; exact stdout bytes and preserved main/starter
+Q5 Complete-the-Code: PASS; exact stdout bytes and preserved main/starter
+All 12 C sources: actual run hashes, required flags and zero diagnostics PASS
+Q1: 48 search rows, truth, linear counts and logarithmic bound PASS
+Q2: all 52 rows, selection/sorted/reverse count formulae PASS
+Q3: stable ties, exact starter empty-list calls and merge/move formulae PASS
+Q4: independent hand/full rainfall totals, averages and traversal sizes PASS
+Q5: whitespace extension, measured length-call counts and safe truncation PASS
+Q6: direct/index comparisons, copy elimination, view sizes and 29/30 boundary PASS
+Q7: independently regenerated vote truth and name-search counts for all 4 datasets PASS

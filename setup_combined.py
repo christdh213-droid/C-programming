@@ -4,7 +4,9 @@ from docx import Document
 import pypdf
 R=Path(__file__).resolve().parent
 def git(*a): subprocess.run(['git',*a],cwd=R,check=True)
-dest=R/'Assignment2-CO2'; dest.mkdir(exist_ok=True)
+dest=R/'Assignment2-CO2'
+if (dest/'Q1').exists(): raise SystemExit('Combined layout already exists; no files moved.')
+dest.mkdir(exist_ok=True)
 tracked=subprocess.check_output(['git','ls-files','-z'],cwd=R).decode().split('\0')
 for name in sorted(set(x.split('/')[0] for x in tracked if x)):
     if name.startswith('.'): continue

@@ -1,0 +1,10 @@
+n,method,comparisons,copied_chars,index_writes,view_bytes,seconds
+100,direct_insertion,2428,35420,0,0,0.000000000
+100,index_insertion,2428,0,2431,400,0.000000000
+100,pointer_qsort,670,0,NA,800,0.000000000
+500,direct_insertion,54673,772478,0,0,0.001000000
+500,index_insertion,54673,0,54678,2000,0.000000000
+500,pointer_qsort,4944,0,NA,4000,0.000000000
+5000,direct_insertion,5671880,79476320,0,0,0.110000000
+5000,index_insertion,5671880,0,5671881,20000,0.078000000
+5000,pointer_qsort,71150,0,NA,40000,0.002000000

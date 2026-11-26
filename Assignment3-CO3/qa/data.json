@@ -1,0 +1,1313 @@
+{
+  "Q1": [
+    {
+      "n": "1000",
+      "query": "first",
+      "method": "linear",
+      "found": "1",
+      "probes": "1",
+      "reps": "100",
+      "seconds": "0.000000000"
+    },
+    {
+      "n": "1000",
+      "query": "first",
+      "method": "binary",
+      "found": "1",
+      "probes": "9",
+      "reps": "100000",
+      "seconds": "0.000000000"
+    },
+    {
+      "n": "1000",
+      "query": "first",
+      "method": "hash",
+      "found": "1",
+      "probes": "1",
+      "reps": "100000",
+      "seconds": "0.001000000"
+    },
+    {
+      "n": "1000",
+      "query": "first",
+      "method": "interpolation",
+      "found": "1",
+      "probes": "1",
+      "reps": "100000",
+      "seconds": "0.000000000"
+    },
+    {
+      "n": "1000",
+      "query": "middle",
+      "method": "linear",
+      "found": "1",
+      "probes": "501",
+      "reps": "100",
+      "seconds": "0.000000000"
+    },
+    {
+      "n": "1000",
+      "query": "middle",
+      "method": "binary",
+      "found": "1",
+      "probes": "9",
+      "reps": "100000",
+      "seconds": "0.000000000"
+    },
+    {
+      "n": "1000",
+      "query": "middle",
+      "method": "hash",
+      "found": "1",
+      "probes": "1",
+      "reps": "100000",
+      "seconds": "0.001000000"
+    },
+    {
+      "n": "1000",
+      "query": "middle",
+      "method": "interpolation",
+      "found": "1",
+      "probes": "1",
+      "reps": "100000",
+      "seconds": "0.000000000"
+    },
+    {
+      "n": "1000",
+      "query": "last",
+      "method": "linear",
+      "found": "1",
+      "probes": "1000",
+      "reps": "100",
+      "seconds": "0.000000000"
+    },
+    {
+      "n": "1000",
+      "query": "last",
+      "method": "binary",
+      "found": "1",
+      "probes": "10",
+      "reps": "100000",
+      "seconds": "0.001000000"
+    },
+    {
+      "n": "1000",
+      "query": "last",
+      "method": "hash",
+      "found": "1",
+      "probes": "1",
+      "reps": "100000",
+      "seconds": "0.000000000"
+    },
+    {
+      "n": "1000",
+      "query": "last",
+      "method": "interpolation",
+      "found": "1",
+      "probes": "1",
+      "reps": "100000",
+      "seconds": "0.000000000"
+    },
+    {
+      "n": "1000",
+      "query": "missing",
+      "method": "linear",
+      "found": "0",
+      "probes": "1000",
+      "reps": "100",
+      "seconds": "0.000000000"
+    },
+    {
+      "n": "1000",
+      "query": "missing",
+      "method": "binary",
+      "found": "0",
+      "probes": "10",
+      "reps": "100000",
+      "seconds": "0.001000000"
+    },
+    {
+      "n": "1000",
+      "query": "missing",
+      "method": "hash",
+      "found": "0",
+      "probes": "1",
+      "reps": "100000",
+      "seconds": "0.000000000"
+    },
+    {
+      "n": "1000",
+      "query": "missing",
+      "method": "interpolation",
+      "found": "0",
+      "probes": "1",
+      "reps": "100000",
+      "seconds": "0.001000000"
+    },
+    {
+      "n": "10000",
+      "query": "first",
+      "method": "linear",
+      "found": "1",
+      "probes": "1",
+      "reps": "100",
+      "seconds": "0.000000000"
+    },
+    {
+      "n": "10000",
+      "query": "first",
+      "method": "binary",
+      "found": "1",
+      "probes": "13",
+      "reps": "100000",
+      "seconds": "0.001000000"
+    },
+    {
+      "n": "10000",
+      "query": "first",
+      "method": "hash",
+      "found": "1",
+      "probes": "1",
+      "reps": "100000",
+      "seconds": "0.000000000"
+    },
+    {
+      "n": "10000",
+      "query": "first",
+      "method": "interpolation",
+      "found": "1",
+      "probes": "1",
+      "reps": "100000",
+      "seconds": "0.000000000"
+    },
+    {
+      "n": "10000",
+      "query": "middle",
+      "method": "linear",
+      "found": "1",
+      "probes": "5001",
+      "reps": "100",
+      "seconds": "0.000000000"
+    },
+    {
+      "n": "10000",
+      "query": "middle",
+      "method": "binary",
+      "found": "1",
+      "probes": "13",
+      "reps": "100000",
+      "seconds": "0.001000000"
+    },
+    {
+      "n": "10000",
+      "query": "middle",
+      "method": "hash",
+      "found": "1",
+      "probes": "1",
+      "reps": "100000",
+      "seconds": "0.001000000"
+    },
+    {
+      "n": "10000",
+      "query": "middle",
+      "method": "interpolation",
+      "found": "1",
+      "probes": "1",
+      "reps": "100000",
+      "seconds": "0.000000000"
+    },
+    {
+      "n": "10000",
+      "query": "last",
+      "method": "linear",
+      "found": "1",
+      "probes": "10000",
+      "reps": "100",
+      "seconds": "0.000000000"
+    },
+    {
+      "n": "10000",
+      "query": "last",
+      "method": "binary",
+      "found": "1",
+      "probes": "14",
+      "reps": "100000",
+      "seconds": "0.001000000"
+    },
+    {
+      "n": "10000",
+      "query": "last",
+      "method": "hash",
+      "found": "1",
+      "probes": "1",
+      "reps": "100000",
+      "seconds": "0.000000000"
+    },
+    {
+      "n": "10000",
+      "query": "last",
+      "method": "interpolation",
+      "found": "1",
+      "probes": "1",
+      "reps": "100000",
+      "seconds": "0.001000000"
+    },
+    {
+      "n": "10000",
+      "query": "missing",
+      "method": "linear",
+      "found": "0",
+      "probes": "10000",
+      "reps": "100",
+      "seconds": "0.000000000"
+    },
+    {
+      "n": "10000",
+      "query": "missing",
+      "method": "binary",
+      "found": "0",
+      "probes": "13",
+      "reps": "100000",
+      "seconds": "0.001000000"
+    },
+    {
+      "n": "10000",
+      "query": "missing",
+      "method": "hash",
+      "found": "0",
+      "probes": "1",
+      "reps": "100000",
+      "seconds": "0.000000000"
+    },
+    {
+      "n": "10000",
+      "query": "missing",
+      "method": "interpolation",
+      "found": "0",
+      "probes": "1",
+      "reps": "100000",
+      "seconds": "0.000000000"
+    },
+    {
+      "n": "100000",
+      "query": "first",
+      "method": "linear",
+      "found": "1",
+      "probes": "1",
+      "reps": "100",
+      "seconds": "0.000000000"
+    },
+    {
+      "n": "100000",
+      "query": "first",
+      "method": "binary",
+      "found": "1",
+      "probes": "16",
+      "reps": "100000",
+      "seconds": "0.000000000"
+    },
+    {
+      "n": "100000",
+      "query": "first",
+      "method": "hash",
+      "found": "1",
+      "probes": "1",
+      "reps": "100000",
+      "seconds": "0.001000000"
+    },
+    {
+      "n": "100000",
+      "query": "first",
+      "method": "interpolation",
+      "found": "1",
+      "probes": "1",
+      "reps": "100000",
+      "seconds": "0.000000000"
+    },
+    {
+      "n": "100000",
+      "query": "middle",
+      "method": "linear",
+      "found": "1",
+      "probes": "50001",
+      "reps": "100",
+      "seconds": "0.001000000"
+    },
+    {
+      "n": "100000",
+      "query": "middle",
+      "method": "binary",
+      "found": "1",
+      "probes": "16",
+      "reps": "100000",
+      "seconds": "0.001000000"
+    },
+    {
+      "n": "100000",
+      "query": "middle",
+      "method": "hash",
+      "found": "1",
+      "probes": "1",
+      "reps": "100000",
+      "seconds": "0.000000000"
+    },
+    {
+      "n": "100000",
+      "query": "middle",
+      "method": "interpolation",
+      "found": "1",
+      "probes": "1",
+      "reps": "100000",
+      "seconds": "0.000000000"
+    },
+    {
+      "n": "100000",
+      "query": "last",
+      "method": "linear",
+      "found": "1",
+      "probes": "100000",
+      "reps": "100",
+      "seconds": "0.002000000"
+    },
+    {
+      "n": "100000",
+      "query": "last",
+      "method": "binary",
+      "found": "1",
+      "probes": "17",
+      "reps": "100000",
+      "seconds": "0.001000000"
+    },
+    {
+      "n": "100000",
+      "query": "last",
+      "method": "hash",
+      "found": "1",
+      "probes": "1",
+      "reps": "100000",
+      "seconds": "0.000000000"
+    },
+    {
+      "n": "100000",
+      "query": "last",
+      "method": "interpolation",
+      "found": "1",
+      "probes": "1",
+      "reps": "100000",
+      "seconds": "0.000000000"
+    },
+    {
+      "n": "100000",
+      "query": "missing",
+      "method": "linear",
+      "found": "0",
+      "probes": "100000",
+      "reps": "100",
+      "seconds": "0.002000000"
+    },
+    {
+      "n": "100000",
+      "query": "missing",
+      "method": "binary",
+      "found": "0",
+      "probes": "17",
+      "reps": "100000",
+      "seconds": "0.001000000"
+    },
+    {
+      "n": "100000",
+      "query": "missing",
+      "method": "hash",
+      "found": "0",
+      "probes": "1",
+      "reps": "100000",
+      "seconds": "0.000000000"
+    },
+    {
+      "n": "100000",
+      "query": "missing",
+      "method": "interpolation",
+      "found": "0",
+      "probes": "1",
+      "reps": "100000",
+      "seconds": "0.000000000"
+    }
+  ],
+  "Q2": [
+    {
+      "n": "100",
+      "order": "sorted",
+      "method": "bubble",
+      "comparisons": "99",
+      "swaps": "0",
+      "shifts": "0",
+      "writes": "0",
+      "range": "100",
+      "seconds": "0.000000000"
+    },
+    {
+      "n": "100",
+      "order": "sorted",
+      "method": "selection",
+      "comparisons": "4950",
+      "swaps": "0",
+      "shifts": "0",
+      "writes": "0",
+      "range": "100",
+      "seconds": "0.000000000"
+    },
+    {
+      "n": "100",
+      "order": "sorted",
+      "method": "insertion",
+      "comparisons": "99",
+      "swaps": "0",
+      "shifts": "0",
+      "writes": "99",
+      "range": "100",
+      "seconds": "0.000000000"
+    },
+    {
+      "n": "100",
+      "order": "sorted",
+      "method": "counting",
+      "comparisons": "99",
+      "swaps": "0",
+      "shifts": "0",
+      "writes": "200",
+      "range": "100",
+      "seconds": "0.000000000"
+    },
+    {
+      "n": "100",
+      "order": "nearly",
+      "method": "bubble",
+      "comparisons": "197",
+      "swaps": "10",
+      "shifts": "0",
+      "writes": "20",
+      "range": "100",
+      "seconds": "0.000000000"
+    },
+    {
+      "n": "100",
+      "order": "nearly",
+      "method": "selection",
+      "comparisons": "4950",
+      "swaps": "10",
+      "shifts": "0",
+      "writes": "20",
+      "range": "100",
+      "seconds": "0.000000000"
+    },
+    {
+      "n": "100",
+      "order": "nearly",
+      "method": "insertion",
+      "comparisons": "109",
+      "swaps": "0",
+      "shifts": "10",
+      "writes": "109",
+      "range": "100",
+      "seconds": "0.000000000"
+    },
+    {
+      "n": "100",
+      "order": "nearly",
+      "method": "counting",
+      "comparisons": "99",
+      "swaps": "0",
+      "shifts": "0",
+      "writes": "200",
+      "range": "100",
+      "seconds": "0.000000000"
+    },
+    {
+      "n": "100",
+      "order": "reverse",
+      "method": "bubble",
+      "comparisons": "4950",
+      "swaps": "4950",
+      "shifts": "0",
+      "writes": "9900",
+      "range": "100",
+      "seconds": "0.000000000"
+    },
+    {
+      "n": "100",
+      "order": "reverse",
+      "method": "selection",
+      "comparisons": "4950",
+      "swaps": "50",
+      "shifts": "0",
+      "writes": "100",
+      "range": "100",
+      "seconds": "0.000000000"
+    },
+    {
+      "n": "100",
+      "order": "reverse",
+      "method": "insertion",
+      "comparisons": "4950",
+      "swaps": "0",
+      "shifts": "4950",
+      "writes": "5049",
+      "range": "100",
+      "seconds": "0.000000000"
+    },
+    {
+      "n": "100",
+      "order": "reverse",
+      "method": "counting",
+      "comparisons": "99",
+      "swaps": "0",
+      "shifts": "0",
+      "writes": "200",
+      "range": "100",
+      "seconds": "0.000000000"
+    },
+    {
+      "n": "100",
+      "order": "random",
+      "method": "bubble",
+      "comparisons": "4845",
+      "swaps": "2262",
+      "shifts": "0",
+      "writes": "4524",
+      "range": "100",
+      "seconds": "0.000000000"
+    },
+    {
+      "n": "100",
+      "order": "random",
+      "method": "selection",
+      "comparisons": "4950",
+      "swaps": "98",
+      "shifts": "0",
+      "writes": "196",
+      "range": "100",
+      "seconds": "0.000000000"
+    },
+    {
+      "n": "100",
+      "order": "random",
+      "method": "insertion",
+      "comparisons": "2358",
+      "swaps": "0",
+      "shifts": "2262",
+      "writes": "2361",
+      "range": "100",
+      "seconds": "0.000000000"
+    },
+    {
+      "n": "100",
+      "order": "random",
+      "method": "counting",
+      "comparisons": "99",
+      "swaps": "0",
+      "shifts": "0",
+      "writes": "200",
+      "range": "100",
+      "seconds": "0.000000000"
+    },
+    {
+      "n": "1000",
+      "order": "sorted",
+      "method": "bubble",
+      "comparisons": "999",
+      "swaps": "0",
+      "shifts": "0",
+      "writes": "0",
+      "range": "1000",
+      "seconds": "0.000000000"
+    },
+    {
+      "n": "1000",
+      "order": "sorted",
+      "method": "selection",
+      "comparisons": "499500",
+      "swaps": "0",
+      "shifts": "0",
+      "writes": "0",
+      "range": "1000",
+      "seconds": "0.001000000"
+    },
+    {
+      "n": "1000",
+      "order": "sorted",
+      "method": "insertion",
+      "comparisons": "999",
+      "swaps": "0",
+      "shifts": "0",
+      "writes": "999",
+      "range": "1000",
+      "seconds": "0.000000000"
+    },
+    {
+      "n": "1000",
+      "order": "sorted",
+      "method": "counting",
+      "comparisons": "999",
+      "swaps": "0",
+      "shifts": "0",
+      "writes": "2000",
+      "range": "1000",
+      "seconds": "0.000000000"
+    },
+    {
+      "n": "1000",
+      "order": "nearly",
+      "method": "bubble",
+      "comparisons": "1997",
+      "swaps": "10",
+      "shifts": "0",
+      "writes": "20",
+      "range": "1000",
+      "seconds": "0.000000000"
+    },
+    {
+      "n": "1000",
+      "order": "nearly",
+      "method": "selection",
+      "comparisons": "499500",
+      "swaps": "10",
+      "shifts": "0",
+      "writes": "20",
+      "range": "1000",
+      "seconds": "0.001000000"
+    },
+    {
+      "n": "1000",
+      "order": "nearly",
+      "method": "insertion",
+      "comparisons": "1009",
+      "swaps": "0",
+      "shifts": "10",
+      "writes": "1009",
+      "range": "1000",
+      "seconds": "0.000000000"
+    },
+    {
+      "n": "1000",
+      "order": "nearly",
+      "method": "counting",
+      "comparisons": "999",
+      "swaps": "0",
+      "shifts": "0",
+      "writes": "2000",
+      "range": "1000",
+      "seconds": "0.000000000"
+    },
+    {
+      "n": "1000",
+      "order": "reverse",
+      "method": "bubble",
+      "comparisons": "499500",
+      "swaps": "499500",
+      "shifts": "0",
+      "writes": "999000",
+      "range": "1000",
+      "seconds": "0.000000000"
+    },
+    {
+      "n": "1000",
+      "order": "reverse",
+      "method": "selection",
+      "comparisons": "499500",
+      "swaps": "500",
+      "shifts": "0",
+      "writes": "1000",
+      "range": "1000",
+      "seconds": "0.001000000"
+    },
+    {
+      "n": "1000",
+      "order": "reverse",
+      "method": "insertion",
+      "comparisons": "499500",
+      "swaps": "0",
+      "shifts": "499500",
+      "writes": "500499",
+      "range": "1000",
+      "seconds": "0.001000000"
+    },
+    {
+      "n": "1000",
+      "order": "reverse",
+      "method": "counting",
+      "comparisons": "999",
+      "swaps": "0",
+      "shifts": "0",
+      "writes": "2000",
+      "range": "1000",
+      "seconds": "0.000000000"
+    },
+    {
+      "n": "1000",
+      "order": "random",
+      "method": "bubble",
+      "comparisons": "499434",
+      "swaps": "237495",
+      "shifts": "0",
+      "writes": "474990",
+      "range": "1000",
+      "seconds": "0.000000000"
+    },
+    {
+      "n": "1000",
+      "order": "random",
+      "method": "selection",
+      "comparisons": "499500",
+      "swaps": "997",
+      "shifts": "0",
+      "writes": "1994",
+      "range": "1000",
+      "seconds": "0.001000000"
+    },
+    {
+      "n": "1000",
+      "order": "random",
+      "method": "insertion",
+      "comparisons": "238490",
+      "swaps": "0",
+      "shifts": "237495",
+      "writes": "238494",
+      "range": "1000",
+      "seconds": "0.001000000"
+    },
+    {
+      "n": "1000",
+      "order": "random",
+      "method": "counting",
+      "comparisons": "999",
+      "swaps": "0",
+      "shifts": "0",
+      "writes": "2000",
+      "range": "1000",
+      "seconds": "0.000000000"
+    },
+    {
+      "n": "10000",
+      "order": "sorted",
+      "method": "bubble",
+      "comparisons": "9999",
+      "swaps": "0",
+      "shifts": "0",
+      "writes": "0",
+      "range": "10000",
+      "seconds": "0.000000000"
+    },
+    {
+      "n": "10000",
+      "order": "sorted",
+      "method": "selection",
+      "comparisons": "49995000",
+      "swaps": "0",
+      "shifts": "0",
+      "writes": "0",
+      "range": "10000",
+      "seconds": "0.108000000"
+    },
+    {
+      "n": "10000",
+      "order": "sorted",
+      "method": "insertion",
+      "comparisons": "9999",
+      "swaps": "0",
+      "shifts": "0",
+      "writes": "9999",
+      "range": "10000",
+      "seconds": "0.000000000"
+    },
+    {
+      "n": "10000",
+      "order": "sorted",
+      "method": "counting",
+      "comparisons": "9999",
+      "swaps": "0",
+      "shifts": "0",
+      "writes": "20000",
+      "range": "10000",
+      "seconds": "0.000000000"
+    },
+    {
+      "n": "10000",
+      "order": "nearly",
+      "method": "bubble",
+      "comparisons": "19997",
+      "swaps": "10",
+      "shifts": "0",
+      "writes": "20",
+      "range": "10000",
+      "seconds": "0.000000000"
+    },
+    {
+      "n": "10000",
+      "order": "nearly",
+      "method": "selection",
+      "comparisons": "49995000",
+      "swaps": "10",
+      "shifts": "0",
+      "writes": "20",
+      "range": "10000",
+      "seconds": "0.098000000"
+    },
+    {
+      "n": "10000",
+      "order": "nearly",
+      "method": "insertion",
+      "comparisons": "10009",
+      "swaps": "0",
+      "shifts": "10",
+      "writes": "10009",
+      "range": "10000",
+      "seconds": "0.000000000"
+    },
+    {
+      "n": "10000",
+      "order": "nearly",
+      "method": "counting",
+      "comparisons": "9999",
+      "swaps": "0",
+      "shifts": "0",
+      "writes": "20000",
+      "range": "10000",
+      "seconds": "0.000000000"
+    },
+    {
+      "n": "10000",
+      "order": "reverse",
+      "method": "bubble",
+      "comparisons": "49995000",
+      "swaps": "49995000",
+      "shifts": "0",
+      "writes": "99990000",
+      "range": "10000",
+      "seconds": "0.024000000"
+    },
+    {
+      "n": "10000",
+      "order": "reverse",
+      "method": "selection",
+      "comparisons": "49995000",
+      "swaps": "5000",
+      "shifts": "0",
+      "writes": "10000",
+      "range": "10000",
+      "seconds": "0.092000000"
+    },
+    {
+      "n": "10000",
+      "order": "reverse",
+      "method": "insertion",
+      "comparisons": "49995000",
+      "swaps": "0",
+      "shifts": "49995000",
+      "writes": "50004999",
+      "range": "10000",
+      "seconds": "0.022000000"
+    },
+    {
+      "n": "10000",
+      "order": "reverse",
+      "method": "counting",
+      "comparisons": "9999",
+      "swaps": "0",
+      "shifts": "0",
+      "writes": "20000",
+      "range": "10000",
+      "seconds": "0.000000000"
+    },
+    {
+      "n": "10000",
+      "order": "random",
+      "method": "bubble",
+      "comparisons": "49994504",
+      "swaps": "23027026",
+      "shifts": "0",
+      "writes": "46054052",
+      "range": "10000",
+      "seconds": "0.048000000"
+    },
+    {
+      "n": "10000",
+      "order": "random",
+      "method": "selection",
+      "comparisons": "49995000",
+      "swaps": "9996",
+      "shifts": "0",
+      "writes": "19992",
+      "range": "10000",
+      "seconds": "0.088000000"
+    },
+    {
+      "n": "10000",
+      "order": "random",
+      "method": "insertion",
+      "comparisons": "23037015",
+      "swaps": "0",
+      "shifts": "23027026",
+      "writes": "23037025",
+      "range": "10000",
+      "seconds": "0.009000000"
+    },
+    {
+      "n": "10000",
+      "order": "random",
+      "method": "counting",
+      "comparisons": "9999",
+      "swaps": "0",
+      "shifts": "0",
+      "writes": "20000",
+      "range": "10000",
+      "seconds": "0.000000000"
+    },
+    {
+      "n": "1020",
+      "order": "late20",
+      "method": "bubble",
+      "comparisons": "519500",
+      "swaps": "10480",
+      "shifts": "0",
+      "writes": "20960",
+      "range": "1999",
+      "seconds": "0.001000000"
+    },
+    {
+      "n": "1020",
+      "order": "late20",
+      "method": "selection",
+      "comparisons": "519690",
+      "swaps": "1016",
+      "shifts": "0",
+      "writes": "2032",
+      "range": "1999",
+      "seconds": "0.000000000"
+    },
+    {
+      "n": "1020",
+      "order": "late20",
+      "method": "insertion",
+      "comparisons": "11499",
+      "swaps": "0",
+      "shifts": "10480",
+      "writes": "11499",
+      "range": "1999",
+      "seconds": "0.000000000"
+    },
+    {
+      "n": "1020",
+      "order": "late20",
+      "method": "counting",
+      "comparisons": "1019",
+      "swaps": "0",
+      "shifts": "0",
+      "writes": "2040",
+      "range": "1999",
+      "seconds": "0.000000000"
+    }
+  ],
+  "Q3": [
+    {
+      "m": "1000",
+      "n": "1000",
+      "method": "merge",
+      "comparisons": "1999",
+      "writes": "2000",
+      "aux_bytes": "24000",
+      "seconds": "0.000000000"
+    },
+    {
+      "m": "1000",
+      "n": "1000",
+      "method": "concat_qsort",
+      "comparisons": "52322",
+      "writes": "NA",
+      "aux_bytes": "24000",
+      "seconds": "0.000000000"
+    },
+    {
+      "m": "1000",
+      "n": "1000",
+      "method": "inplace",
+      "comparisons": "1999",
+      "writes": "500499",
+      "aux_bytes": "12",
+      "seconds": "0.000000000"
+    },
+    {
+      "m": "10000",
+      "n": "10000",
+      "method": "merge",
+      "comparisons": "19999",
+      "writes": "20000",
+      "aux_bytes": "240000",
+      "seconds": "0.000000000"
+    },
+    {
+      "m": "10000",
+      "n": "10000",
+      "method": "concat_qsort",
+      "comparisons": "872665",
+      "writes": "NA",
+      "aux_bytes": "240000",
+      "seconds": "0.003000000"
+    },
+    {
+      "m": "10000",
+      "n": "10000",
+      "method": "inplace",
+      "comparisons": "19999",
+      "writes": "50004999",
+      "aux_bytes": "12",
+      "seconds": "0.011000000"
+    }
+  ],
+  "Q4": [
+    {
+      "order": "row",
+      "dimension": "2000",
+      "reps": "5",
+      "cells": "20000000",
+      "bytes": "32000000",
+      "seconds": "0.010000000",
+      "checksum": "1086790000.003"
+    },
+    {
+      "order": "column",
+      "dimension": "2000",
+      "reps": "5",
+      "cells": "20000000",
+      "bytes": "32000000",
+      "seconds": "0.081000000",
+      "checksum": "1086790000.003"
+    }
+  ],
+  "Q5": [
+    {
+      "n": "1000",
+      "method": "repeated",
+      "calls": "100100",
+      "reps": "100",
+      "seconds": "0.008000000",
+      "checksum": "12000000"
+    },
+    {
+      "n": "1000",
+      "method": "cached",
+      "calls": "100",
+      "reps": "100",
+      "seconds": "0.000000000",
+      "checksum": "12000000"
+    },
+    {
+      "n": "10000",
+      "method": "repeated",
+      "calls": "1000100",
+      "reps": "100",
+      "seconds": "0.600000000",
+      "checksum": "120000000"
+    },
+    {
+      "n": "10000",
+      "method": "cached",
+      "calls": "100",
+      "reps": "100",
+      "seconds": "0.000000000",
+      "checksum": "120000000"
+    }
+  ],
+  "Q6": [
+    {
+      "n": "100",
+      "method": "direct_insertion",
+      "comparisons": "2428",
+      "copied_chars": "35420",
+      "index_writes": "0",
+      "view_bytes": "0",
+      "seconds": "0.000000000"
+    },
+    {
+      "n": "100",
+      "method": "index_insertion",
+      "comparisons": "2428",
+      "copied_chars": "0",
+      "index_writes": "2431",
+      "view_bytes": "400",
+      "seconds": "0.000000000"
+    },
+    {
+      "n": "100",
+      "method": "pointer_qsort",
+      "comparisons": "670",
+      "copied_chars": "0",
+      "index_writes": "NA",
+      "view_bytes": "800",
+      "seconds": "0.000000000"
+    },
+    {
+      "n": "500",
+      "method": "direct_insertion",
+      "comparisons": "54673",
+      "copied_chars": "772478",
+      "index_writes": "0",
+      "view_bytes": "0",
+      "seconds": "0.001000000"
+    },
+    {
+      "n": "500",
+      "method": "index_insertion",
+      "comparisons": "54673",
+      "copied_chars": "0",
+      "index_writes": "54678",
+      "view_bytes": "2000",
+      "seconds": "0.000000000"
+    },
+    {
+      "n": "500",
+      "method": "pointer_qsort",
+      "comparisons": "4944",
+      "copied_chars": "0",
+      "index_writes": "NA",
+      "view_bytes": "4000",
+      "seconds": "0.000000000"
+    },
+    {
+      "n": "5000",
+      "method": "direct_insertion",
+      "comparisons": "5671880",
+      "copied_chars": "79476320",
+      "index_writes": "0",
+      "view_bytes": "0",
+      "seconds": "0.110000000"
+    },
+    {
+      "n": "5000",
+      "method": "index_insertion",
+      "comparisons": "5671880",
+      "copied_chars": "0",
+      "index_writes": "5671881",
+      "view_bytes": "20000",
+      "seconds": "0.078000000"
+    },
+    {
+      "n": "5000",
+      "method": "pointer_qsort",
+      "comparisons": "71150",
+      "copied_chars": "0",
+      "index_writes": "NA",
+      "view_bytes": "40000",
+      "seconds": "0.002000000"
+    }
+  ],
+  "Q7": [
+    {
+      "votes": "5000",
+      "candidates": "12",
+      "method": "count_array",
+      "visits": "5000",
+      "comparisons": "0",
+      "invalid": "979",
+      "seconds": "0.000000000"
+    },
+    {
+      "votes": "5000",
+      "candidates": "12",
+      "method": "name_search",
+      "visits": "5000",
+      "comparisons": "37690",
+      "invalid": "979",
+      "seconds": "0.000000000"
+    },
+    {
+      "votes": "5000",
+      "candidates": "12",
+      "method": "sort_count",
+      "visits": "5000",
+      "comparisons": "31002",
+      "invalid": "979",
+      "seconds": "0.001000000"
+    },
+    {
+      "votes": "500000",
+      "candidates": "12",
+      "method": "count_array",
+      "visits": "500000",
+      "comparisons": "0",
+      "invalid": "99585",
+      "seconds": "0.001000000"
+    },
+    {
+      "votes": "500000",
+      "candidates": "12",
+      "method": "name_search",
+      "visits": "500000",
+      "comparisons": "3798549",
+      "invalid": "99585",
+      "seconds": "0.074000000"
+    },
+    {
+      "votes": "500000",
+      "candidates": "12",
+      "method": "sort_count",
+      "visits": "500000",
+      "comparisons": "2999952",
+      "invalid": "99585",
+      "seconds": "0.018000000"
+    },
+    {
+      "votes": "5000",
+      "candidates": "500",
+      "method": "count_array",
+      "visits": "5000",
+      "comparisons": "0",
+      "invalid": "29",
+      "seconds": "0.000000000"
+    },
+    {
+      "votes": "5000",
+      "candidates": "500",
+      "method": "name_search",
+      "visits": "5000",
+      "comparisons": "1265808",
+      "invalid": "29",
+      "seconds": "0.005000000"
+    },
+    {
+      "votes": "5000",
+      "candidates": "500",
+      "method": "sort_count",
+      "visits": "5000",
+      "comparisons": "60719",
+      "invalid": "29",
+      "seconds": "0.000000000"
+    },
+    {
+      "votes": "500000",
+      "candidates": "500",
+      "method": "count_array",
+      "visits": "500000",
+      "comparisons": "0",
+      "invalid": "3049",
+      "seconds": "0.000000000"
+    },
+    {
+      "votes": "500000",
+      "candidates": "500",
+      "method": "name_search",
+      "visits": "500000",
+      "comparisons": "126225709",
+      "invalid": "3049",
+      "seconds": "0.553000000"
+    },
+    {
+      "votes": "500000",
+      "candidates": "500",
+      "method": "sort_count",
+      "visits": "500000",
+      "comparisons": "6252302",
+      "invalid": "3049",
+      "seconds": "0.041000000"
+    }
+  ]
+}

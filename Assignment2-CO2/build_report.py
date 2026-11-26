@@ -13,7 +13,7 @@ R=Path(__file__).resolve().parent
 NAME='CSA02_1911260256_Assignment2_Report.docx'
 LINK='https://github.com/<your-username>/CSA02-1911260256-Assignment2'
 origin=subprocess.run(['git','remote','get-url','origin'],cwd=R,capture_output=True,text=True)
-if origin.returncode==0: LINK=origin.stdout.strip()
+if origin.returncode==0: LINK=origin.stdout.strip().removesuffix('.git')
 def raw(q,name): return (R/q/'outputs'/f'{name}.stdout.txt').read_text()
 
 def visuals():

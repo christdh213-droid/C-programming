@@ -1,0 +1,13 @@
+{
+  "c_sources": 12,
+  "execution_transcripts": 12,
+  "screenshots": 21,
+  "report_pages": 34,
+  "charts": 6,
+  "cover_blank_fields": "PASS",
+  "all_starter_outputs": "PASS",
+  "all_transcript_lines_covered": "PASS",
+  "png_dimensions_dpi_nonblank": "PASS",
+  "assignment2_cover_url": "PASS",
+  "renderer": "Microsoft Word read-only PDF export; page PNGs inspected"
+}

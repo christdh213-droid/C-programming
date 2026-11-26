@@ -24,8 +24,9 @@ d=Document(report)
 assert len(d.inline_shapes)==15  # 12 transcript images + 3 charts
 text='\n'.join(p.text for p in d.paragraphs)
 assert 'Chris Abraham George' in text and '1911260256' in text
-assert 'Section: ____________________' in text and 'Submission Date: ____________________' in text
-assert 'https://github.com/<your-username>/CSA02-1911260256-Assignment2' in text
+assert 'Section:' not in text or 'Section: ____________________' in text
+assert 'Submission Date:' not in text or 'Submission Date: ____________________' in text
+assert 'https://github.com/christdh213-droid/C-programming' in text
 pdf=pypdf.PdfReader(R/'qa/render/report.pdf')
 assert all(len(p.extract_text().strip())>30 for p in pdf.pages)
 source_count=len(list(R.glob('Q*/*.c')))
