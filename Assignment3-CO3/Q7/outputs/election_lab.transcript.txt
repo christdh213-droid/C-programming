@@ -1,0 +1,40 @@
+$ gcc -std=c11 -O2 -Wall -Wextra Q7/election_lab.c -o build/Q7_election_lab.exe
+$ build/Q7_election_lab.exe < Q7/input.txt
+RESULT hand candidates=3 valid=5 invalid=3
+RANK 1 candidate=1 votes=2
+RANK 2 candidate=2 votes=2
+RANK 3 candidate=3 votes=1
+WINNERS count=2 tied=1: 1 2
+RESULT all_invalid candidates=3 valid=0 invalid=3
+RANK 1 candidate=1 votes=0
+RANK 2 candidate=2 votes=0
+RANK 3 candidate=3 votes=0
+NO WINNER: no valid votes
+BENCH votes candidates method vote_visits string_or_sort_comparisons invalid cpu_seconds
+5000 12 count_array 5000 0 979 0.000000000
+5000 12 name_search 5000 37690 979 0.000000000
+5000 12 sort_count 5000 31002 979 0.001000000
+RESULT 5000_sample candidates=12 valid=4021 invalid=979
+RANK 1 candidate=3 votes=362
+RANK 2 candidate=7 votes=356
+RANK 3 candidate=2 votes=348
+RANK 4 candidate=5 votes=346
+RANK 5 candidate=12 votes=340
+RANK 6 candidate=10 votes=333
+RANK 7 candidate=4 votes=332
+RANK 8 candidate=6 votes=330
+RANK 9 candidate=9 votes=329
+RANK 10 candidate=11 votes=327
+RANK 11 candidate=1 votes=326
+RANK 12 candidate=8 votes=292
+WINNERS count=1 tied=0: 3
+500000 12 count_array 500000 0 99585 0.001000000
+500000 12 name_search 500000 3798549 99585 0.074000000
+500000 12 sort_count 500000 2999952 99585 0.018000000
+5000 500 count_array 5000 0 29 0.000000000
+5000 500 name_search 5000 1265808 29 0.005000000
+5000 500 sort_count 5000 60719 29 0.000000000
+500000 500 count_array 500000 0 3049 0.000000000
+500000 500 name_search 500000 126225709 3049 0.553000000
+500000 500 sort_count 500000 6252302 3049 0.041000000
+clock_ticks_per_second=1000 sink=138227

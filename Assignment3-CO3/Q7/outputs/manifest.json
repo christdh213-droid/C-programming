@@ -1,0 +1,19 @@
+[
+  {
+    "source": "election_lab.c",
+    "compile": [
+      "gcc",
+      "-std=c11",
+      "-O2",
+      "-Wall",
+      "-Wextra",
+      "Q7/election_lab.c",
+      "-o",
+      "build/Q7_election_lab.exe"
+    ],
+    "input": "Q7\\input.txt",
+    "exit_code": 0,
+    "stdout_sha256": "b182fb47e06cc217d2e46505dfba206280f9de934e867156826e9fb53c7bdd1f",
+    "expected_bytes_match": false
+  }
+]
