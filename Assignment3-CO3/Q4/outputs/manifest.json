@@ -1,0 +1,19 @@
+[
+  {
+    "source": "rainfall_lab.c",
+    "compile": [
+      "gcc",
+      "-std=c11",
+      "-O2",
+      "-Wall",
+      "-Wextra",
+      "Q4/rainfall_lab.c",
+      "-o",
+      "build/Q4_rainfall_lab.exe"
+    ],
+    "input": "Q4\\input.txt",
+    "exit_code": 0,
+    "stdout_sha256": "d63f8ba85f80f08d76e162d808fa4950a451bc978b42278ab7847ecfa2563663",
+    "expected_bytes_match": false
+  }
+]
