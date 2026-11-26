@@ -1,0 +1,18 @@
+[
+  {
+    "source": "canteen_system.c",
+    "compile": [
+      "gcc",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "Task06/canteen_system.c",
+      "-o",
+      "build/Task06_canteen_system.exe"
+    ],
+    "compile_exit": 0,
+    "exit_code": 0,
+    "stdout_sha256": "d09101a1f353192df21302c64f64b8da4f709af7ea04eaeff3eeee6002f9261a",
+    "exact_expected": false
+  }
+]

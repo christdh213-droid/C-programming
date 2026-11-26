@@ -1,0 +1,25 @@
+EXPIRY Juice days=2 within two days
+EXPIRY OldMilk days=-1 EXPIRED
+SALE id=1 quantity=2 revenue=60.00
+SALE id=3 quantity=3 revenue=240.00
+REJECT stock Rice available=5 required=99
+UNCHANGED stock and revenue
+REJECT expired OldMilk
+UNCHANGED stock and revenue
+REJECT stock Juice available=5 required=6
+UNCHANGED stock and revenue
+REJECT invalid item or quantity
+UNCHANGED stock and revenue
+REJECT invalid item or quantity
+UNCHANGED stock and revenue
+SALE id=2 quantity=2 revenue=120.00
+STOCK id=1 Juice=5
+STOCK id=2 Rice=3
+STOCK id=3 MealCombo=0
+STOCK id=4 OldMilk=5
+STOCK id=5 TripleJuice=0
+SUMMARY id=3 quantity=3 revenue=240.00
+SUMMARY id=2 quantity=2 revenue=120.00
+SUMMARY id=1 quantity=2 revenue=60.00
+TOTAL revenue=420.00 sizeof_Item=64 pointer_overhead_per_list_node=8
+DATE_CHECK year_boundary_days=1 leap_boundary_days=2
