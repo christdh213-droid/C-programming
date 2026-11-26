@@ -1,0 +1,53 @@
+[
+  {
+    "source": "complete_the_code.c",
+    "compile": [
+      "gcc",
+      "-std=c11",
+      "-O2",
+      "-Wall",
+      "-Wextra",
+      "Q5/complete_the_code.c",
+      "-o",
+      "build/Q5_complete_the_code.exe"
+    ],
+    "input": "Q5\\input.txt",
+    "exit_code": 0,
+    "stdout_sha256": "b60cab40e6d241f591b1c8c30f8ba2b49d8f34e8d7af6f6c4c6224f915d7070d",
+    "expected_bytes_match": true
+  },
+  {
+    "source": "sms_analyser_lab.c",
+    "compile": [
+      "gcc",
+      "-std=c11",
+      "-O2",
+      "-Wall",
+      "-Wextra",
+      "Q5/sms_analyser_lab.c",
+      "-o",
+      "build/Q5_sms_analyser_lab.exe"
+    ],
+    "input": "Q5\\input.txt",
+    "exit_code": 0,
+    "stdout_sha256": "6ead6c6e736260a36f4f1c4facca785daae2fc6fedde840d95ddad9919013849",
+    "expected_bytes_match": false
+  },
+  {
+    "source": "starter_extra_tests.c",
+    "compile": [
+      "gcc",
+      "-std=c11",
+      "-O2",
+      "-Wall",
+      "-Wextra",
+      "Q5/starter_extra_tests.c",
+      "-o",
+      "build/Q5_starter_extra_tests.exe"
+    ],
+    "input": "Q5\\input.txt",
+    "exit_code": 0,
+    "stdout_sha256": "2a0569108e89210eeef7fb35bac013e36856bc739f40df15b9cb535a712770ec",
+    "expected_bytes_match": false
+  }
+]

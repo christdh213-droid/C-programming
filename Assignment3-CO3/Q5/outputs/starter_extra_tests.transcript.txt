@@ -1,0 +1,5 @@
+$ gcc -std=c11 -O2 -Wall -Wextra Q5/starter_extra_tests.c -o build/Q5_starter_extra_tests.exe
+$ build/Q5_starter_extra_tests.exe < Q5/input.txt
+Tab-separated words: 4
+Empty words: 0; punctuation words: 2
+Empty palindrome: 1; punctuation-only palindrome: 1

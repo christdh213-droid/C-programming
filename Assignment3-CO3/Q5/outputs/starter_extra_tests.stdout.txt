@@ -1,0 +1,3 @@
+Tab-separated words: 4
+Empty words: 0; punctuation words: 2
+Empty palindrome: 1; punctuation-only palindrome: 1

@@ -1,0 +1,4 @@
+$ gcc -std=c11 -O2 -Wall -Wextra Q5/complete_the_code.c -o build/Q5_complete_the_code.exe
+$ build/Q5_complete_the_code.exe < Q5/input.txt
+Words: 7
+1 0

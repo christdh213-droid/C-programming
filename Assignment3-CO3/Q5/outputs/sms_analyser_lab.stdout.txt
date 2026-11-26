@@ -1,0 +1,37 @@
+TEXT [  Meet at  the library at 5 PM ]
+WORDS manual=7 library=7 PAL manual=0 library=0
+UPPER [  MEET AT  THE LIBRARY AT 5 PM ]
+REVERSE [ MP 5 ta yrarbil eht  ta teeM  ]
+TEXT [Madam, I'm Adam]
+WORDS manual=3 library=3 PAL manual=1 library=1
+UPPER [MADAM, I'M ADAM]
+REVERSE [madA m'I ,madaM]
+TEXT [Hello, world!]
+WORDS manual=2 library=2 PAL manual=0 library=0
+UPPER [HELLO, WORLD!]
+REVERSE [!dlrow ,olleH]
+TEXT []
+WORDS manual=0 library=0 PAL manual=1 library=1
+UPPER []
+REVERSE []
+TEXT [one	two]
+WORDS manual=2 library=2 PAL manual=0 library=0
+UPPER [ONE	TWO]
+REVERSE [owt	eno]
+TEXT [!!!]
+WORDS manual=1 library=1 PAL manual=1 library=1
+UPPER [!!!]
+REVERSE [!!!]
+SAFETY unsafe strcpy would need 37 bytes in capacity=8; NOT executed
+strncpy bounded [This is] length=7
+snprintf [This is] required=36 truncated=1
+fgets first chunk [This is] length=7
+fgets drained_remaining=29
+STRLEN n method length_calls reps cpu_seconds checksum
+1000 repeated 100100 100 0.008000000 12000000
+1000 cached 100 100 0.000000000 12000000
+RECURSION n=1000 max_active_calls=501
+10000 repeated 1000100 100 0.600000000 120000000
+10000 cached 100 100 0.000000000 120000000
+RECURSION n=10000 max_active_calls=5001
+clock_ticks_per_second=1000 sink=264692388
