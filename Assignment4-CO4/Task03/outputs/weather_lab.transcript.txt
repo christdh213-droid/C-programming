@@ -1,0 +1,10 @@
+$ gcc -std=c11 -Wall -Wextra Task03/weather_lab.c -o build/Task03_weather_lab.exe
+$ build/Task03_weather_lab.exe < Task03/input.txt
+LAYOUT full_payload=16 full_with_tag=20 union=8 tagged=12 align_union=4 align_tagged=4 value_offset=4
+MISUSE celsius=31.5 inactive_percent=1107034112 memcpy_bits=0x41fc0000
+Inactive-member interpretation is target-specific; production dispatch must use the tag.
+BENCH tagged n=30000 known_bytes=360000 build_cpu=0.000000000 read_cpu=0.000000000 checksum=1785000.0
+BENCH separate_type_arrays n=30000 known_bytes=160000 build_cpu=0.000000000 read_cpu=0.000000000 checksum=1785000.0
+BENCH malloc_void_pointer n=30000 known_bytes=640000 build_cpu=0.001000000 read_cpu=0.000000000 checksum=1785000.0
+DYNAMIC descriptor=16 payload_bytes=160000 allocations=30000 allocator_overhead=not_measured
+Separate compact arrays group packets by type; preserving arbitrary arrival order requires additional tags/indices.

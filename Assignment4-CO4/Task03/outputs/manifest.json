@@ -1,0 +1,34 @@
+[
+  {
+    "source": "complete_the_code.c",
+    "compile": [
+      "gcc",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "Task03/complete_the_code.c",
+      "-o",
+      "build/Task03_complete_the_code.exe"
+    ],
+    "compile_exit": 0,
+    "exit_code": 0,
+    "stdout_sha256": "1e7fde550ac5927f68b9f8ebf505cc1c395f0b7571588d0705ac5f64af434244",
+    "exact_expected": true
+  },
+  {
+    "source": "weather_lab.c",
+    "compile": [
+      "gcc",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "Task03/weather_lab.c",
+      "-o",
+      "build/Task03_weather_lab.exe"
+    ],
+    "compile_exit": 0,
+    "exit_code": 0,
+    "stdout_sha256": "31dfe434d121a548b963724795853e02e63fe101f2a7b5a4bbf68aaf08d41551",
+    "exact_expected": false
+  }
+]

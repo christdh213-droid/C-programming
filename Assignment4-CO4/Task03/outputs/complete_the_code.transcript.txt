@@ -1,0 +1,6 @@
+$ gcc -std=c11 -Wall -Wextra Task03/complete_the_code.c -o build/Task03_complete_the_code.exe
+$ build/Task03_complete_the_code.exe < Task03/input.txt
+sizeof union = 8, sizeof struct reading = 12
+Temp 31.5 C
+Humidity 68%
+Status OK
