@@ -11,6 +11,7 @@ Repository: https://github.com/christdh213-droid/C-programming
 | Assignment 2 CO2 | [Assignment2-CO2](Assignment2-CO2/README.md) | [Report](Assignment2-CO2/CSA02_1911260256_Assignment2_Report.docx) |
 | Assignment 3 CO3 | [Assignment3-CO3](Assignment3-CO3/README.md) | [Report](Assignment3-CO3/CSA02_1911260256_Assignment3_Report.docx) |
 | Assignment 4 CO4 | [Assignment4-CO4](Assignment4-CO4/README.md) | [Report](Assignment4-CO4/CSA02_1911260256_Assignment4_Report.docx) |
+| Assignment 5 CO5 | [Assignment5-CO5](Assignment5-CO5/README.md) | [Report](Assignment5-CO5/CSA02_1911260256_Assignment5_Report.docx) |
 
 ## Exact detected gcc version
 
@@ -24,6 +25,7 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 Assignment 2 retains its original executed evidence and progressive Git history. Its report cover now links to this repository.
 Assignment 3 has separate progressive task commits and compiles all its C programs with `-std=c11 -O2 -Wall -Wextra`.
 See each assignment README for exact compile commands, inputs, output definitions and reproduction steps.
+Assignments 4 and 5 compile final programs with `-std=c11 -Wall -Wextra`, preserve starter skeletons and exact fixtures, and retain raw execution evidence. CO5's sanitizer probes fail because this GCC installation lacks libasan; that verification gap is explicitly documented.
 The existing DBMS work and original Assignment 2 folder in the parent workspace are preserved.
 
 ```powershell
