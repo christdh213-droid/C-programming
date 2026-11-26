@@ -1,0 +1,17 @@
+[
+  {
+    "source": "concession.c",
+    "command": [
+      "gcc",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "Q2/concession.c",
+      "-o",
+      "build/Q2_concession.exe"
+    ],
+    "exit_code": 0,
+    "stdout_sha256": "b803f679474102fdb3669656af638d1db68d958decdba01a73ad343b15470d52",
+    "expected_bytes_match": false
+  }
+]
