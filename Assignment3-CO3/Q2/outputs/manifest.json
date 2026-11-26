@@ -1,0 +1,19 @@
+[
+  {
+    "source": "seating_sort_lab.c",
+    "compile": [
+      "gcc",
+      "-std=c11",
+      "-O2",
+      "-Wall",
+      "-Wextra",
+      "Q2/seating_sort_lab.c",
+      "-o",
+      "build/Q2_seating_sort_lab.exe"
+    ],
+    "input": "Q2\\input.txt",
+    "exit_code": 0,
+    "stdout_sha256": "b0d6442dbf7339bc440810344b39640e0dd879911258fd447da9751505d66f7b",
+    "expected_bytes_match": false
+  }
+]
