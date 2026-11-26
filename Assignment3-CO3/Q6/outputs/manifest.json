@@ -1,0 +1,19 @@
+[
+  {
+    "source": "hostel_directory_lab.c",
+    "compile": [
+      "gcc",
+      "-std=c11",
+      "-O2",
+      "-Wall",
+      "-Wextra",
+      "Q6/hostel_directory_lab.c",
+      "-o",
+      "build/Q6_hostel_directory_lab.exe"
+    ],
+    "input": "Q6\\input.txt",
+    "exit_code": 0,
+    "stdout_sha256": "b38582a2f426f84bd46af1a56b5beb2e4cefb2fac715537a000625710329327b",
+    "expected_bytes_match": false
+  }
+]
