@@ -30,7 +30,24 @@
     ],
     "input": "Q3\\input.txt",
     "exit_code": 0,
-    "stdout_sha256": "d52a7682eee0d41e2252df79b20d223c4512a14d26c177163709f9d7e3b2ff0e",
+    "stdout_sha256": "6f0232dea5f3c274d69c1177856e92e84249827d4f14c97eda204679de0dd7ba",
+    "expected_bytes_match": false
+  },
+  {
+    "source": "starter_extra_tests.c",
+    "compile": [
+      "gcc",
+      "-std=c11",
+      "-O2",
+      "-Wall",
+      "-Wextra",
+      "Q3/starter_extra_tests.c",
+      "-o",
+      "build/Q3_starter_extra_tests.exe"
+    ],
+    "input": "Q3\\input.txt",
+    "exit_code": 0,
+    "stdout_sha256": "062aec33e33459e202636cdddf8f116195a3a09193b0e82f694b9bb5ac98e065",
     "expected_bytes_match": false
   }
 ]

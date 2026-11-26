@@ -15,6 +15,6 @@ BENCH m n method comparisons record_writes_known aux_record_bytes cpu_seconds
 1000 1000 concat_qsort 52322 NA 24000 0.000000000
 1000 1000 inplace 1999 500499 12 0.000000000
 10000 10000 merge 19999 20000 240000 0.000000000
-10000 10000 concat_qsort 872665 NA 240000 0.004000000
-10000 10000 inplace 19999 50004999 12 0.012000000
+10000 10000 concat_qsort 872665 NA 240000 0.003000000
+10000 10000 inplace 19999 50004999 12 0.011000000
 sizeof_entry=12 clock_ticks_per_second=1000; qsort internal moves/storage implementation-dependent

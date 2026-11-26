@@ -1,0 +1,4 @@
+$ gcc -std=c11 -O2 -Wall -Wextra Q3/starter_extra_tests.c -o build/Q3_starter_extra_tests.exe
+$ build/Q3_starter_extra_tests.exe < Q3/input.txt
+Empty A -> 95 91 80 
+Both empty -> count 0
