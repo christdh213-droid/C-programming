@@ -1,0 +1,20 @@
+$ gcc -std=c11 -O2 -Wall -Wextra Q3/merit_merge_lab.c -o build/Q3_merit_merge_lab.exe
+$ build/Q3_merit_merge_lab.exe < Q3/input.txt
+EDGE unequal: 98A0 95B0 91A1 91B1 85A2 80B2 72A3
+EDGE_WORK unequal comparisons=6 moves=7
+EDGE empty_A: 95B0 91B1 80B2
+EDGE_WORK empty_A comparisons=0 moves=3
+EDGE empty_B: 98A0 91A1 85A2 72A3
+EDGE_WORK empty_B comparisons=0 moves=4
+EDGE both_empty:
+EDGE_WORK both_empty comparisons=0 moves=0
+EDGE equal: 91A0 91A1 91B0 91B1 91B2
+EDGE_WORK equal comparisons=2 moves=5
+BENCH m n method comparisons record_writes_known aux_record_bytes cpu_seconds
+1000 1000 merge 1999 2000 24000 0.000000000
+1000 1000 concat_qsort 52322 NA 24000 0.000000000
+1000 1000 inplace 1999 500499 12 0.000000000
+10000 10000 merge 19999 20000 240000 0.000000000
+10000 10000 concat_qsort 872665 NA 240000 0.004000000
+10000 10000 inplace 19999 50004999 12 0.012000000
+sizeof_entry=12 clock_ticks_per_second=1000; qsort internal moves/storage implementation-dependent

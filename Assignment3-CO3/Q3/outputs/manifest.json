@@ -1,0 +1,36 @@
+[
+  {
+    "source": "complete_the_code.c",
+    "compile": [
+      "gcc",
+      "-std=c11",
+      "-O2",
+      "-Wall",
+      "-Wextra",
+      "Q3/complete_the_code.c",
+      "-o",
+      "build/Q3_complete_the_code.exe"
+    ],
+    "input": "Q3\\input.txt",
+    "exit_code": 0,
+    "stdout_sha256": "b20502f4089446a361d13b6e1052b1d419e71585a0d2579856d7446a5ff0534f",
+    "expected_bytes_match": true
+  },
+  {
+    "source": "merit_merge_lab.c",
+    "compile": [
+      "gcc",
+      "-std=c11",
+      "-O2",
+      "-Wall",
+      "-Wextra",
+      "Q3/merit_merge_lab.c",
+      "-o",
+      "build/Q3_merit_merge_lab.exe"
+    ],
+    "input": "Q3\\input.txt",
+    "exit_code": 0,
+    "stdout_sha256": "d52a7682eee0d41e2252df79b20d223c4512a14d26c177163709f9d7e3b2ff0e",
+    "expected_bytes_match": false
+  }
+]
