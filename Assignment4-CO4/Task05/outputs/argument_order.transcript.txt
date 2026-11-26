@@ -1,0 +1,4 @@
+$ gcc -std=c11 -Wall -Wextra Task05/argument_order.c -o build/Task05_argument_order.exe
+$ build/Task05_argument_order.exe < Task05/input.txt
+1003 1002 1001
+Observed argument order is not a portable token-printing order.

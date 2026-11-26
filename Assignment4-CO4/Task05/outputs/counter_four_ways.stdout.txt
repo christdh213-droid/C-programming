@@ -1,0 +1,5 @@
+auto: 1001 1001 1001
+static: 1001 1002 1003
+extern: 1001 1002 1003
+register loop: 0 1 2
+extern final state=1003

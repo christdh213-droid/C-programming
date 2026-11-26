@@ -1,0 +1,7 @@
+$ gcc -std=c11 -Wall -Wextra Task05/counter_four_ways.c Task05/extern_store.c -o build/Task05_counter_four_ways.exe
+$ build/Task05_counter_four_ways.exe < Task05/input.txt
+auto: 1001 1001 1001
+static: 1001 1002 1003
+extern: 1001 1002 1003
+register loop: 0 1 2
+extern final state=1003

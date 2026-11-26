@@ -1,0 +1,2 @@
+1003 1002 1001
+Observed argument order is not a portable token-printing order.

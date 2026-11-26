@@ -1,0 +1,4 @@
+$ gcc -std=c11 -Wall -Wextra Task05/complete_the_code.c -o build/Task05_complete_the_code.exe
+$ build/Task05_complete_the_code.exe < Task05/input.txt
+static: 1001 1002 1003
+auto  : 1001 1001 1001

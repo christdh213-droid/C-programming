@@ -1,0 +1,82 @@
+[
+  {
+    "source": "argument_order.c",
+    "compile": [
+      "gcc",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "Task05/argument_order.c",
+      "-o",
+      "build/Task05_argument_order.exe"
+    ],
+    "compile_exit": 0,
+    "exit_code": 0,
+    "stdout_sha256": "a75ac612c3b48fe18d914c4232c3eccb153a9a2dcdb32173e30bd9271a8894fd",
+    "exact_expected": false
+  },
+  {
+    "source": "complete_the_code.c",
+    "compile": [
+      "gcc",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "Task05/complete_the_code.c",
+      "-o",
+      "build/Task05_complete_the_code.exe"
+    ],
+    "compile_exit": 0,
+    "exit_code": 0,
+    "stdout_sha256": "2bebb0b6ca47c8d77a663e877a9e25a83fbfc818928f0a627fec750e729a6b2b",
+    "exact_expected": true
+  },
+  {
+    "source": "counter_four_ways.c",
+    "compile": [
+      "gcc",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "Task05/counter_four_ways.c",
+      "Task05/extern_store.c",
+      "-o",
+      "build/Task05_counter_four_ways.exe"
+    ],
+    "compile_exit": 0,
+    "exit_code": 0,
+    "stdout_sha256": "c09c789130cde8009f40f6df4c66a8db6a4a3e8b700cf401767f99d0b46f38d6",
+    "exact_expected": false
+  },
+  {
+    "source": "extern_store.c",
+    "compile": [
+      "gcc",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "Task05/extern_store.c",
+      "-c",
+      "-o",
+      "build/Task05_extern_store.o"
+    ],
+    "compile_exit": 0,
+    "object_only": true
+  },
+  {
+    "source": "two_counters.c",
+    "compile": [
+      "gcc",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "Task05/two_counters.c",
+      "-o",
+      "build/Task05_two_counters.exe"
+    ],
+    "compile_exit": 0,
+    "exit_code": 0,
+    "stdout_sha256": "ae8f1a4fc677de2187fcad498a038cd05d193c52d166ffda22b4577f5d2a3d60",
+    "exact_expected": false
+  }
+]

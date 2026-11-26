@@ -1,0 +1,8 @@
+$ gcc -std=c11 -Wall -Wextra Task05/two_counters.c -o build/Task05_two_counters.exe
+$ build/Task05_two_counters.exe < Task05/input.txt
+TWO auto veg=1001 nonveg=1001 veg=1001 nonveg=1001
+TWO static veg=1001 nonveg=1001 veg=1002 nonveg=1002
+TWO global veg=1001 nonveg=1001 veg=1002 nonveg=1002
+TWO pointer veg=1001 nonveg=1001 veg=1002 nonveg=1002
+MODIFICATION_COUNTS: auto/static/global add one second state cell and one selector parameter; pointer adds one caller-owned cell and zero function-body changes.
+register applies to the printing loop, not persistent token storage; its address cannot be taken in C11.
