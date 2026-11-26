@@ -1,0 +1,8 @@
+Q3: starter and main preserved; exact expected bytes PASS
+Q4: starter and main preserved; exact expected bytes PASS
+Q5: starter and main preserved; exact expected bytes PASS
+All C programs: real execution manifest hashes and warning policy PASS
+Q6: exact Decimal recurrence agrees with all 6 C schedule rows PASS
+Q2: 1000 unique audit entries, truth and call-count checks PASS
+Q7: counts recomputed and objective >=50% reduction on both large primes PASS
+Q5: PDF printed whitespace discrepancy independently confirmed on rows 1 and 4

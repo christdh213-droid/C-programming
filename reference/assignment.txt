@@ -1,0 +1,335 @@
+Programme: B.E / B.Tech
+Course Code: CSA02
+Course Name         : C Programming
+Course outcome: CO1
+Max Marks: 50
+ASSIGNMENT 2 – CO2
+CO2 Coverage: Examine and write solutions for problems using operators, decision-making and looping constructs – 
+arithmetic, relational, logical, bitwise, assignment and conditional operators, precedence and associativity, if, if–else, else–
+if ladder, nested if, switch, while, do–while, for, break, continue and goto.
+Nature of Assignment: IndividualDuration: 1 WeekTotal Marks: 50Submission Date: __________________
+Bloom’s Levels Assessed: K4 – Analyse and K5 – Evaluate (the level of each task is stated under the task heading)
+Mandatory Execution and GitHub Submission
+Every student must individually execute every task in this assignment, including all “Complete the Code” 
+programs.
+Create a GitHub repository named CSA02-<RegisterNumber>-Assignment2 and share it with the course faculty 
+(public, or private with the faculty added as a collaborator).
+Keep one folder for each task (for example: Task01, Task02 … or Q1, Q2 …), containing the C source code, input 
+files and output screenshots.
+Include a README.md with your name, register number, compiler and version (for example gcc 13), the exact gcc 
+command used to compile, the steps to run each program, and a short note of the result of each task.
+Commit your work progressively – at least one commit for each task. The commit history will be checked; a single 
+upload of all files on the last day will not be accepted.
+Submit the GitHub link below and on the cover page of your report. An assignment submitted without a working 
+GitHub link will not be evaluated.
+GitHub Repository Link: __________________________________________________
+How to Answer the Additional Questions
+Complete the Code: Copy the given code into your repository, replace every TODO with working code without changing 
+the rest of the program, execute it and compare your output with the expected output.
+Alternative Concept and Complexity Analysis: Describe how the solution would change if the alternative concept were 
+used, with code or pseudocode, and analyse and compare the time complexity and space complexity of both solutions 
+using Big-O notation, supported by your own measurements wherever possible.
+Q1 – Precedence, Associativity and the Discount Bug6 Marks
+Bloom’s Level: K4 – Analyse
+Problem Context – Jan Aushadhi Pharmacy Billing
+A government pharmacy computes the amount payable as: price × quantity, less 15% discount for senior citizens, plus 5% 
+GST. A developer wrote the whole calculation in one expression without brackets. Customers report wrong amounts.
+total = price * qty - price * qty * 15 / 100 * senior + price * qty * 5 / 100;
+net   = total > 1000 ? total - 50 : total;   /* Rs 50 off above Rs 1000 */
+count = count++ + 1;
+Your Challenge
+Before running any code:
+Predict the value of total and net for three bills of your choice, using the C precedence and associativity rules.
+Explain the order in which each operator is applied.
+Then write the program, run it and compare. Identify every expression whose result differs from what the pharmacist 
+intended, including the effect of integer division.
+Inquiry
+Explain why the third statement is undefined behaviour in C, and what the compiler does with -Wall.
+Design Decision
+Rewrite the calculation so that it is correct and readable. Decide whether to use brackets, intermediate variables or both, 
+and defend your decision.
+Alternative Concept and Complexity Analysis
+If the single long expression were replaced by several statements with intermediate variables (gross, discount, tax), what 
+would the solution be? Analyse whether the number of operations (time) changes, the extra space used by the temporary 
+variables, and the effect on correctness and readability.
+Evidence Expected
+Predictions before execution, an operator-by-operator explanation, observed outputs, identification of incorrect 
+expressions and a corrected, defended calculation.
+Q2 – When Does Short-Circuit Evaluation Matter?4 Marks
+Bloom’s Level: K4 – Analyse
+Problem Context – Railway Senior-Citizen Concession
+A ticket counter program grants a concession if the passenger is a senior citizen AND the ticket class is eligible, OR the 
+passenger holds a disability card. One check calls a slow function that verifies the card against a server.
+Your Challenge
+Design experiments to show:
+When the second operand of && and of || is not evaluated
+How the order of conditions changes the number of calls to the slow verification function
+The difference between & and && when used on conditions
+Count the number of calls to the slow function for 1,000 sample passengers with different orders of the conditions. Then 
+answer:
+When should the cheapest or most-likely-false condition be written first, and when is the order irrelevant?
+Changed Condition
+The verification function now also records every passenger it checks in an audit log. Re-evaluate your recommended 
+order.
+Alternative Concept and Complexity Analysis
+If the combined condition with && and || were replaced by nested if statements, or by the non-short-circuit operators & 
+and |, what would the solution be? For n passengers, analyse the number of calls to the slow verification function (time) in 
+each version.
+Evidence Expected
+Designed experiments, call-count evidence, an explanation of short-circuit evaluation and a justified response to the 
+changed condition.
+Q3 – Engineer a Device-Status Register with Bitwise Operators6 Marks
+Bloom’s Level: K4 – Analyse
+Problem Context – Smart Home Controller
+A low-cost smart-home controller has only a few bytes of memory. It must remember whether each of up to 8 devices 
+(light, fan, AC, heater, pump …) is ON or OFF. The firmware engineer proposes storing all states in a single unsigned 
+char, one bit per device.
+Your Challenge
+Using only bitwise operators (&, |, ^, ~, <<, >>):
+Switch a device on, switch it off, toggle it and test whether it is on
+Print the register in binary
+Count how many devices are on
+Before execution, predict the register value after a sequence of operations you design, then verify it.
+Inquiry
+Explain why reg & 1 << dev and (reg & 1) << dev give different results, and what goes wrong if a signed char is used and 
+bit 7 is set.
+Complete the Code
+Complete TODO 1 to TODO 4 below using only bitwise operators, and execute the program.
+#include <stdio.h>
+/* Each bit of one byte stores the ON/OFF state of one device. */
+enum { LIGHT = 0, FAN = 1, AC = 2, HEATER = 3, PUMP = 4 };
+unsigned char switch_on(unsigned char reg, int dev)
+{
+    // TODO 1: Set the bit of device dev to 1 and return the new register value
+    
+}
+unsigned char switch_off(unsigned char reg, int dev)
+{
+    // TODO 2: Clear the bit of device dev to 0 and return the new register value
+    
+}
+unsigned char toggle(unsigned char reg, int dev)
+{
+    // TODO 3: Flip the bit of device dev and return the new register value
+    
+}
+int is_on(unsigned char reg, int dev)
+{
+    // TODO 4: Return 1 if the bit of device dev is 1, otherwise 0
+    
+}
+void show(unsigned char reg)
+{
+    for (int bit = 7; bit >= 0; bit--) putchar(((reg >> bit) & 1u) ? '1' : '0');
+    putchar('\n');
+}
+int main(void)
+{
+    unsigned char reg = 0;
+    reg = switch_on(reg, LIGHT);
+    reg = switch_on(reg, AC);
+    show(reg);
+    reg = toggle(reg, FAN);
+    reg = switch_off(reg, LIGHT);
+    show(reg);
+    printf("AC is %s, PUMP is %s\n", is_on(reg, AC) ? "ON" : "OFF",
+           is_on(reg, PUMP) ? "ON" : "OFF");
+    return 0;
+}
+Expected output:
+00000101
+00000110
+AC is ON, PUMP is OFF
+Write the register value after each statement in main() before running the program.
+Alternative Concept and Complexity Analysis
+If the eight device states were stored in an array char state[8] (one element per device) instead of one bit each, what would 
+the solution be? Analyse the time of each operation (O(1) in both) and the space for 1,000,000 homes (1 byte versus 8 
+bytes per home), and the time to count the devices that are ON.
+Evidence Expected
+Correct bit-manipulation functions, predicted and observed register values, and a reasoned explanation of precedence and 
+signedness issues.
+Q4 – else–if Ladder or switch?6 Marks
+Bloom’s Level: K4 – Analyse
+Problem Context – University Grade and Scholarship Classifier
+The examination cell converts marks to grades (S, A, B, C, D, F) and then decides the scholarship category from the grade 
+and family income. Marks outside 0–100 must be rejected.
+Your Challenge
+Implement the grade decision twice – once with an else–if ladder and once with switch on marks / 10. Determine:
+Which input values each version handles correctly and incorrectly (test 100, 90, 89, 0, -1, 101)
+The effect of a missing break in the switch version
+Why switch cannot directly test ranges such as 75–84
+Which version is easier to change when the grade boundaries change
+Design a test set that would expose every boundary error.
+Design Decision
+The scholarship rule depends on both the grade and the income band. Decide whether nested if, a switch inside an if, or a 
+lookup table is the best structure, and defend your choice.
+Complete the Code
+Complete TODO 1 with a switch statement and execute the program.
+#include <stdio.h>
+/* Grade rules: 90-100 S, 80-89 A, 70-79 B, 60-69 C, 50-59 D, below 50 F, invalid '?' */
+char grade(int marks)
+{
+    if (marks < 0 || marks > 100) return '?';
+    // TODO 1: Use a switch on marks / 10 to return the grade letter (combine cases
+    //   where possible)
+    
+}
+int main(void)
+{
+    int marks[] = {100, 95, 83, 50, 49, -5};
+    for (int i = 0; i < 6; i++) printf("%d:%c ", marks[i], grade(marks[i]));
+    printf("\n");
+    return 0;
+}
+Expected output:
+100:S 95:S 83:A 50:D 49:F -5:? 
+Remove one break (or one return) from your switch and record how the output changes.
+Alternative Concept and Complexity Analysis
+If the grade were found from a lookup table, char grades[11] = {'F','F','F','F','F','D','C','B','A','S','S'}, indexed by marks / 10, 
+instead of a switch or an else–if ladder, what would the solution be? Analyse the time per grade (O(1) versus up to k 
+comparisons in a ladder) and the space used by the table.
+Evidence Expected
+Two working implementations, a boundary-exposing test set, observed results, an explanation of fall-through and a 
+defended structure for the scholarship rule.
+Q5 – Count the Work Done by a Loop7 Marks
+Bloom’s Level: K4 – Analyse
+Problem Context – Lucky-Draw Ticket Verification
+A college fest awards prizes to tickets whose numbers are prime. The first version of the program tests every divisor from 
+2 to n − 1. The organisers will verify tickets up to 1,000,003.
+Design Starting Point
+You are given only the following principle:
+If n has a divisor greater than √n, it must also have a divisor smaller than √n.
+Your Challenge
+Convert this principle into a loop. Determine:
+The loop condition that uses the principle without calling sqrt()
+Where break or return should stop the loop early
+How to count the number of divisions performed
+Implement both versions (2 to n − 1, and the improved loop) with for, and the improved loop again with while and with 
+do–while. Record the number of divisions for at least four ticket numbers, including a large prime.
+Inquiry
+Explain why the do–while version needs special care for n = 2 and n = 3, and why i * i <= n can overflow for very large n.
+Complete the Code
+Complete TODO 1 below and execute the program.
+#include <stdio.h>
+unsigned long checks = 0;     /* number of divisions performed by the last call */
+/* Returns 1 if n is prime, otherwise 0. */
+int is_prime(unsigned long n)
+{
+    checks = 0;
+    if (n < 2) return 0;
+    // TODO 1: Try divisors i = 2, 3, 4 ... only while i * i <= n, adding 1 to checks
+    //   for every division; return 0 as soon as a divisor is found, otherwise return 1
+    
+}
+int main(void)
+{
+    unsigned long tickets[] = {97, 100, 7919, 1000003};
+    for (int k = 0; k < 4; k++) {
+        int p = is_prime(tickets[k]);
+        printf("%8lu  %-9s  divisions = %lu\n", tickets[k],
+               p ? "prime" : "not prime", checks);
+    }
+    return 0;
+}
+Expected output:
+     97  prime      divisions = 8
+     100  not prime  divisions = 1
+    7919  prime      divisions = 87
+1000003  prime      divisions = 999
+Change the condition to i < n and record the new division counts.
+Alternative Concept and Complexity Analysis
+If every ticket up to N were checked once in advance using the Sieve of Eratosthenes (an array of N flags), instead of trial 
+division for each ticket, what would the solution be? Analyse the time (O(N log log N) once and O(1) per query, versus 
+O(√n) per query) and the space O(N) needed by the sieve.
+Evidence Expected
+A student-derived loop condition, three loop versions, division counts for several inputs, and a reasoned explanation of the 
+loop boundary cases.
+Q6 – Loops That Must Terminate: Loan Repayment Schedule8 Marks
+Bloom’s Level: K5 – Evaluate
+Problem Context – Self-Help Group Micro-Loan
+A women’s self-help group lends money at a monthly interest rate. Each month, interest is added to the outstanding 
+balance and the member repays a fixed amount. The program must print the month-by-month schedule until the loan is 
+fully repaid, and report the number of months and the total interest paid.
+Your Challenge
+Design the loop. Determine:
+Which loop (for, while or do–while) matches the problem, and why
+The exact termination condition, and why balance != 0 is dangerous with floating-point values
+What must happen in the last month when the remaining balance is less than the fixed repayment
+What happens if the repayment is smaller than the monthly interest
+Correctness Check
+Create a small loan (for example Rs 10,000 at 2% per month, Rs 2,000 repayment) and calculate the schedule by hand. 
+Verify your program against it.
+Growth Investigation
+Predict and then measure how the number of iterations changes as the repayment amount decreases towards the monthly 
+interest.
+Deployment Decision
+Add a safety limit (for example 360 months) using break, and decide what message the program should give when the 
+limit is reached. Defend your decision.
+Alternative Concept and Complexity Analysis
+If the number of months were calculated directly from the loan formula n = −log(1 − r·P / E) / log(1 + r), instead of 
+simulating every month in a loop, what would the solution be? Analyse the time (O(1) versus O(n) iterations), the space, 
+and the precision problems of each approach.
+Evidence Expected
+A justified loop design, a hand-verified schedule, iteration counts, protection against non-terminating loops and an 
+evidence-based deployment decision.
+DAY-4 DESIGN CHALLENGE
+Q7 – Diagnose, Redesign and Validate13 Marks
+Bloom’s Level: K5 – Evaluate
+Review the evidence you generated while working on Q1–Q6. Select ONE program that shows a significant limitation as 
+the input size or requirement changes.
+You are not permitted simply to rewrite the program in a different loop or decision statement and claim it is better. You 
+must understand the problem first and then develop an appropriate redesign.
+A. Diagnose the Bottleneck – 2 Marks
+Using your own evidence, identify where most of the operations are performed, which count grows with the input, and 
+whether work is unnecessarily repeated.
+Evidence Expected
+A precise diagnosis supported by evidence from your original program.
+B. Define the Design Objective – 2 Marks
+State a measurable objective for the redesign (for example: halve the number of divisions, remove repeated condition 
+checks, guarantee termination).
+Evidence Expected
+A clearly stated objective derived from the identified limitation.
+C. Design the Revised Solution – 4 Marks
+Explain what you have changed, which property you exploit (for example: skipping even divisors, ordering conditions, a 
+lookup table), whether extra memory is needed, and any new trade-off. Provide pseudocode or a flowchart.
+Evidence Expected
+A coherent redesign directly addressing the diagnosed limitation.
+D. Predict Before Implementing – 1 Mark
+Predict the improvement and the measure in which you expect it.
+Evidence Expected
+A clear, testable prediction.
+E. Implement and Validate the Redesign – 2 Marks
+Compare Original → Redesigned using the same inputs and counts.
+Evidence Expected
+Comparable experimental evidence for both versions.
+F. Defend the Final Design – 2 Marks
+Evaluate whether the objective was achieved, the size of the improvement, new costs, and where the original may still be 
+preferable. A redesign that does not outperform the original is not automatically unsuccessful if you correctly explain why.
+Evidence Expected
+A critical, evidence-based evaluation and a defensible conclusion.
+MARK DISTRIBUTION
+Question Assessed Area Bloom’s Level Marks
+Q1 Precedence, associativity and arithmetic K4 – Analyse 6
+Q2 Relational, logical operators and short-circuit evaluationK4 – Analyse 4
+Q3 Bitwise operators K4 – Analyse 6
+Q4 else–if ladder, nested if and switch K4 – Analyse 6
+Q5 for, while, do–while, break and continue K4 – Analyse 7
+Q6 Loop design and termination K5 – Evaluate 8
+Q7 Day-4 Design Challenge – Diagnose, Redesign & 
+Validate
+K5 – Evaluate 13
+TOTAL 50
+Submission Requirements
+GitHub repository link (mandatory) containing the executed code for every task, including every completed “Complete 
+the Code” program, with input files, output screenshots and a README.md.
+Your assignment report containing the required evidence for Q1–Q7
+C source code for all programs
+Raw counts and outputs used to produce your results
+Tables/graphs used in your analysis
+Operation counts (divisions, iterations, function calls) are the primary evidence. A screenshot of the final output alone is 
+not sufficient.
+Assessment Verification
+Students may be asked to explain any part of their predictions, code, test data or results during a brief verification 
+discussion/viva.
+Overall Assessment Expectation
+Predict → Design → Implement → Measure → Analyse → Evaluate → Diagnose → Redesign → Validate

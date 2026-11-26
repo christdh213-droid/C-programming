@@ -1,0 +1,389 @@
+[
+  {
+    "file": "Q1\\screenshots\\billing_01.png",
+    "width": 1825,
+    "height": 376,
+    "nonblank": true,
+    "source": "Q1\\outputs\\billing.transcript.txt",
+    "line_start": 1,
+    "line_end": 7
+  },
+  {
+    "file": "Q1\\screenshots\\ub_demo_01.png",
+    "width": 1800,
+    "height": 414,
+    "nonblank": true,
+    "source": "Q1\\outputs\\ub_demo.transcript.txt",
+    "line_start": 1,
+    "line_end": 8
+  },
+  {
+    "file": "Q2\\screenshots\\concession_01.png",
+    "width": 1800,
+    "height": 1478,
+    "nonblank": true,
+    "source": "Q2\\outputs\\concession.transcript.txt",
+    "line_start": 1,
+    "line_end": 36
+  },
+  {
+    "file": "Q2\\screenshots\\concession_02.png",
+    "width": 1800,
+    "height": 1478,
+    "nonblank": true,
+    "source": "Q2\\outputs\\concession.transcript.txt",
+    "line_start": 37,
+    "line_end": 72
+  },
+  {
+    "file": "Q2\\screenshots\\concession_03.png",
+    "width": 1800,
+    "height": 1478,
+    "nonblank": true,
+    "source": "Q2\\outputs\\concession.transcript.txt",
+    "line_start": 73,
+    "line_end": 108
+  },
+  {
+    "file": "Q2\\screenshots\\concession_04.png",
+    "width": 1800,
+    "height": 1478,
+    "nonblank": true,
+    "source": "Q2\\outputs\\concession.transcript.txt",
+    "line_start": 109,
+    "line_end": 144
+  },
+  {
+    "file": "Q2\\screenshots\\concession_05.png",
+    "width": 1800,
+    "height": 1478,
+    "nonblank": true,
+    "source": "Q2\\outputs\\concession.transcript.txt",
+    "line_start": 145,
+    "line_end": 180
+  },
+  {
+    "file": "Q2\\screenshots\\concession_06.png",
+    "width": 1800,
+    "height": 1478,
+    "nonblank": true,
+    "source": "Q2\\outputs\\concession.transcript.txt",
+    "line_start": 181,
+    "line_end": 216
+  },
+  {
+    "file": "Q2\\screenshots\\concession_07.png",
+    "width": 1800,
+    "height": 1478,
+    "nonblank": true,
+    "source": "Q2\\outputs\\concession.transcript.txt",
+    "line_start": 217,
+    "line_end": 252
+  },
+  {
+    "file": "Q2\\screenshots\\concession_08.png",
+    "width": 1800,
+    "height": 1478,
+    "nonblank": true,
+    "source": "Q2\\outputs\\concession.transcript.txt",
+    "line_start": 253,
+    "line_end": 288
+  },
+  {
+    "file": "Q2\\screenshots\\concession_09.png",
+    "width": 1800,
+    "height": 1478,
+    "nonblank": true,
+    "source": "Q2\\outputs\\concession.transcript.txt",
+    "line_start": 289,
+    "line_end": 324
+  },
+  {
+    "file": "Q2\\screenshots\\concession_10.png",
+    "width": 1800,
+    "height": 1478,
+    "nonblank": true,
+    "source": "Q2\\outputs\\concession.transcript.txt",
+    "line_start": 325,
+    "line_end": 360
+  },
+  {
+    "file": "Q2\\screenshots\\concession_11.png",
+    "width": 1800,
+    "height": 1478,
+    "nonblank": true,
+    "source": "Q2\\outputs\\concession.transcript.txt",
+    "line_start": 361,
+    "line_end": 396
+  },
+  {
+    "file": "Q2\\screenshots\\concession_12.png",
+    "width": 1800,
+    "height": 1478,
+    "nonblank": true,
+    "source": "Q2\\outputs\\concession.transcript.txt",
+    "line_start": 397,
+    "line_end": 432
+  },
+  {
+    "file": "Q2\\screenshots\\concession_13.png",
+    "width": 1800,
+    "height": 1478,
+    "nonblank": true,
+    "source": "Q2\\outputs\\concession.transcript.txt",
+    "line_start": 433,
+    "line_end": 468
+  },
+  {
+    "file": "Q2\\screenshots\\concession_14.png",
+    "width": 1800,
+    "height": 1478,
+    "nonblank": true,
+    "source": "Q2\\outputs\\concession.transcript.txt",
+    "line_start": 469,
+    "line_end": 504
+  },
+  {
+    "file": "Q2\\screenshots\\concession_15.png",
+    "width": 1800,
+    "height": 1478,
+    "nonblank": true,
+    "source": "Q2\\outputs\\concession.transcript.txt",
+    "line_start": 505,
+    "line_end": 540
+  },
+  {
+    "file": "Q2\\screenshots\\concession_16.png",
+    "width": 1800,
+    "height": 1478,
+    "nonblank": true,
+    "source": "Q2\\outputs\\concession.transcript.txt",
+    "line_start": 541,
+    "line_end": 576
+  },
+  {
+    "file": "Q2\\screenshots\\concession_17.png",
+    "width": 1800,
+    "height": 1478,
+    "nonblank": true,
+    "source": "Q2\\outputs\\concession.transcript.txt",
+    "line_start": 577,
+    "line_end": 612
+  },
+  {
+    "file": "Q2\\screenshots\\concession_18.png",
+    "width": 1800,
+    "height": 1478,
+    "nonblank": true,
+    "source": "Q2\\outputs\\concession.transcript.txt",
+    "line_start": 613,
+    "line_end": 648
+  },
+  {
+    "file": "Q2\\screenshots\\concession_19.png",
+    "width": 1800,
+    "height": 1478,
+    "nonblank": true,
+    "source": "Q2\\outputs\\concession.transcript.txt",
+    "line_start": 649,
+    "line_end": 684
+  },
+  {
+    "file": "Q2\\screenshots\\concession_20.png",
+    "width": 1800,
+    "height": 1478,
+    "nonblank": true,
+    "source": "Q2\\outputs\\concession.transcript.txt",
+    "line_start": 685,
+    "line_end": 720
+  },
+  {
+    "file": "Q2\\screenshots\\concession_21.png",
+    "width": 1800,
+    "height": 1478,
+    "nonblank": true,
+    "source": "Q2\\outputs\\concession.transcript.txt",
+    "line_start": 721,
+    "line_end": 756
+  },
+  {
+    "file": "Q2\\screenshots\\concession_22.png",
+    "width": 1800,
+    "height": 1478,
+    "nonblank": true,
+    "source": "Q2\\outputs\\concession.transcript.txt",
+    "line_start": 757,
+    "line_end": 792
+  },
+  {
+    "file": "Q2\\screenshots\\concession_23.png",
+    "width": 1800,
+    "height": 1478,
+    "nonblank": true,
+    "source": "Q2\\outputs\\concession.transcript.txt",
+    "line_start": 793,
+    "line_end": 828
+  },
+  {
+    "file": "Q2\\screenshots\\concession_24.png",
+    "width": 1800,
+    "height": 1478,
+    "nonblank": true,
+    "source": "Q2\\outputs\\concession.transcript.txt",
+    "line_start": 829,
+    "line_end": 864
+  },
+  {
+    "file": "Q2\\screenshots\\concession_25.png",
+    "width": 1800,
+    "height": 1478,
+    "nonblank": true,
+    "source": "Q2\\outputs\\concession.transcript.txt",
+    "line_start": 865,
+    "line_end": 900
+  },
+  {
+    "file": "Q2\\screenshots\\concession_26.png",
+    "width": 1800,
+    "height": 1478,
+    "nonblank": true,
+    "source": "Q2\\outputs\\concession.transcript.txt",
+    "line_start": 901,
+    "line_end": 936
+  },
+  {
+    "file": "Q2\\screenshots\\concession_27.png",
+    "width": 1800,
+    "height": 1478,
+    "nonblank": true,
+    "source": "Q2\\outputs\\concession.transcript.txt",
+    "line_start": 937,
+    "line_end": 972
+  },
+  {
+    "file": "Q2\\screenshots\\concession_28.png",
+    "width": 1800,
+    "height": 1478,
+    "nonblank": true,
+    "source": "Q2\\outputs\\concession.transcript.txt",
+    "line_start": 973,
+    "line_end": 1008
+  },
+  {
+    "file": "Q2\\screenshots\\concession_29.png",
+    "width": 1800,
+    "height": 262,
+    "nonblank": true,
+    "source": "Q2\\outputs\\concession.transcript.txt",
+    "line_start": 1009,
+    "line_end": 1012
+  },
+  {
+    "file": "Q3\\screenshots\\complete_01.png",
+    "width": 1800,
+    "height": 300,
+    "nonblank": true,
+    "source": "Q3\\outputs\\complete.transcript.txt",
+    "line_start": 1,
+    "line_end": 5
+  },
+  {
+    "file": "Q3\\screenshots\\register_compare_01.png",
+    "width": 1800,
+    "height": 452,
+    "nonblank": true,
+    "source": "Q3\\outputs\\register_compare.transcript.txt",
+    "line_start": 1,
+    "line_end": 9
+  },
+  {
+    "file": "Q4\\screenshots\\classifiers_01.png",
+    "width": 1800,
+    "height": 1478,
+    "nonblank": true,
+    "source": "Q4\\outputs\\classifiers.transcript.txt",
+    "line_start": 1,
+    "line_end": 36
+  },
+  {
+    "file": "Q4\\screenshots\\classifiers_02.png",
+    "width": 1800,
+    "height": 642,
+    "nonblank": true,
+    "source": "Q4\\outputs\\classifiers.transcript.txt",
+    "line_start": 37,
+    "line_end": 50
+  },
+  {
+    "file": "Q4\\screenshots\\complete_01.png",
+    "width": 1800,
+    "height": 224,
+    "nonblank": true,
+    "source": "Q4\\outputs\\complete.transcript.txt",
+    "line_start": 1,
+    "line_end": 3
+  },
+  {
+    "file": "Q4\\screenshots\\fallthrough_01.png",
+    "width": 1800,
+    "height": 224,
+    "nonblank": true,
+    "source": "Q4\\outputs\\fallthrough.transcript.txt",
+    "line_start": 1,
+    "line_end": 3
+  },
+  {
+    "file": "Q5\\screenshots\\complete_01.png",
+    "width": 1800,
+    "height": 338,
+    "nonblank": true,
+    "source": "Q5\\outputs\\complete.transcript.txt",
+    "line_start": 1,
+    "line_end": 6
+  },
+  {
+    "file": "Q5\\screenshots\\loops_sieve_01.png",
+    "width": 1800,
+    "height": 1478,
+    "nonblank": true,
+    "source": "Q5\\outputs\\loops_sieve.transcript.txt",
+    "line_start": 1,
+    "line_end": 36
+  },
+  {
+    "file": "Q5\\screenshots\\loops_sieve_02.png",
+    "width": 1800,
+    "height": 528,
+    "nonblank": true,
+    "source": "Q5\\outputs\\loops_sieve.transcript.txt",
+    "line_start": 37,
+    "line_end": 47
+  },
+  {
+    "file": "Q5\\screenshots\\naive_complete_01.png",
+    "width": 1800,
+    "height": 338,
+    "nonblank": true,
+    "source": "Q5\\outputs\\naive_complete.transcript.txt",
+    "line_start": 1,
+    "line_end": 6
+  },
+  {
+    "file": "Q6\\screenshots\\loan_01.png",
+    "width": 1800,
+    "height": 1402,
+    "nonblank": true,
+    "source": "Q6\\outputs\\loan.transcript.txt",
+    "line_start": 1,
+    "line_end": 34
+  },
+  {
+    "file": "Q7\\screenshots\\redesign_01.png",
+    "width": 1800,
+    "height": 718,
+    "nonblank": true,
+    "source": "Q7\\outputs\\redesign.transcript.txt",
+    "line_start": 1,
+    "line_end": 16
+  }
+]

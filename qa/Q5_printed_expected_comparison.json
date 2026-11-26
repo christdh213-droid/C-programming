@@ -1,0 +1,12 @@
+[
+  {
+    "line": 1,
+    "printed": "'     97  prime      divisions = 8'",
+    "actual": "'      97  prime      divisions = 8'"
+  },
+  {
+    "line": 4,
+    "printed": "'1000003  prime      divisions = 999'",
+    "actual": "' 1000003  prime      divisions = 999'"
+  }
+]

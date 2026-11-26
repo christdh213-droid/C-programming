@@ -1,0 +1,11 @@
+{
+  "c_sources": 13,
+  "transcript_images": 43,
+  "transcripts": 13,
+  "report_pages": 20,
+  "embedded_images": 15,
+  "image_dimensions_dpi_nonblank": "PASS",
+  "all_transcript_lines_covered": "PASS",
+  "cover_metadata": "PASS",
+  "visual_review": "All pages inspected; no clipping or overlap in final render. Renderer fallback: Microsoft Word read-only PDF export; bundled LibreOffice unavailable."
+}
