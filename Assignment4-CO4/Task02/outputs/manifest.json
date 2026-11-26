@@ -1,0 +1,50 @@
+[
+  {
+    "source": "complete_the_code.c",
+    "compile": [
+      "gcc",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "Task02/complete_the_code.c",
+      "-o",
+      "build/Task02_complete_the_code.exe"
+    ],
+    "compile_exit": 0,
+    "exit_code": 0,
+    "stdout_sha256": "3280750accd6ca2716ead121165fc4027c2cef76ce23958308406f81c3901912",
+    "exact_expected": true
+  },
+  {
+    "source": "courier_full.c",
+    "compile": [
+      "gcc",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "Task02/courier_full.c",
+      "-o",
+      "build/Task02_courier_full.exe"
+    ],
+    "compile_exit": 0,
+    "exit_code": 0,
+    "stdout_sha256": "07be8c092b80c8b5a335b02374d61a4511a1ca597588cb5d816d9f25185447e1",
+    "exact_expected": false
+  },
+  {
+    "source": "starter_layout.c",
+    "compile": [
+      "gcc",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "Task02/starter_layout.c",
+      "-o",
+      "build/Task02_starter_layout.exe"
+    ],
+    "compile_exit": 0,
+    "exit_code": 0,
+    "stdout_sha256": "27c774ecb753809b448dd2762e0fd2f1700b18e718a5e7c61e37e7413e618ed0",
+    "exact_expected": false
+  }
+]

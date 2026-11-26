@@ -1,0 +1,9 @@
+$ gcc -std=c11 -Wall -Wextra Task02/courier_full.c -o build/Task02_courier_full.exe
+$ build/Task02_courier_full.exe < Task02/input.txt
+THIRD_PIN array=641001 pointer=641001
+PARCEL 502 1.2 kg Madurai->Chennai-600077 12/10/2026 express charge=150.00
+PARCEL 503 2.8 kg Salem->Coimbatore-641001 13/10/2026 normal charge=90.00
+PARCEL 501 4.5 kg Chennai->Madurai-625001 12/10/2026 normal charge=120.00
+FILTER Chennai
+PARCEL 502 1.2 kg Madurai->Chennai-600077 12/10/2026 express charge=150.00
+SIZE nested=160 flat=160 Address=60 Date=12

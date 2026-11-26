@@ -1,0 +1,3 @@
+$ gcc -std=c11 -Wall -Wextra Task02/starter_layout.c -o build/Task02_starter_layout.exe
+$ build/Task02_starter_layout.exe < Task02/input.txt
+sizeof(struct parcel)=44 alignment=4 bytes_per_swap=132
