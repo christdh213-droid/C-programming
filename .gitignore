@@ -1,4 +1,5 @@
-build/
-qa/render/
-__pycache__/
+**/build/
+**/qa/render/
+**/__pycache__/
 *.exe
+~$*

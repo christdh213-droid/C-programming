@@ -1,0 +1,370 @@
+Programme: B.E / B.Tech
+Course Code: CSA02
+Course Name         : C Programming
+Course outcome: CO3
+Max Marks: 50
+ASSIGNMENT 3
+CO3 Coverage: Solve problems for searching, sorting and merging using array and string processing 
+techniques – one-dimensional, two-dimensional and multi-dimensional arrays, search in sorted and unsorted 
+data, merging of arrays, sorting algorithms, character arrays and string-handling functions.
+Mode: Pair Work – 2 Students per GroupDuration: 1 WeekTotal Marks: 50Submission Date: 
+__________________
+Bloom’s Levels Assessed: K4 – Analyse and K5 – Evaluate (the level of each task is stated under the task 
+heading)
+Mandatory Execution and GitHub Submission
+Every student must individually execute every task in this assignment, including all “Complete the Code” programs. 
+In this pair-work assignment, both students must execute every question in their own repository, not only the part for 
+which they are primarily responsible.
+Create a GitHub repository named CSA02-<RegisterNumber>-Assignment3 and share it with the course faculty (public, 
+or private with the faculty added as a collaborator).
+Keep one folder for each task (for example: Task01, Task02 … or Q1, Q2 …), containing the C source code, input files 
+and output screenshots.
+Include a README.md with your name, register number, compiler and version (for example gcc 13), the exact gcc 
+command used to compile, the steps to run each program, and a short note of the result of each task.
+Commit your work progressively – at least one commit for each task. The commit history will be checked; a single upload 
+of all files on the last day will not be accepted.
+Submit the GitHub link below and on the cover page of your report. An assignment submitted without a working 
+GitHub link will not be evaluated.
+GitHub Repository Link (Student A): __________________________________________
+GitHub Repository Link (Student B): __________________________________________
+How to Answer the Additional Questions
+Complete the Code: Copy the given code into your repository, replace every TODO with working code 
+without changing the rest of the program, execute it and compare your output with the expected output.
+Alternative Concept and Complexity Analysis: Describe how the solution would change if the alternative 
+concept were used, with code or pseudocode, and analyse and compare the time complexity and space 
+complexity of both solutions using Big-O notation, supported by your own measurements wherever possible.
+Pair-Work Principle
+Both students are responsible for understanding the complete assignment. However, each question contains 
+clearly identified individual responsibilities so that the contribution and understanding of each student can be 
+independently verified.
+Student A and Student B must not divide the assignment question-wise. Both students must participate in 
+every question.
+The individual responsibilities intentionally alternate across questions so that both students demonstrate 
+evidence of:
+Design → Implementation → Analysis → Evaluation
+Q1 – Searching a Library Catalogue6 Marks
+Bloom’s Level: K4 – Analyse
+Problem Context – College Central Library
+The library stores the accession numbers of its books in an array. Students search for a book by accession 
+number at the self-service kiosk. The catalogue holds 10 books in the trial, and will hold 100,000 books when 
+fully loaded.
+Shared Group Work
+Together:
+Implement linear search on the unsorted array and binary search on the sorted array
+Count the comparisons made by each search
+Test with books at the beginning, middle and end, and with a missing book
+Student A – Design & Mathematical Analysis
+Student A must individually:
+Write pseudocode for both searches
+Derive the best, worst and average number of comparisons for each
+Explain why binary search requires sorted data and why mid = low + (high − low) / 2 is preferred
+Predict the comparisons needed for 100,000 books
+Student B – Experimental Investigation
+Student B must individually:
+Generate arrays of 1,000, 10,000 and 100,000 accession numbers
+Record comparisons for successful and unsuccessful searches
+Plot comparisons against array size for both searches
+Check whether the results agree with Student A’s predictions
+Joint Design Question
+If new books are added every day, is it still worth keeping the array sorted for binary search? What information 
+would you need to decide?
+Both students must be able to defend the answer.
+Complete the Code
+Complete TODO 1 below and execute the program.
+#include <stdio.h>
+int steps;    /* comparisons made by the last search */
+/* a[] is sorted in ascending order. Returns the index of key, or -1. */
+int binary_search(const int a[], int n, int key)
+{
+    steps = 0;
+    // TODO 1: Search between low = 0 and high = n - 1; compute mid without overflow,
+    //   count every comparison of a[mid] with key in steps, and narrow the range until
+    //   key is found or the range is empty
+    
+    return -1;
+}
+int main(void)
+{
+    int accession[] = {1021, 1048, 1103, 1190, 1222, 1305, 1377, 1402, 1460, 1533};
+    int n = sizeof accession / sizeof accession[0];
+    int keys[] = {1021, 1305, 1533, 1400};
+    for (int k = 0; k < 4; k++) {
+        int pos = binary_search(accession, n, keys[k]);
+        printf("Book %d -> index %d, comparisons = %d\n", keys[k], pos, steps);
+    }
+    return 0;
+}
+Expected output:
+Book 1021 -> index 0, comparisons = 3
+Book 1305 -> index 5, comparisons = 3
+Book 1533 -> index 9, comparisons = 4
+Book 1400 -> index -1, comparisons = 4
+Explain why the missing book needs as many comparisons as the worst successful search.
+Alternative Concept and Complexity Analysis
+If the catalogue were stored in a hash table (accession number mod table size, with linear probing), or searched 
+by interpolation search, instead of binary search, what would the solution be? Analyse the time per search (O(1) 
+average, O(log log n) average, O(log n)) and the extra space in each approach.
+Q2 – Sorting the Examination Hall Seating Register7 Marks
+Bloom’s Level: K4 – Analyse
+Problem Context – Examination Seating
+The examination cell prepares a seating register sorted by register number for each hall. The data may arrive 
+already sorted, nearly sorted (a few late registrations) or in random order.
+Shared Group Work
+Together:
+Implement bubble sort (with an early-exit flag), selection sort and insertion sort
+Count comparisons and swaps (or shifts) for each
+Test on sorted, nearly sorted, reverse-sorted and random arrays
+Student A – Algorithm Design and Tracing
+Student A must individually:
+Trace each algorithm by hand on an array of 6 register numbers
+Explain the purpose of the early-exit flag in bubble sort
+Explain why insertion sort is fast on nearly sorted data
+State which algorithms are stable and why it matters for students with equal marks
+Student B – Comparative Measurement
+Student B must individually:
+Measure comparisons and swaps for n = 100, 1,000 and 10,000 on all four input orders
+Present the results in tables and graphs
+Identify the best algorithm for each input order
+Explain any result that differs from expectation
+Joint Conclusion
+Which sort would you recommend for a seating register that is already sorted except for 20 late registrations, 
+and why?
+Alternative Concept and Complexity Analysis
+If register numbers lie in a known range of size k, counting sort could be used instead of a comparison sort. 
+What would the solution be? Analyse its time O(n + k) against O(n²) for the three sorts, and its extra space O(k), 
+and state when it is not suitable.
+Q3 – Merging Two Merit Lists7 Marks
+Bloom’s Level: K4 – Analyse
+Here the responsibilities are deliberately reversed so that the same student does not always perform the design 
+component.
+Problem Context – Inter-Campus Admission
+Two campuses each produce a merit list sorted in descending order of entrance score. The admissions office 
+must produce one combined merit list, also in descending order, without sorting again.
+Shared Group Work
+Together:
+Implement the merge of two sorted arrays into a third array
+Handle lists of different lengths and equal scores
+Verify the merged list is in order
+Student A – Analysis and Comparison
+Student A must individually:
+Derive the number of comparisons for lists of sizes m and n
+Compare merging with joining the two arrays and sorting again, using counts for m = n = 1,000 and 10,000
+Identify the extra memory used by the merge
+Test with one empty list and with all scores equal
+Student B – Merge Design and Correctness
+Student B must individually:
+Write pseudocode for the merge
+Explain why each element is compared at most once
+Explain how the remaining elements are copied after one list ends
+Decide whether equal scores keep their original campus order, and why
+Joint Engineering Decision
+When would the admissions office prefer to merge in place instead of using a third array, and what would it 
+cost?
+Complete the Code
+Complete TODO 1 below and execute the program.
+#include <stdio.h>
+/* a[] and b[] are merit lists sorted in DESCENDING order of score.
+   Copies both into out[] in descending order and returns the total count. */
+int merge(const int a[], int na, const int b[], int nb, int out[])
+{
+    int i = 0, j = 0, k = 0;
+    // TODO 1: While both lists have elements, copy the larger score into out[k]; then
+    //   copy whatever remains in a[] and in b[]
+    
+    return k;
+}
+int main(void)
+{
+    int campusA[] = {98, 91, 85, 72};
+    int campusB[] = {95, 91, 80};
+    int merged[7];
+    int n = merge(campusA, 4, campusB, 3, merged);
+    for (int i = 0; i < n; i++) printf("%d ", merged[i]);
+    printf("\n");
+    return 0;
+}
+Expected output:
+98 95 91 91 85 80 72 
+Test with one empty list and explain how your loop handles it.
+Alternative Concept and Complexity Analysis
+If the two lists were simply copied into one array and sorted with qsort(), or merged in place without a third 
+array, what would the solution be? Analyse the time (O(m + n), O((m + n) log(m + n)), and O(m·n) for a simple 
+in-place merge) and the extra space of each approach.
+Q4 – Two-Dimensional Arrays: District Rainfall Records7 Marks
+Bloom’s Level: K4 – Analyse
+Problem Context – State Disaster Management Cell
+Monthly rainfall (mm) for 38 districts over 12 months is stored in a two-dimensional array rain[38][12]. The 
+cell needs the annual total per district, the monthly average for the state, the wettest district-month, and the 
+districts whose rainfall fell below 60% of the state average.
+Shared Group Work
+Together:
+Declare, initialise and read the 2-D array
+Compute row totals, column averages and the maximum element
+List the deficient districts
+Student A – Array Design and Memory
+Student A must individually:
+Explain how rain[38][12] is stored in memory (row-major order)
+Write the address formula for rain[i][j]
+Explain why the loop order (row-wise or column-wise) affects speed for large arrays
+Extend the design to a 3-D array rain[years][districts][months]
+Student B – Implementation and Verification
+Student B must individually:
+Implement all four computations as separate functions
+Verify the results on a small 3 × 4 array calculated by hand
+Measure the time to traverse a 2,000 × 2,000 array row-wise and column-wise
+Explain the difference observed
+Joint Conclusion
+Why is a two-dimensional array a better choice here than 38 separate one-dimensional arrays?
+Alternative Concept and Complexity Analysis
+If the rainfall data were stored in a one-dimensional array with index i × 12 + j, or as an array of 38 pointers 
+each pointing to a separately allocated row, instead of rain[38][12], what would the solution be? Analyse the 
+access time (O(1) in all three) and the extra space for the pointers, and explain any difference in speed caused 
+by memory layout.
+Q5 – Processing Text Without the Library6 Marks
+Bloom’s Level: K4 – Analyse
+Problem Context – SMS Feedback Analyser
+A college collects student feedback by SMS. The analyser must count the words in each message, convert it to 
+upper case, reverse it, and check whether a short code is a palindrome – first without using string.h, then with it.
+Shared Group Work
+Together:
+Implement word count, upper-case conversion, reversal and palindrome check using loops on character arrays
+Re-implement them using strlen, strcpy, strcmp and toupper
+Test with extra spaces, punctuation and an empty message
+Student A – Character-Level Design
+Student A must individually:
+Explain the role of the null character '\0'
+Write pseudocode for word counting that handles several spaces between words
+Explain why the length of the string should not be recomputed in every loop iteration
+Explain the difference between char s[] = "OK" and char *s = "OK"
+Student B – Library Functions and Safety
+Student B must individually:
+Compare your own functions with the string.h versions on the same inputs
+Show what happens when strcpy copies a long message into a small array
+Replace unsafe calls with strncpy or snprintf and fgets
+Explain why gets() was removed from the C standard
+Joint Conclusion
+When is it better to write your own string function, and when should you rely on string.h?
+Complete the Code
+Complete TODO 1 and TODO 2 below without using string.h, and execute the program.
+#include <stdio.h>
+#include <ctype.h>
+/* Counts words separated by one or more spaces, without using string.h */
+int word_count(const char s[])
+{
+    int count = 0, inside = 0;
+    // TODO 1: Scan the string up to '\0'; count a new word each time a non-space
+    //   character follows a space (or the start of the string)
+    
+    return count;
+}
+/* Returns 1 if s reads the same both ways, ignoring case and non-letters. */
+int is_palindrome(const char s[])
+{
+    int left = 0, right = 0;
+    while (s[right] != '\0') right++;
+    right--;
+    // TODO 2: Move left forward and right backward, skipping non-letters, and compare
+    //   the letters ignoring case; return 0 on the first mismatch
+    
+    return 1;
+}
+int main(void)
+{
+    printf("Words: %d\n", word_count("  Meet at  the library at 5 PM "));
+    printf("%d %d\n", is_palindrome("Madam, I'm Adam"), is_palindrome("Hello"));
+    return 0;
+}
+Expected output:
+Words: 7
+1 0
+Add a test with a tab character between words and explain the result.
+Alternative Concept and Complexity Analysis
+If strlen(s) were written in the loop condition (for (i = 0; i < strlen(s); i++)), or if reversal were done recursively, 
+instead of your loops, what would happen? Analyse the time complexity (O(n²) for the repeated strlen, O(n) 
+otherwise) and the stack space used by recursion.
+Q6 – A Directory of Names: Sorting and Searching Strings7 Marks
+Bloom’s Level: K4 – Analyse
+Problem Context – Hostel Resident Directory
+The hostel warden keeps the names of 500 residents in a two-dimensional character array names[500][30]. The 
+warden needs the list in alphabetical order, a search by name, and a report of duplicate entries.
+Shared Group Work
+Together:
+Read names safely using fgets and remove the trailing newline
+Sort the names alphabetically using strcmp and strcpy
+Implement binary search on the sorted names and detect duplicates
+Student A – Measurement and Improvement
+Student A must individually:
+Count strcmp calls and character copies for 100, 500 and 5,000 names
+Replace copying of names by sorting an array of indices, and measure the difference
+Test with names of length 29 and 30 and explain the result
+Record the search comparisons for present and missing names
+Student B – Design and Correctness
+Student B must individually:
+Explain how strcmp compares two strings and why "apple" and "Apple" are ordered differently
+Design case-insensitive comparison
+Explain the cost of swapping two names by copying characters
+Explain how duplicates appear next to each other after sorting
+Joint Conclusion
+Why does sorting an array of indices (or pointers) instead of the names themselves save time, and what is the 
+trade-off?
+Alternative Concept and Complexity Analysis
+If an array of pointers (char *list[500]) were sorted with qsort() instead of copying names with strcpy during the 
+sort, what would the solution be? Analyse the time (number of comparisons O(n log n), each up to L characters, 
+and the cost of each swap) and the extra space used by the pointer array.
+Q7 – Design an Election Counting Program from First Principles10 Marks
+Bloom’s Level: K5 – Evaluate
+Problem Context – Student Council Election
+The student council election has up to 12 candidates and up to 5,000 votes, each vote being the candidate 
+number entered at a polling booth. Some entries are invalid (0, negative or above the number of candidates). 
+The program must report the valid and invalid vote counts, the votes for each candidate in descending order, the 
+winner, and whether there is a tie.
+You are not given the design. You must develop it from the requirements.
+Stage 1 – Interpret the Problem (Joint) | 2 Marks
+Identify the input, the output and the rules
+Identify the arrays needed and their sizes
+State the requirements as measurable statements
+Stage 2 – Design (Student A) | 3 Marks
+Design the counting method (one pass with a count array) and the sorting of results
+Design the tie-detection logic
+Present the design as pseudocode
+Stage 3 – Implement and Measure (Student B) | 3 Marks
+Implement the design and test it with invalid votes and a tie
+Measure the time for 5,000 and 500,000 votes
+Verify the result for a small vote set counted by hand
+Stage 4 – Defend the Design (Joint) | 2 Marks
+Explain why a count array is better than searching a list of names for every vote
+Explain how the design would change for 500 candidates
+Identify one remaining limitation
+Alternative Concept and Complexity Analysis
+If, for every vote, the program searched a list of candidate names, or sorted all votes and counted runs of equal 
+values, instead of using a count array indexed by candidate number, what would the solution be? Analyse the 
+time for v votes and c candidates (O(v), O(v·c), O(v log v)) and the space of each approach.
+MARK DISTRIBUTION
+Question Assessed Area Bloom’s Level Marks
+Q1 Linear and binary search on arrays K4 – Analyse 6
+Q2 Bubble, selection and insertion sort K4 – Analyse 7
+Q3 Merging sorted arrays K4 – Analyse 7
+Q4 Two- and multi-dimensional arrays K4 – Analyse 7
+Q5 Character arrays and string processing K4 – Analyse 6
+Q6 Sorting and searching strings K4 – Analyse 7
+Q7 Array-based design from first principles K5 – Evaluate 10
+TOTAL 50
+Individual Contribution Record
+Complete the following table and submit it with the report:
+Question Student A – Primary Responsibility Student B – Primary Responsibility Joint
+Q1
+Q2
+Q3
+Q4
+Q5
+Q6
+Q7
+Submission Requirements
+GitHub repository link (mandatory) containing the executed code for every task, including every completed 
+“Complete the Code” program, with input files, output screenshots and a README.md.
+One joint report with each individual section clearly labelled Student A or Student B
+C source code for all questions
+Test tables, counts and timing data with tables/graphs
+Assessment Verification
+Each student will be verified individually. Either student may be asked to explain any part of the assignment, 
+including the part for which the other student was primarily responsible.

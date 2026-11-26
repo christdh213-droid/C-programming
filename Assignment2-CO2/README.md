@@ -4,7 +4,7 @@ Chris Abraham George | Register number 1911260256
 SIMATS Engineering | B.E / B.Tech CSE  
 Course: CSA02 C Programming | Maximum marks: 50
 
-Repository link: https://github.com/<your-username>/CSA02-1911260256-Assignment2
+Repository link: https://github.com/christdh213-droid/C-programming
 
 ## Environment
 
@@ -102,8 +102,8 @@ Transcript images are rendered from captured execution records, not photographs 
 
 ## Git and submission
 
-This directory is a separate Git repository on `main`; existing DBMS work in the parent workspace is preserved.
+This directory is Assignment 2 within the combined C-programming repository; its earlier progressive Git history is retained.
 Use `git log --oneline --reverse` to inspect progressive setup, task and final-documentation commits.
-No origin was configured during preparation, so the report contains the requested editable GitHub placeholder.
+The report cover now points to the combined C-programming GitHub repository.
 Before submission, create the matching GitHub repository, push this history, replace the placeholder with the actual URL and grant the faculty access.
 The cover leaves Section and Submission Date blank.
