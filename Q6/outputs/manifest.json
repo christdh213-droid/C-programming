@@ -1,0 +1,18 @@
+[
+  {
+    "source": "loan.c",
+    "command": [
+      "gcc",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "Q6/loan.c",
+      "-o",
+      "build/Q6_loan.exe",
+      "-lm"
+    ],
+    "exit_code": 0,
+    "stdout_sha256": "64b19b7f234d30b886b201a2954595ae24329c7e2f771bb09ac0b3300c3b0020",
+    "expected_bytes_match": false
+  }
+]
