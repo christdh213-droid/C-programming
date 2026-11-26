@@ -1,0 +1,26 @@
+$ C:\Users\Chris\Documents\ChatGPT\DBMS assisgnments\C-programming\Assignment5-CO5\build\TaskB1_stack_limit.exe linear 1000
+STACK mode=linear n=1000 result=1 calls=1001
+EXIT_CODE 0 (0x00000000)
+$ C:\Users\Chris\Documents\ChatGPT\DBMS assisgnments\C-programming\Assignment5-CO5\build\TaskB1_stack_limit.exe linear 2000
+STACK mode=linear n=2000 result=1 calls=2001
+EXIT_CODE 0 (0x00000000)
+$ C:\Users\Chris\Documents\ChatGPT\DBMS assisgnments\C-programming\Assignment5-CO5\build\TaskB1_stack_limit.exe linear 4000
+STACK mode=linear n=4000 result=1 calls=4001
+EXIT_CODE 0 (0x00000000)
+$ C:\Users\Chris\Documents\ChatGPT\DBMS assisgnments\C-programming\Assignment5-CO5\build\TaskB1_stack_limit.exe linear 8000
+STACK mode=linear n=8000 result=1 calls=8001
+EXIT_CODE 0 (0x00000000)
+$ C:\Users\Chris\Documents\ChatGPT\DBMS assisgnments\C-programming\Assignment5-CO5\build\TaskB1_stack_limit.exe linear 16000
+STACK mode=linear n=16000 result=1 calls=16001
+EXIT_CODE 0 (0x00000000)
+$ C:\Users\Chris\Documents\ChatGPT\DBMS assisgnments\C-programming\Assignment5-CO5\build\TaskB1_stack_limit.exe linear 32000
+STACK mode=linear n=32000 result=1 calls=32001
+EXIT_CODE 0 (0x00000000)
+$ C:\Users\Chris\Documents\ChatGPT\DBMS assisgnments\C-programming\Assignment5-CO5\build\TaskB1_stack_limit.exe linear 64000
+EXIT_CODE 3221225725 (0xC00000FD)
+$ C:\Users\Chris\Documents\ChatGPT\DBMS assisgnments\C-programming\Assignment5-CO5\build\TaskB1_stack_limit.exe iterative 64000
+STACK mode=iterative n=64000 result=1 calls=64001
+EXIT_CODE 0
+$ C:\Users\Chris\Documents\ChatGPT\DBMS assisgnments\C-programming\Assignment5-CO5\build\TaskB1_stack_limit.exe iterative 128000
+STACK mode=iterative n=128000 result=1 calls=128001
+EXIT_CODE 0

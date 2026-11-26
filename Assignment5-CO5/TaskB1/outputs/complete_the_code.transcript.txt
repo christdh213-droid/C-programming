@@ -1,0 +1,4 @@
+$ gcc -std=c11 -Wall -Wextra TaskB1/complete_the_code.c -o build/TaskB1_complete_the_code.exe
+$ build/TaskB1_complete_the_code.exe < TaskB1/input.txt
+linear: 1073741824 in 31 calls
+fast  : 1073741824 in 6 calls

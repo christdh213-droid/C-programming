@@ -1,0 +1,19 @@
+$ gcc -std=c11 -Wall -Wextra TaskB1/recursion_lab.c -o build/TaskB1_recursion_lab.exe
+$ build/TaskB1_recursion_lab.exe < TaskB1/input.txt
+ROOT 0 -> 0 PASS
+ROOT 1 -> 1 PASS
+ROOT 9875 -> 2 PASS
+ROOT 999999 -> 9 PASS
+ROOT 123456789 -> 9 PASS
+POWER 0 ^ 0 = 1 three variants PASS
+POWER 0 ^ 1 = 0 three variants PASS
+POWER 1 ^ 1 = 1 three variants PASS
+POWER 2 ^ 10 = 1024 three variants PASS
+POWER 3 ^ 7 = 2187 three variants PASS
+POWER 5 ^ 4 = 625 three variants PASS
+CALLS n=10 linear=11 fast=5
+CALLS n=100 linear=101 fast=8
+CALLS n=1000 linear=1001 fast=11
+CALLS n=10000 linear=10001 fast=15
+DUPLICATE_HALF exp=30 value=1073741824 calls=63
+ODD_DECREMENT exp=30 value=1073741824 calls=61

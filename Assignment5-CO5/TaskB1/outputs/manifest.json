@@ -1,0 +1,50 @@
+[
+  {
+    "source": "complete_the_code.c",
+    "compile": [
+      "gcc",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "TaskB1/complete_the_code.c",
+      "-o",
+      "build/TaskB1_complete_the_code.exe"
+    ],
+    "compile_exit": 0,
+    "exit_code": 0,
+    "stdout_sha256": "8cbee5d365e10c243060d863740dbee3839d590d23aa889ccf303f1dd94309a5",
+    "exact_expected": true
+  },
+  {
+    "source": "recursion_lab.c",
+    "compile": [
+      "gcc",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "TaskB1/recursion_lab.c",
+      "-o",
+      "build/TaskB1_recursion_lab.exe"
+    ],
+    "compile_exit": 0,
+    "exit_code": 0,
+    "stdout_sha256": "c8f508f0075411891675ca838ed07cc5600cf67f2e4e01109ca8696278fa30b1",
+    "exact_expected": false
+  },
+  {
+    "source": "stack_limit.c",
+    "compile": [
+      "gcc",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "TaskB1/stack_limit.c",
+      "-o",
+      "build/TaskB1_stack_limit.exe"
+    ],
+    "compile_exit": 0,
+    "exit_code": 0,
+    "stdout_sha256": "f5f535253c990454b32b0dbe58679b4f2a1f6318dd71a2f6792ba4bd49706ced",
+    "exact_expected": false
+  }
+]
