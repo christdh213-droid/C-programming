@@ -1,0 +1,6 @@
+UPDATED 101 5200.00
+UPDATED 102 12480.00
+UPDATED 103 832.00
+SIZE account=8 pointer=8 conceptual_value_copy_bytes_per_call=16
+BENCH pointer repetitions=1000000 cpu_seconds=0.002000000 checksum=5200000000.00
+BENCH return_value repetitions=1000000 cpu_seconds=0.022000000 checksum=5200000000.00

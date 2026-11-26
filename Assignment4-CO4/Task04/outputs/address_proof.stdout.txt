@@ -1,0 +1,9 @@
+CALLER address=0000000C9CDFFB60 number=101
+VALUE address=0000000C9CDFFB40 number=101 before=5000.00 local_after=5200.00
+CALLER unchanged=5000.00
+CALLER address=0000000C9CDFFB68 number=102
+VALUE address=0000000C9CDFFB40 number=102 before=12000.00 local_after=12480.00
+CALLER unchanged=12000.00
+CALLER address=0000000C9CDFFB70 number=103
+VALUE address=0000000C9CDFFB40 number=103 before=800.00 local_after=832.00
+CALLER unchanged=800.00

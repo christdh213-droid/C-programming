@@ -1,0 +1,12 @@
+Task04/forensics_bug.c: In function 'main':
+Task04/forensics_bug.c:7:23: error: 'p' is a pointer; did you mean to use '->'?
+    7 |     printf("%d %f\n",p.number,p.balance);return 0;
+      |                       ^
+      |                       ->
+Task04/forensics_bug.c:7:32: error: 'p' is a pointer; did you mean to use '->'?
+    7 |     printf("%d %f\n",p.number,p.balance);return 0;
+      |                                ^
+      |                                ->
+Task04/forensics_bug.c:5:79: warning: variable 'p' set but not used [-Wunused-but-set-variable=]
+    5 |     struct account list[3]={{101,5000},{102,12000},{103,800}};struct account *p=list;
+      |                                                                               ^

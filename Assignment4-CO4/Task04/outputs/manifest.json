@@ -1,0 +1,48 @@
+[
+  {
+    "source": "address_proof.c",
+    "compile": [
+      "gcc",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "Task04/address_proof.c",
+      "-o",
+      "build/Task04_address_proof.exe"
+    ],
+    "compile_exit": 0,
+    "exit_code": 0,
+    "stdout_sha256": "2cb0e60ebe0f5755308985e0ead4225c460b6e7f9c3b14999156cf5c627d5abe",
+    "exact_expected": false
+  },
+  {
+    "source": "forensics_bug.c",
+    "compile": [
+      "gcc",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "Task04/forensics_bug.c",
+      "-o",
+      "build/Task04_forensics_bug.exe"
+    ],
+    "compile_exit": 1,
+    "intentional_error": true
+  },
+  {
+    "source": "repaired_bank.c",
+    "compile": [
+      "gcc",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "Task04/repaired_bank.c",
+      "-o",
+      "build/Task04_repaired_bank.exe"
+    ],
+    "compile_exit": 0,
+    "exit_code": 0,
+    "stdout_sha256": "181627aa759f5fc3fe46a6194d8ca75e2c1817475bcd26bd21ca304637dc24bb",
+    "exact_expected": false
+  }
+]
