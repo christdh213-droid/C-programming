@@ -1,0 +1,11 @@
+$ gcc -std=c11 -Wall -Wextra Task01/patient_register.c -o build/Task01_patient_register.exe
+$ build/Task01_patient_register.exe < Task01/input.txt
+capacity2 add=accepted before=0 after=1
+capacity2 add=accepted before=1 after=2
+capacity2 add=rejected before=2 after=2
+PATIENT Bala age=28 phone=9123456780 bp=118/76 date=25/11/2026
+PATIENT Chitra age=44 phone=9000012345 bp=130/85 date=24/11/2026
+PATIENT Anita age=65 phone=9876543210 bp=120/80 date=26/11/2026
+LAYOUT Patient=76 align=4 fields=75 padding=1 Parallel100=7500 AoS100=7600
+OFFSETS name=0 age=40 phone=44 bp=56 visit=64
+SWAPS 2 AoS_source_bytes=456 equivalent_SoA_source_bytes=450 (three assignments per swapped field)

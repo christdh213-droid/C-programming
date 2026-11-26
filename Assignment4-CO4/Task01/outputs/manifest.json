@@ -1,0 +1,18 @@
+[
+  {
+    "source": "patient_register.c",
+    "compile": [
+      "gcc",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "Task01/patient_register.c",
+      "-o",
+      "build/Task01_patient_register.exe"
+    ],
+    "compile_exit": 0,
+    "exit_code": 0,
+    "stdout_sha256": "872a57a0b5533e9321e4e1764c0b36bbf4d7972535139f226a4df9f10d589082",
+    "exact_expected": false
+  }
+]
