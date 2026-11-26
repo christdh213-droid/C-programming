@@ -1,5 +1,5 @@
 $ gcc -std=c11 -Wall -Wextra Q3/complete.c -o build/Q3_complete.exe
 $ build/Q3_complete.exe < Q3/inputs/complete.txt
-00000101
-00000110
-AC is ON, PUMP is OFF
+00000101
+00000110
+AC is ON, PUMP is OFF

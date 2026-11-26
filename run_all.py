@@ -24,7 +24,7 @@ def run(task):
         (folder/'outputs'/f'{name}.stderr.txt').write_bytes(execution.stderr)
         transcript = '$ ' + subprocess.list2cmdline(cmd) + '\n' + comp.stdout.decode(errors='replace') + comp.stderr.decode(errors='replace')
         transcript += '$ ' + f'build/{task}_{name}.exe < {task}/inputs/{name}.txt\n' + execution.stdout.decode(errors='replace') + execution.stderr.decode(errors='replace')
-        (folder/'outputs'/f'{name}.transcript.txt').write_text(transcript, encoding='utf-8')
+        (folder/'outputs'/f'{name}.transcript.txt').write_bytes(transcript.encode('utf-8'))
         expected = folder/'expected'/f'{name}.txt'
         if expected.exists():
             assert execution.stdout == expected.read_bytes(), f'{task}/{name}: byte mismatch'

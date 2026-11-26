@@ -1,16 +1,16 @@
 $ gcc -std=c11 -Wall -Wextra Q7/redesign.c -o build/Q7_redesign.exe
 $ build/Q7_redesign.exe < Q7/inputs/redesign.txt
-n prime old_mod new_mod old_quot new_quot old_total new_total reduction_percent
-0 0 0 0 0 0 0 0 0.000
-1 0 0 0 0 0 0 0 0.000
-2 1 0 0 1 0 1 0 100.000
-3 1 0 0 1 0 1 0 100.000
-4 0 1 1 1 0 2 1 50.000
-9 0 2 2 2 0 4 2 50.000
-25 0 4 3 4 1 8 4 50.000
-49 0 6 4 6 1 12 5 58.333
-97 1 8 4 9 2 17 6 64.706
-100 0 1 1 1 0 2 1 50.000
-7919 1 87 30 88 15 175 45 74.286
-1000003 1 999 334 1000 167 1999 501 74.937
-Validation: revised vs sieve 0..1000003 PASS; original vs revised 0..10000 PASS.
+n prime old_mod new_mod old_quot new_quot old_total new_total reduction_percent
+0 0 0 0 0 0 0 0 0.000
+1 0 0 0 0 0 0 0 0.000
+2 1 0 0 1 0 1 0 100.000
+3 1 0 0 1 0 1 0 100.000
+4 0 1 1 1 0 2 1 50.000
+9 0 2 2 2 0 4 2 50.000
+25 0 4 3 4 1 8 4 50.000
+49 0 6 4 6 1 12 5 58.333
+97 1 8 4 9 2 17 6 64.706
+100 0 1 1 1 0 2 1 50.000
+7919 1 87 30 88 15 175 45 74.286
+1000003 1 999 334 1000 167 1999 501 74.937
+Validation: revised vs sieve 0..1000003 PASS; original vs revised 0..10000 PASS.

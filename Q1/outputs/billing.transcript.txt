@@ -1,7 +1,7 @@
 $ gcc -std=c11 -Wall -Wextra Q1/billing.c -o build/Q1_billing.exe
 $ build/Q1_billing.exe < Q1/inputs/billing.txt
-price qty senior | original_total original_net | corrected_net
-99 3 1 | 267 267 | 265.072500
-500 2 0 | 1050 1000 | 1000.000000
-1200 1 1 | 1080 1030 | 1021.000000
-Static arithmetic operations when senior and coupon apply: original 11; corrected 6; comparisons/branches excluded.
+price qty senior | original_total original_net | corrected_net
+99 3 1 | 267 267 | 265.072500
+500 2 0 | 1050 1000 | 1000.000000
+1200 1 1 | 1080 1030 | 1021.000000
+Static arithmetic operations when senior and coupon apply: original 11; corrected 6; comparisons/branches excluded.
