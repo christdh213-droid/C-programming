@@ -1,0 +1,4 @@
+$ gcc -std=c11 -Wall -Wextra -fanalyzer -c TaskB2/bloodbank_cli.c -o build/analyzer_cli.o
+EXIT_CODE 0
+$ gcc -std=c11 -Wall -Wextra -fanalyzer -c TaskB4/nightly_report.c -o build/analyzer_nightly.o
+EXIT_CODE 0

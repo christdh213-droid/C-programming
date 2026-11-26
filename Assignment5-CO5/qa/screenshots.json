@@ -1,0 +1,182 @@
+[
+  {
+    "file": "TaskB1\\screenshots\\complete_the_code_01.png",
+    "source": "TaskB1\\outputs\\complete_the_code.transcript.txt",
+    "start": 1,
+    "end": 4,
+    "width": 1900,
+    "height": 262,
+    "dpi": 300,
+    "nonblank": true
+  },
+  {
+    "file": "TaskB1\\screenshots\\recursion_lab_01.png",
+    "source": "TaskB1\\outputs\\recursion_lab.transcript.txt",
+    "start": 1,
+    "end": 19,
+    "width": 1900,
+    "height": 832,
+    "dpi": 300,
+    "nonblank": true
+  },
+  {
+    "file": "TaskB1\\screenshots\\stack_limit_01.png",
+    "source": "TaskB1\\outputs\\stack_limit.transcript.txt",
+    "start": 1,
+    "end": 3,
+    "width": 1900,
+    "height": 224,
+    "dpi": 300,
+    "nonblank": true
+  },
+  {
+    "file": "TaskB1\\screenshots\\stack_stress_01.png",
+    "source": "TaskB1\\outputs\\stack_stress.transcript.txt",
+    "start": 1,
+    "end": 26,
+    "width": 2030,
+    "height": 1098,
+    "dpi": 300,
+    "nonblank": true
+  },
+  {
+    "file": "TaskB2\\screenshots\\adversarial_cases_01.png",
+    "source": "TaskB2\\outputs\\adversarial_cases.transcript.txt",
+    "start": 1,
+    "end": 28,
+    "width": 2825,
+    "height": 1174,
+    "dpi": 300,
+    "nonblank": true
+  },
+  {
+    "file": "TaskB2\\screenshots\\adversarial_cases_02.png",
+    "source": "TaskB2\\outputs\\adversarial_cases.transcript.txt",
+    "start": 29,
+    "end": 52,
+    "width": 2285,
+    "height": 1022,
+    "dpi": 300,
+    "nonblank": true
+  },
+  {
+    "file": "TaskB2\\screenshots\\adversarial_scanf_demo_01.png",
+    "source": "TaskB2\\outputs\\adversarial_scanf_demo.transcript.txt",
+    "start": 1,
+    "end": 3,
+    "width": 1900,
+    "height": 224,
+    "dpi": 300,
+    "nonblank": true
+  },
+  {
+    "file": "TaskB2\\screenshots\\bloodbank_cli_01.png",
+    "source": "TaskB2\\outputs\\bloodbank_cli.transcript.txt",
+    "start": 1,
+    "end": 3,
+    "width": 1900,
+    "height": 224,
+    "dpi": 300,
+    "nonblank": true
+  },
+  {
+    "file": "TaskB2\\screenshots\\sanitizer_probe_01.png",
+    "source": "TaskB2\\outputs\\sanitizer_probe.transcript.txt",
+    "start": 1,
+    "end": 11,
+    "width": 2300,
+    "height": 528,
+    "dpi": 300,
+    "nonblank": true
+  },
+  {
+    "file": "TaskB2\\screenshots\\unsafe_native_01.png",
+    "source": "TaskB2\\outputs\\unsafe_native.transcript.txt",
+    "start": 1,
+    "end": 4,
+    "width": 2510,
+    "height": 262,
+    "dpi": 300,
+    "nonblank": true
+  },
+  {
+    "file": "TaskB3\\screenshots\\complete_the_code_01.png",
+    "source": "TaskB3\\outputs\\complete_the_code.transcript.txt",
+    "start": 1,
+    "end": 5,
+    "width": 1900,
+    "height": 300,
+    "dpi": 300,
+    "nonblank": true
+  },
+  {
+    "file": "TaskB3\\screenshots\\file_benchmark_01.png",
+    "source": "TaskB3\\outputs\\file_benchmark.transcript.txt",
+    "start": 1,
+    "end": 14,
+    "width": 1900,
+    "height": 642,
+    "dpi": 300,
+    "nonblank": true
+  },
+  {
+    "file": "TaskB4\\screenshots\\complete_the_code_01.png",
+    "source": "TaskB4\\outputs\\complete_the_code.transcript.txt",
+    "start": 1,
+    "end": 7,
+    "width": 1900,
+    "height": 376,
+    "dpi": 300,
+    "nonblank": true
+  },
+  {
+    "file": "TaskB4\\screenshots\\nightly_report_01.png",
+    "source": "TaskB4\\outputs\\nightly_report.transcript.txt",
+    "start": 1,
+    "end": 28,
+    "width": 2360,
+    "height": 1174,
+    "dpi": 300,
+    "nonblank": true
+  },
+  {
+    "file": "TaskB4\\screenshots\\nightly_report_02.png",
+    "source": "TaskB4\\outputs\\nightly_report.transcript.txt",
+    "start": 29,
+    "end": 31,
+    "width": 1900,
+    "height": 224,
+    "dpi": 300,
+    "nonblank": true
+  },
+  {
+    "file": "TaskB4\\screenshots\\sanitizer_probe_01.png",
+    "source": "TaskB4\\outputs\\sanitizer_probe.transcript.txt",
+    "start": 1,
+    "end": 4,
+    "width": 2300,
+    "height": 262,
+    "dpi": 300,
+    "nonblank": true
+  },
+  {
+    "file": "TaskB4\\screenshots\\stream_01.png",
+    "source": "TaskB4\\outputs\\stream.transcript.txt",
+    "start": 1,
+    "end": 28,
+    "width": 2210,
+    "height": 1174,
+    "dpi": 300,
+    "nonblank": true
+  },
+  {
+    "file": "TaskB4\\screenshots\\stream_02.png",
+    "source": "TaskB4\\outputs\\stream.transcript.txt",
+    "start": 29,
+    "end": 30,
+    "width": 1900,
+    "height": 186,
+    "dpi": 300,
+    "nonblank": true
+  }
+]

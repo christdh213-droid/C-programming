@@ -1,0 +1,8 @@
+TaskB1 Complete-the-Code PASS: immutable main/skeleton and exact stdout bytes
+TaskB3 Complete-the-Code PASS: immutable main/skeleton and exact stdout bytes
+TaskB4 Complete-the-Code PASS: immutable main/skeleton and exact stdout bytes
+Every final ordinary build: zero diagnostics, exit0, captured stdout SHA256 PASS
+Stack overflow OBSERVED at first failing sweep n=64000; previous tested n=32000 passed; this is not the exact minimum threshold
+Adversarial CLI 16 cases: expected statuses PASS
+Independent Python decode of 100000 records: eligibility count, youngest ID and 25 hospital totals PASS for both strategies
+Sanitizer verification UNAVAILABLE: real GCC link probes fail, missing libasan; zero-leak certification NOT obtained
