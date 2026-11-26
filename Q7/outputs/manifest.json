@@ -1,0 +1,17 @@
+[
+  {
+    "source": "redesign.c",
+    "command": [
+      "gcc",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "Q7/redesign.c",
+      "-o",
+      "build/Q7_redesign.exe"
+    ],
+    "exit_code": 0,
+    "stdout_sha256": "7752e573d5c94a3c3c47e2878b64f76ca7d2f8671a267005af35c6d1f2762e8c",
+    "expected_bytes_match": false
+  }
+]
