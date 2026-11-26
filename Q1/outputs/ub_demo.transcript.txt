@@ -1,0 +1,8 @@
+$ gcc -std=c11 -Wall Q1/ub_demo.c -o build/Q1_ub_demo.exe
+Q1/ub_demo.c: In function 'main':
+Q1/ub_demo.c:4:11: warning: operation on 'count' may be undefined [-Wsequence-point]
+    4 |     count = count++ + 1;
+      |     ~~~~~~^~~~~~~~~~~~~
+$ build/Q1_ub_demo.exe < Q1/inputs/ub_demo.txt
+Observed count = 1 (undefined behaviour; not a portable result)
+Correct increment = 1

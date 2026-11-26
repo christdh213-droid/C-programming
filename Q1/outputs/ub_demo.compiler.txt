@@ -1,0 +1,4 @@
+Q1/ub_demo.c: In function 'main':
+Q1/ub_demo.c:4:11: warning: operation on 'count' may be undefined [-Wsequence-point]
+    4 |     count = count++ + 1;
+      |     ~~~~~~^~~~~~~~~~~~~

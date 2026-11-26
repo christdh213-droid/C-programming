@@ -1,0 +1,31 @@
+[
+  {
+    "source": "billing.c",
+    "command": [
+      "gcc",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "Q1/billing.c",
+      "-o",
+      "build/Q1_billing.exe"
+    ],
+    "exit_code": 0,
+    "stdout_sha256": "9ae4c4232f3f621a851b4720de408dc4922353599bdf332ba2095486a1c28d44",
+    "expected_bytes_match": false
+  },
+  {
+    "source": "ub_demo.c",
+    "command": [
+      "gcc",
+      "-std=c11",
+      "-Wall",
+      "Q1/ub_demo.c",
+      "-o",
+      "build/Q1_ub_demo.exe"
+    ],
+    "exit_code": 0,
+    "stdout_sha256": "250794fbeeb0459c24c61c65a2e87b0c916130970ab3ffc4695d765120e5a122",
+    "expected_bytes_match": false
+  }
+]

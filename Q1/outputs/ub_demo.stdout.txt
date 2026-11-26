@@ -1,0 +1,2 @@
+Observed count = 1 (undefined behaviour; not a portable result)
+Correct increment = 1
