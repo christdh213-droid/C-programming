@@ -1,0 +1,47 @@
+[
+  {
+    "source": "complete.c",
+    "command": [
+      "gcc",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "Q5/complete.c",
+      "-o",
+      "build/Q5_complete.exe"
+    ],
+    "exit_code": 0,
+    "stdout_sha256": "601cf186253a30399c239aef3fc1cbb53620b672b86408c3d3be2c06cbdfd23b",
+    "expected_bytes_match": true
+  },
+  {
+    "source": "loops_sieve.c",
+    "command": [
+      "gcc",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "Q5/loops_sieve.c",
+      "-o",
+      "build/Q5_loops_sieve.exe"
+    ],
+    "exit_code": 0,
+    "stdout_sha256": "a22a642e1ffcfc7004e738e167fa74784a3f5d66b09e1d64925df4bf02834d3e",
+    "expected_bytes_match": false
+  },
+  {
+    "source": "naive_complete.c",
+    "command": [
+      "gcc",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "Q5/naive_complete.c",
+      "-o",
+      "build/Q5_naive_complete.exe"
+    ],
+    "exit_code": 0,
+    "stdout_sha256": "7d06f4a0bc14b1bf71bcab1d1e5e485694728e6e8f5b9d6a87bb11b59485db91",
+    "expected_bytes_match": false
+  }
+]

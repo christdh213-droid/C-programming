@@ -1,0 +1,45 @@
+sieve bytes=1000004 marking_visits=2122051 primes=78499
+n mode prime modulo_attempts condition_quotients total_divisions
+0 0 0 0 0 0
+0 1 0 0 0 0
+0 2 0 0 0 0
+0 3 0 0 0 0
+1 0 0 0 0 0
+1 1 0 0 0 0
+1 2 0 0 0 0
+1 3 0 0 0 0
+2 0 1 0 0 0
+2 1 1 0 1 1
+2 2 1 0 1 1
+2 3 1 0 1 1
+3 0 1 1 0 1
+3 1 1 0 1 1
+3 2 1 0 1 1
+3 3 1 0 1 1
+4 0 0 1 0 1
+4 1 0 1 1 2
+4 2 0 1 1 2
+4 3 0 1 1 2
+25 0 0 4 0 4
+25 1 0 4 4 8
+25 2 0 4 4 8
+25 3 0 4 4 8
+97 0 1 95 0 95
+97 1 1 8 9 17
+97 2 1 8 9 17
+97 3 1 8 9 17
+100 0 0 1 0 1
+100 1 0 1 1 2
+100 2 0 1 1 2
+100 3 0 1 1 2
+7919 0 1 7917 0 7917
+7919 1 1 87 88 175
+7919 2 1 87 88 175
+7919 3 1 87 88 175
+1000003 0 1 1000001 0 1000001
+1000003 1 1 999 1000 1999
+1000003 2 1 999 1000 1999
+1000003 3 1 999 1000 1999
+All 4 variants agree with sieve for every n=0..10000.
+Defined uint32_t wrap: i=65536 i*i=0 UINT32_MAX=4294967295
+Signed overflow is undefined and is not executed. Use i<=n/i for safe trial bounds.

@@ -1,0 +1,6 @@
+$ gcc -std=c11 -Wall -Wextra Q5/complete.c -o build/Q5_complete.exe
+$ build/Q5_complete.exe < Q5/inputs/complete.txt
+      97  prime      divisions = 8
+     100  not prime  divisions = 1
+    7919  prime      divisions = 87
+ 1000003  prime      divisions = 999
