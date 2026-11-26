@@ -11,7 +11,7 @@
       "build/Q1_billing.exe"
     ],
     "exit_code": 0,
-    "stdout_sha256": "9ae4c4232f3f621a851b4720de408dc4922353599bdf332ba2095486a1c28d44",
+    "stdout_sha256": "f7a32249c5a33857512f93bae71ec3377fbd797a5b148480fdaecbf6f3ec5643",
     "expected_bytes_match": false
   },
   {

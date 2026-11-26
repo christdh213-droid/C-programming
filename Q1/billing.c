@@ -14,6 +14,6 @@ int main(void) {
         if (corrected>1000.0) corrected-=50.0;
         printf("%d %d %d | %d %d | %.6f\n",price,qty,senior,total,net,corrected);
     }
-    puts("Static arithmetic operations: original 11; corrected 5 (senior case); comparisons/branches excluded.");
+    puts("Static arithmetic operations when senior and coupon apply: original 11; corrected 6; comparisons/branches excluded.");
     return 0;
 }
