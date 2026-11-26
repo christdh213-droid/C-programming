@@ -1,0 +1,3 @@
+$ gcc -std=c11 -Wall -Wextra Q4/fallthrough.c -o build/Q4_fallthrough.exe
+$ build/Q4_fallthrough.exe < Q4/inputs/fallthrough.txt
+100:A 95:A 83:A 50:D 49:F -5:? 

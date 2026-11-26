@@ -1,0 +1,47 @@
+[
+  {
+    "source": "classifiers.c",
+    "command": [
+      "gcc",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "Q4/classifiers.c",
+      "-o",
+      "build/Q4_classifiers.exe"
+    ],
+    "exit_code": 0,
+    "stdout_sha256": "c49f7e7e6dc8a0e3f717689d7e5737c2dacc9936823bbd3cc3c4f2923160b967",
+    "expected_bytes_match": false
+  },
+  {
+    "source": "complete.c",
+    "command": [
+      "gcc",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "Q4/complete.c",
+      "-o",
+      "build/Q4_complete.exe"
+    ],
+    "exit_code": 0,
+    "stdout_sha256": "461cb1500e73bbec044b746a4940d29932c65096419e74cc368bba14b98f7cd7",
+    "expected_bytes_match": true
+  },
+  {
+    "source": "fallthrough.c",
+    "command": [
+      "gcc",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "Q4/fallthrough.c",
+      "-o",
+      "build/Q4_fallthrough.exe"
+    ],
+    "exit_code": 0,
+    "stdout_sha256": "976e587a1fd58bf23430ad4596b98b7137aa754908cfafc445e2b72495d275eb",
+    "expected_bytes_match": false
+  }
+]
